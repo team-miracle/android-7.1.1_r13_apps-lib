@@ -1,0 +1,8 @@
+libcore/ojluni/src/lambda/java/java/lang/invoke/CallSite.java
+libcore/ojluni/src/lambda/java/java/lang/invoke/LambdaConversionException.java
+libcore/ojluni/src/lambda/java/java/lang/invoke/LambdaMetafactory.java
+libcore/ojluni/src/lambda/java/java/lang/invoke/MethodHandle.java
+libcore/ojluni/src/lambda/java/java/lang/invoke/MethodHandleInfo.java
+libcore/ojluni/src/lambda/java/java/lang/invoke/MethodHandles.java
+libcore/ojluni/src/lambda/java/java/lang/invoke/MethodType.java
+libcore/ojluni/src/lambda/java/java/lang/invoke/SerializedLambda.java

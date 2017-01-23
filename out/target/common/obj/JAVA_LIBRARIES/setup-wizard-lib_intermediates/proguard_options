@@ -1,0 +1,60 @@
+# view res/layout/suw_template_card.xml #generated:52
+# view res/layout/suw_template_card_wide.xml #generated:53
+# view res/layout/suw_template_header_collapsed.xml #generated:49
+-keep class com.android.setupwizardlib.view.BottomScrollView { <init>(...); }
+
+# view res/layout/suw_list_header.xml #generated:28
+# view res/layout/suw_list_template_card.xml #generated:24
+# view res/layout/suw_list_template_card_wide.xml #generated:24
+# view res/layout/suw_no_scroll_template_card.xml #generated:27
+# view res/layout/suw_no_scroll_template_card_wide.xml #generated:27
+# view res/layout/suw_no_scroll_template_header.xml #generated:35
+# view res/layout/suw_template_card.xml #generated:24
+# view res/layout/suw_template_card_wide.xml #generated:24
+# view res/layout/suw_template_header.xml #generated:49
+-keep class com.android.setupwizardlib.view.Illustration { <init>(...); }
+
+# view res/layout/suw_glif_blank_template_card.xml #generated:33
+# view res/layout/suw_glif_list_template_card.xml #generated:33
+# view res/layout/suw_glif_template_card.xml #generated:33
+-keep class com.android.setupwizardlib.view.IntrinsicSizeFrameLayout { <init>(...); }
+
+# view res/layout/suw_list_template_card.xml #generated:65
+# view res/layout/suw_list_template_card_wide.xml #generated:66
+# view res/layout/suw_list_template_header.xml #generated:32
+# view res/layout/suw_list_template_header_collapsed.xml #generated:48
+# view res/layout/suw_no_scroll_template_card.xml #generated:68
+# view res/layout/suw_no_scroll_template_card_wide.xml #generated:69
+# view res/layout/suw_no_scroll_template_header.xml #generated:63
+# view res/layout/suw_no_scroll_template_header_collapsed.xml #generated:50
+# view res/layout/suw_template_card.xml #generated:74
+# view res/layout/suw_template_card_wide.xml #generated:74
+# view res/layout/suw_template_header.xml #generated:75
+# view res/layout/suw_template_header_collapsed.xml #generated:63
+-keep class com.android.setupwizardlib.view.NavigationBar { <init>(...); }
+
+# view res/layout/suw_navbar_view.xml #generated:20
+# view res/layout/suw_navbar_view.xml #generated:35
+# view res/layout/suw_navbar_view.xml #generated:46
+-keep class com.android.setupwizardlib.view.NavigationBarButton { <init>(...); }
+
+# view res/layout/suw_items_default.xml #generated:47
+# view res/layout/suw_items_default.xml #generated:56
+# view res/layout/suw_items_description.xml #generated:46
+# view res/layout/suw_items_description.xml #generated:57
+# view res/layout/suw_items_verbose.xml #generated:46
+# view res/layout/suw_items_verbose.xml #generated:55
+-keep class com.android.setupwizardlib.view.RichTextView { <init>(...); }
+
+# view res/layout/suw_glif_blank_template_compact.xml #generated:18
+# view res/layout/suw_glif_list_template_compact.xml #generated:18
+# view res/layout/suw_glif_template_compact.xml #generated:18
+-keep class com.android.setupwizardlib.view.StatusBarBackgroundLayout { <init>(...); }
+
+# view res/layout/suw_glif_list_template_content.xml #generated:24
+# view res/layout/suw_list_template_header.xml #generated:24
+-keep class com.android.setupwizardlib.view.StickyHeaderListView { <init>(...); }
+
+# view res/layout/suw_template_header.xml #generated:24
+-keep class com.android.setupwizardlib.view.StickyHeaderScrollView { <init>(...); }
+

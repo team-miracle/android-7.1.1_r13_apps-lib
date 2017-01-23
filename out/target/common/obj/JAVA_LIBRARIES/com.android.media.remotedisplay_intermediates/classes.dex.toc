@@ -1,0 +1,829 @@
+<api>
+<package name="com.android.media.remotedisplay"
+>
+<class name="RemoteDisplay"
+ extends="java.lang.Object"
+ interface="false"
+ abstract="false"
+ static="false"
+ final="false"
+ visibility="public"
+>
+<field name="PLAYBACK_VOLUME_FIXED"
+ type="int"
+ transient="false"
+ volatile="false"
+ static="true"
+ final="true"
+ visibility="public"
+ value="0"
+>
+</field>
+<field name="PLAYBACK_VOLUME_VARIABLE"
+ type="int"
+ transient="false"
+ volatile="false"
+ static="true"
+ final="true"
+ visibility="public"
+ value="1"
+>
+</field>
+<field name="STATUS_AVAILABLE"
+ type="int"
+ transient="false"
+ volatile="false"
+ static="true"
+ final="true"
+ visibility="public"
+ value="2"
+>
+</field>
+<field name="STATUS_CONNECTED"
+ type="int"
+ transient="false"
+ volatile="false"
+ static="true"
+ final="true"
+ visibility="public"
+ value="4"
+>
+</field>
+<field name="STATUS_CONNECTING"
+ type="int"
+ transient="false"
+ volatile="false"
+ static="true"
+ final="true"
+ visibility="public"
+ value="3"
+>
+</field>
+<field name="STATUS_IN_USE"
+ type="int"
+ transient="false"
+ volatile="false"
+ static="true"
+ final="true"
+ visibility="public"
+ value="1"
+>
+</field>
+<field name="STATUS_NOT_AVAILABLE"
+ type="int"
+ transient="false"
+ volatile="false"
+ static="true"
+ final="true"
+ visibility="public"
+>
+</field>
+<field name="mImmutableInfo"
+ type="android.media.RemoteDisplayState.RemoteDisplayInfo"
+ transient="false"
+ volatile="false"
+ static="false"
+ final="false"
+ visibility="private"
+>
+</field>
+<field name="mMutableInfo"
+ type="android.media.RemoteDisplayState.RemoteDisplayInfo"
+ transient="false"
+ volatile="false"
+ static="false"
+ final="true"
+ visibility="private"
+>
+</field>
+<constructor name="RemoteDisplay"
+ type="com.android.media.remotedisplay.RemoteDisplay"
+ static="false"
+ final="false"
+ visibility="public"
+>
+<parameter name="arg0" type="java.lang.String">
+</parameter>
+<parameter name="arg1" type="java.lang.String">
+</parameter>
+</constructor>
+<method name="getDescription"
+ return="java.lang.String"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ visibility="public"
+>
+</method>
+<method name="getId"
+ return="java.lang.String"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ visibility="public"
+>
+</method>
+<method name="getInfo"
+ return="android.media.RemoteDisplayState.RemoteDisplayInfo"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ visibility="package"
+>
+</method>
+<method name="getName"
+ return="java.lang.String"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ visibility="public"
+>
+</method>
+<method name="getPresentationDisplayId"
+ return="int"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ visibility="public"
+>
+</method>
+<method name="getStatus"
+ return="int"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ visibility="public"
+>
+</method>
+<method name="getVolume"
+ return="int"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ visibility="public"
+>
+</method>
+<method name="getVolumeHandling"
+ return="int"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ visibility="public"
+>
+</method>
+<method name="getVolumeMax"
+ return="int"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ visibility="public"
+>
+</method>
+<method name="setDescription"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ visibility="public"
+>
+<parameter name="arg0" type="java.lang.String">
+</parameter>
+</method>
+<method name="setName"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ visibility="public"
+>
+<parameter name="arg0" type="java.lang.String">
+</parameter>
+</method>
+<method name="setPresentationDisplayId"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ visibility="public"
+>
+<parameter name="arg0" type="int">
+</parameter>
+</method>
+<method name="setStatus"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ visibility="public"
+>
+<parameter name="arg0" type="int">
+</parameter>
+</method>
+<method name="setVolume"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ visibility="public"
+>
+<parameter name="arg0" type="int">
+</parameter>
+</method>
+<method name="setVolumeHandling"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ visibility="public"
+>
+<parameter name="arg0" type="int">
+</parameter>
+</method>
+<method name="setVolumeMax"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ visibility="public"
+>
+<parameter name="arg0" type="int">
+</parameter>
+</method>
+<method name="toString"
+ return="java.lang.String"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ visibility="public"
+>
+</method>
+</class>
+<class name="RemoteDisplayProvider.ProviderHandler"
+ extends="android.os.Handler"
+ interface="false"
+ abstract="false"
+ static="false"
+ final="true"
+ visibility="package"
+>
+<field name="this$0"
+ type="com.android.media.remotedisplay.RemoteDisplayProvider"
+ transient="false"
+ volatile="false"
+ static="false"
+ final="true"
+ visibility="package"
+>
+</field>
+<constructor name="RemoteDisplayProvider.ProviderHandler"
+ type="com.android.media.remotedisplay.RemoteDisplayProvider.ProviderHandler"
+ static="false"
+ final="false"
+ visibility="public"
+>
+<parameter name="arg0" type="com.android.media.remotedisplay.RemoteDisplayProvider">
+</parameter>
+<parameter name="arg1" type="android.os.Looper">
+</parameter>
+</constructor>
+<method name="handleMessage"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ visibility="public"
+>
+<parameter name="arg0" type="android.os.Message">
+</parameter>
+</method>
+</class>
+<class name="RemoteDisplayProvider.ProviderStub"
+ extends="android.media.IRemoteDisplayProvider.Stub"
+ interface="false"
+ abstract="false"
+ static="false"
+ final="true"
+ visibility="package"
+>
+<field name="this$0"
+ type="com.android.media.remotedisplay.RemoteDisplayProvider"
+ transient="false"
+ volatile="false"
+ static="false"
+ final="true"
+ visibility="package"
+>
+</field>
+<constructor name="RemoteDisplayProvider.ProviderStub"
+ type="com.android.media.remotedisplay.RemoteDisplayProvider.ProviderStub"
+ static="false"
+ final="false"
+ visibility="package"
+>
+<parameter name="arg0" type="com.android.media.remotedisplay.RemoteDisplayProvider">
+</parameter>
+</constructor>
+<method name="adjustVolume"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ visibility="public"
+>
+<parameter name="arg0" type="java.lang.String">
+</parameter>
+<parameter name="arg1" type="int">
+</parameter>
+</method>
+<method name="connect"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ visibility="public"
+>
+<parameter name="arg0" type="java.lang.String">
+</parameter>
+</method>
+<method name="disconnect"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ visibility="public"
+>
+<parameter name="arg0" type="java.lang.String">
+</parameter>
+</method>
+<method name="setCallback"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ visibility="public"
+>
+<parameter name="arg0" type="android.media.IRemoteDisplayCallback">
+</parameter>
+</method>
+<method name="setDiscoveryMode"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ visibility="public"
+>
+<parameter name="arg0" type="int">
+</parameter>
+</method>
+<method name="setVolume"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ visibility="public"
+>
+<parameter name="arg0" type="java.lang.String">
+</parameter>
+<parameter name="arg1" type="int">
+</parameter>
+</method>
+</class>
+<class name="RemoteDisplayProvider"
+ extends="java.lang.Object"
+ interface="false"
+ abstract="true"
+ static="false"
+ final="false"
+ visibility="public"
+>
+<field name="DISCOVERY_MODE_ACTIVE"
+ type="int"
+ transient="false"
+ volatile="false"
+ static="true"
+ final="true"
+ visibility="public"
+ value="2"
+>
+</field>
+<field name="DISCOVERY_MODE_NONE"
+ type="int"
+ transient="false"
+ volatile="false"
+ static="true"
+ final="true"
+ visibility="public"
+ value="0"
+>
+</field>
+<field name="DISCOVERY_MODE_PASSIVE"
+ type="int"
+ transient="false"
+ volatile="false"
+ static="true"
+ final="true"
+ visibility="public"
+ value="1"
+>
+</field>
+<field name="MSG_ADJUST_VOLUME"
+ type="int"
+ transient="false"
+ volatile="false"
+ static="true"
+ final="true"
+ visibility="private"
+ value="6"
+>
+</field>
+<field name="MSG_CONNECT"
+ type="int"
+ transient="false"
+ volatile="false"
+ static="true"
+ final="true"
+ visibility="private"
+ value="3"
+>
+</field>
+<field name="MSG_DISCONNECT"
+ type="int"
+ transient="false"
+ volatile="false"
+ static="true"
+ final="true"
+ visibility="private"
+ value="4"
+>
+</field>
+<field name="MSG_SET_CALLBACK"
+ type="int"
+ transient="false"
+ volatile="false"
+ static="true"
+ final="true"
+ visibility="private"
+ value="1"
+>
+</field>
+<field name="MSG_SET_DISCOVERY_MODE"
+ type="int"
+ transient="false"
+ volatile="false"
+ static="true"
+ final="true"
+ visibility="private"
+ value="2"
+>
+</field>
+<field name="MSG_SET_VOLUME"
+ type="int"
+ transient="false"
+ volatile="false"
+ static="true"
+ final="true"
+ visibility="private"
+ value="5"
+>
+</field>
+<field name="SERVICE_INTERFACE"
+ type="java.lang.String"
+ transient="false"
+ volatile="false"
+ static="true"
+ final="true"
+ visibility="public"
+ value="com.android.media.remotedisplay.RemoteDisplayProvider"
+>
+</field>
+<field name="mCallback"
+ type="android.media.IRemoteDisplayCallback"
+ transient="false"
+ volatile="false"
+ static="false"
+ final="false"
+ visibility="private"
+>
+</field>
+<field name="mContext"
+ type="android.content.Context"
+ transient="false"
+ volatile="false"
+ static="false"
+ final="true"
+ visibility="private"
+>
+</field>
+<field name="mDiscoveryMode"
+ type="int"
+ transient="false"
+ volatile="false"
+ static="false"
+ final="false"
+ visibility="private"
+>
+</field>
+<field name="mDisplays"
+ type="android.util.ArrayMap"
+ transient="false"
+ volatile="false"
+ static="false"
+ final="true"
+ visibility="private"
+>
+</field>
+<field name="mHandler"
+ type="com.android.media.remotedisplay.RemoteDisplayProvider.ProviderHandler"
+ transient="false"
+ volatile="false"
+ static="false"
+ final="true"
+ visibility="private"
+>
+</field>
+<field name="mSettingsPendingIntent"
+ type="android.app.PendingIntent"
+ transient="false"
+ volatile="false"
+ static="false"
+ final="false"
+ visibility="private"
+>
+</field>
+<field name="mStub"
+ type="com.android.media.remotedisplay.RemoteDisplayProvider.ProviderStub"
+ transient="false"
+ volatile="false"
+ static="false"
+ final="true"
+ visibility="private"
+>
+</field>
+<method name="-get0"
+ return="com.android.media.remotedisplay.RemoteDisplayProvider.ProviderHandler"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="true"
+ final="false"
+ visibility="package"
+>
+<parameter name="arg0" type="com.android.media.remotedisplay.RemoteDisplayProvider">
+</parameter>
+</method>
+<constructor name="RemoteDisplayProvider"
+ type="com.android.media.remotedisplay.RemoteDisplayProvider"
+ static="false"
+ final="false"
+ visibility="public"
+>
+<parameter name="arg0" type="android.content.Context">
+</parameter>
+</constructor>
+<method name="addDisplay"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ visibility="public"
+>
+<parameter name="arg0" type="com.android.media.remotedisplay.RemoteDisplay">
+</parameter>
+</method>
+<method name="findRemoteDisplay"
+ return="com.android.media.remotedisplay.RemoteDisplay"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ visibility="public"
+>
+<parameter name="arg0" type="java.lang.String">
+</parameter>
+</method>
+<method name="getBinder"
+ return="android.os.IBinder"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ visibility="public"
+>
+</method>
+<method name="getContext"
+ return="android.content.Context"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="true"
+ visibility="public"
+>
+</method>
+<method name="getDiscoveryMode"
+ return="int"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ visibility="public"
+>
+</method>
+<method name="getDisplays"
+ return="java.util.Collection"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ visibility="public"
+>
+</method>
+<method name="getSettingsPendingIntent"
+ return="android.app.PendingIntent"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ visibility="public"
+>
+</method>
+<method name="onAdjustVolume"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ visibility="public"
+>
+<parameter name="arg0" type="com.android.media.remotedisplay.RemoteDisplay">
+</parameter>
+<parameter name="arg1" type="int">
+</parameter>
+</method>
+<method name="onConnect"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ visibility="public"
+>
+<parameter name="arg0" type="com.android.media.remotedisplay.RemoteDisplay">
+</parameter>
+</method>
+<method name="onDisconnect"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ visibility="public"
+>
+<parameter name="arg0" type="com.android.media.remotedisplay.RemoteDisplay">
+</parameter>
+</method>
+<method name="onDiscoveryModeChanged"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ visibility="public"
+>
+<parameter name="arg0" type="int">
+</parameter>
+</method>
+<method name="onSetVolume"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ visibility="public"
+>
+<parameter name="arg0" type="com.android.media.remotedisplay.RemoteDisplay">
+</parameter>
+<parameter name="arg1" type="int">
+</parameter>
+</method>
+<method name="publishState"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ visibility="package"
+>
+</method>
+<method name="removeDisplay"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ visibility="public"
+>
+<parameter name="arg0" type="com.android.media.remotedisplay.RemoteDisplay">
+</parameter>
+</method>
+<method name="setCallback"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ visibility="package"
+>
+<parameter name="arg0" type="android.media.IRemoteDisplayCallback">
+</parameter>
+</method>
+<method name="setDiscoveryMode"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ visibility="package"
+>
+<parameter name="arg0" type="int">
+</parameter>
+</method>
+<method name="updateDisplay"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ visibility="public"
+>
+<parameter name="arg0" type="com.android.media.remotedisplay.RemoteDisplay">
+</parameter>
+</method>
+</class>
+</package>
+</api>

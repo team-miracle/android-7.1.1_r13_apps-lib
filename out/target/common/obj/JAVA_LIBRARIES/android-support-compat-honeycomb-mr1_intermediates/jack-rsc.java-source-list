@@ -1,0 +1,3 @@
+frameworks/support/compat/honeycomb_mr1/android/support/v4/animation/HoneycombMr1AnimatorCompatProvider.java
+frameworks/support/compat/honeycomb_mr1/android/support/v4/graphics/BitmapCompatHoneycombMr1.java
+frameworks/support/compat/honeycomb_mr1/android/support/v4/view/MotionEventCompatHoneycombMr1.java

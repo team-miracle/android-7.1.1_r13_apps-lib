@@ -1,0 +1,10 @@
+frameworks/support/design/base/android/support/design/internal/BottomNavigationAnimationHelperBase.java
+frameworks/support/design/base/android/support/design/widget/AnimationUtils.java
+frameworks/support/design/base/android/support/design/widget/CircularBorderDrawable.java
+frameworks/support/design/base/android/support/design/widget/FloatingActionButtonImpl.java
+frameworks/support/design/base/android/support/design/widget/MathUtils.java
+frameworks/support/design/base/android/support/design/widget/ShadowDrawableWrapper.java
+frameworks/support/design/base/android/support/design/widget/ShadowViewDelegate.java
+frameworks/support/design/base/android/support/design/widget/StateListAnimator.java
+frameworks/support/design/base/android/support/design/widget/ValueAnimatorCompat.java
+frameworks/support/design/base/android/support/design/widget/VisibilityAwareImageButton.java

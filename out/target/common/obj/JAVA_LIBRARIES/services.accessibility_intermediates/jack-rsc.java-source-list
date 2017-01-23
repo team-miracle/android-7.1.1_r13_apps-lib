@@ -1,0 +1,13 @@
+frameworks/base/services/accessibility/java/com/android/server/accessibility/AccessibilityGestureDetector.java
+frameworks/base/services/accessibility/java/com/android/server/accessibility/AccessibilityInputFilter.java
+frameworks/base/services/accessibility/java/com/android/server/accessibility/AccessibilityManagerService.java
+frameworks/base/services/accessibility/java/com/android/server/accessibility/AutoclickController.java
+frameworks/base/services/accessibility/java/com/android/server/accessibility/DisplayAdjustmentUtils.java
+frameworks/base/services/accessibility/java/com/android/server/accessibility/EventStreamTransformation.java
+frameworks/base/services/accessibility/java/com/android/server/accessibility/GestureUtils.java
+frameworks/base/services/accessibility/java/com/android/server/accessibility/KeyEventDispatcher.java
+frameworks/base/services/accessibility/java/com/android/server/accessibility/KeyboardInterceptor.java
+frameworks/base/services/accessibility/java/com/android/server/accessibility/MagnificationController.java
+frameworks/base/services/accessibility/java/com/android/server/accessibility/MagnificationGestureHandler.java
+frameworks/base/services/accessibility/java/com/android/server/accessibility/MotionEventInjector.java
+frameworks/base/services/accessibility/java/com/android/server/accessibility/TouchExplorer.java

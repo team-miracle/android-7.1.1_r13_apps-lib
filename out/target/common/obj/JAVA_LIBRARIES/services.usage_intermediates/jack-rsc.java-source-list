@@ -1,0 +1,8 @@
+frameworks/base/services/usage/java/com/android/server/usage/AppIdleHistory.java
+frameworks/base/services/usage/java/com/android/server/usage/IntervalStats.java
+frameworks/base/services/usage/java/com/android/server/usage/UnixCalendar.java
+frameworks/base/services/usage/java/com/android/server/usage/UsageStatsDatabase.java
+frameworks/base/services/usage/java/com/android/server/usage/UsageStatsService.java
+frameworks/base/services/usage/java/com/android/server/usage/UsageStatsXml.java
+frameworks/base/services/usage/java/com/android/server/usage/UsageStatsXmlV1.java
+frameworks/base/services/usage/java/com/android/server/usage/UserUsageStatsService.java

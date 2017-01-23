@@ -1,0 +1,9 @@
+# Referenced at frameworks/base/packages/SettingsLib/res/layout/settings_with_drawer.xml:16
+-keep class android.support.v4.widget.DrawerLayout { <init>(...); }
+
+# Referenced at frameworks/base/packages/SettingsLib/res/layout/restricted_switch_preference.xml:36
+-keep class com.android.internal.widget.PreferenceImageView { <init>(...); }
+
+# Referenced at frameworks/base/packages/SettingsLib/res/layout/usage_view.xml:60
+-keep class com.android.settingslib.graph.UsageGraph { <init>(...); }
+

@@ -1,0 +1,23 @@
+<!-- This file contains <public> resource definitions for all
+     resources that were generated from the source data. -->
+
+<resources>
+
+  <!-- PRIVATE SECTION.  These resources have not been declared public.
+       You can make them public my moving these lines into a file in res/values. -->
+
+  <!-- Declared at frameworks/opt/bitmap/res/values/constants.xml:19 -->
+  <public type="integer" name="bitmap_fade_animation_duration" id="0x7f020000" />
+  <!-- Declared at frameworks/opt/bitmap/res/values/constants.xml:21 -->
+  <public type="integer" name="bitmap_progress_animation_delay" id="0x7f020001" />
+  <!-- Declared at frameworks/opt/bitmap/res/values/constants.xml:23 -->
+  <public type="integer" name="bitmap_placeholder_animation_duration" id="0x7f020002" />
+  <!-- Declared at frameworks/opt/bitmap/res/values/constants.xml:25 -->
+  <public type="integer" name="bitmap_progress_animation_duration" id="0x7f020003" />
+
+  <!-- Declared at frameworks/opt/bitmap/res/values/dimens.xml:20 -->
+  <public type="dimen" name="placeholder_size" id="0x7f030000" />
+  <!-- Declared at frameworks/opt/bitmap/res/values/dimens.xml:22 -->
+  <public type="dimen" name="progress_bar_size" id="0x7f030001" />
+
+</resources>

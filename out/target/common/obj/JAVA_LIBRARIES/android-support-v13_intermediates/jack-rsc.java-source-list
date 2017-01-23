@@ -1,0 +1,12 @@
+frameworks/support/v13/java/android/support/v13/app/ActivityCompat.java
+frameworks/support/v13/java/android/support/v13/app/FragmentCompat.java
+frameworks/support/v13/java/android/support/v13/app/FragmentPagerAdapter.java
+frameworks/support/v13/java/android/support/v13/app/FragmentStatePagerAdapter.java
+frameworks/support/v13/java/android/support/v13/app/FragmentTabHost.java
+frameworks/support/v13/java/android/support/v13/view/DragAndDropPermissionsCompat.java
+frameworks/support/v13/java/android/support/v13/view/DragStartHelper.java
+frameworks/support/v13/java/android/support/v13/view/ViewCompat.java
+frameworks/support/v13/java/android/support/v13/view/inputmethod/EditorInfoCompat.java
+frameworks/support/v13/java/android/support/v13/view/inputmethod/InputConnectionCompat.java
+frameworks/support/v13/java/android/support/v13/view/inputmethod/InputContentInfoCompat.java
+out/target/common/obj/JAVA_LIBRARIES/android-support-v13_intermediates/src/android/support/v13/R.java

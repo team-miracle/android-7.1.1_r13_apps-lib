@@ -1,0 +1,16 @@
+external/messageformat/java/com/android/messageformat/MessageFormat.java
+external/messageformat/java/com/ibm/icu/impl/ICUConfig.java
+external/messageformat/java/com/ibm/icu/impl/ICUData.java
+external/messageformat/java/com/ibm/icu/impl/PatternProps.java
+external/messageformat/java/com/ibm/icu/simple/LocaleElements_plurals.java
+external/messageformat/java/com/ibm/icu/simple/MessageFormat.java
+external/messageformat/java/com/ibm/icu/simple/PluralFormat.java
+external/messageformat/java/com/ibm/icu/simple/PluralRules.java
+external/messageformat/java/com/ibm/icu/simple/PluralRulesLoader.java
+external/messageformat/java/com/ibm/icu/text/MessagePattern.java
+external/messageformat/java/com/ibm/icu/text/SelectFormat.java
+external/messageformat/java/com/ibm/icu/util/Freezable.java
+external/messageformat/java/com/ibm/icu/util/ICUCloneNotSupportedException.java
+external/messageformat/java/com/ibm/icu/util/ICUException.java
+external/messageformat/java/com/ibm/icu/util/ICUUncheckedIOException.java
+external/messageformat/java/com/ibm/icu/util/Output.java

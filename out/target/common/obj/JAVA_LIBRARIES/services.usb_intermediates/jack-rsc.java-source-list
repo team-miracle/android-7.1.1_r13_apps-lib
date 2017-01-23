@@ -1,0 +1,10 @@
+frameworks/base/services/usb/java/com/android/server/usb/MtpNotificationManager.java
+frameworks/base/services/usb/java/com/android/server/usb/UsbAlsaManager.java
+frameworks/base/services/usb/java/com/android/server/usb/UsbAudioDevice.java
+frameworks/base/services/usb/java/com/android/server/usb/UsbDebuggingManager.java
+frameworks/base/services/usb/java/com/android/server/usb/UsbDeviceManager.java
+frameworks/base/services/usb/java/com/android/server/usb/UsbHostManager.java
+frameworks/base/services/usb/java/com/android/server/usb/UsbMidiDevice.java
+frameworks/base/services/usb/java/com/android/server/usb/UsbPortManager.java
+frameworks/base/services/usb/java/com/android/server/usb/UsbService.java
+frameworks/base/services/usb/java/com/android/server/usb/UsbSettingsManager.java

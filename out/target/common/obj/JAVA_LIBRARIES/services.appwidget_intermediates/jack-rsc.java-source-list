@@ -1,0 +1,2 @@
+frameworks/base/services/appwidget/java/com/android/server/appwidget/AppWidgetService.java
+frameworks/base/services/appwidget/java/com/android/server/appwidget/AppWidgetServiceImpl.java

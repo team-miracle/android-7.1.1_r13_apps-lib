@@ -1,0 +1,12 @@
+frameworks/support/transition/base/android/support/transition/ChangeBoundsInterface.java
+frameworks/support/transition/base/android/support/transition/SceneImpl.java
+frameworks/support/transition/base/android/support/transition/SceneStaticsImpl.java
+frameworks/support/transition/base/android/support/transition/TransitionImpl.java
+frameworks/support/transition/base/android/support/transition/TransitionInterface.java
+frameworks/support/transition/base/android/support/transition/TransitionInterfaceListener.java
+frameworks/support/transition/base/android/support/transition/TransitionManagerImpl.java
+frameworks/support/transition/base/android/support/transition/TransitionManagerStaticsImpl.java
+frameworks/support/transition/base/android/support/transition/TransitionSetImpl.java
+frameworks/support/transition/base/android/support/transition/TransitionValues.java
+frameworks/support/transition/base/android/support/transition/VisibilityImpl.java
+frameworks/support/transition/base/android/support/transition/VisibilityInterface.java

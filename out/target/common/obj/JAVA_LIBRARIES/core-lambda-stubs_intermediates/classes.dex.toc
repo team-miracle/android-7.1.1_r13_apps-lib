@@ -1,0 +1,1687 @@
+<api>
+<package name="java.lang.invoke"
+>
+<class name="CallSite"
+ extends="java.lang.Object"
+ interface="false"
+ abstract="true"
+ static="false"
+ final="false"
+ visibility="public"
+>
+<constructor name="CallSite"
+ type="java.lang.invoke.CallSite"
+ static="false"
+ final="false"
+ visibility="public"
+>
+</constructor>
+<method name="dynamicInvoker"
+ return="java.lang.invoke.MethodHandle"
+ abstract="true"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ visibility="public"
+>
+</method>
+<method name="getTarget"
+ return="java.lang.invoke.MethodHandle"
+ abstract="true"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ visibility="public"
+>
+</method>
+<method name="setTarget"
+ return="void"
+ abstract="true"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ visibility="public"
+>
+<parameter name="arg0" type="java.lang.invoke.MethodHandle">
+</parameter>
+</method>
+<method name="type"
+ return="java.lang.invoke.MethodType"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ visibility="public"
+>
+</method>
+</class>
+<class name="LambdaConversionException"
+ extends="java.lang.Exception"
+ interface="false"
+ abstract="false"
+ static="false"
+ final="false"
+ visibility="public"
+>
+<field name="serialVersionUID"
+ type="long"
+ transient="false"
+ volatile="false"
+ static="true"
+ final="true"
+ visibility="private"
+ value="300"
+>
+</field>
+<constructor name="LambdaConversionException"
+ type="java.lang.invoke.LambdaConversionException"
+ static="false"
+ final="false"
+ visibility="public"
+>
+</constructor>
+<constructor name="LambdaConversionException"
+ type="java.lang.invoke.LambdaConversionException"
+ static="false"
+ final="false"
+ visibility="public"
+>
+<parameter name="arg0" type="java.lang.String">
+</parameter>
+</constructor>
+<constructor name="LambdaConversionException"
+ type="java.lang.invoke.LambdaConversionException"
+ static="false"
+ final="false"
+ visibility="public"
+>
+<parameter name="arg0" type="java.lang.String">
+</parameter>
+<parameter name="arg1" type="java.lang.Throwable">
+</parameter>
+</constructor>
+<constructor name="LambdaConversionException"
+ type="java.lang.invoke.LambdaConversionException"
+ static="false"
+ final="false"
+ visibility="public"
+>
+<parameter name="arg0" type="java.lang.String">
+</parameter>
+<parameter name="arg1" type="java.lang.Throwable">
+</parameter>
+<parameter name="arg2" type="boolean">
+</parameter>
+<parameter name="arg3" type="boolean">
+</parameter>
+</constructor>
+<constructor name="LambdaConversionException"
+ type="java.lang.invoke.LambdaConversionException"
+ static="false"
+ final="false"
+ visibility="public"
+>
+<parameter name="arg0" type="java.lang.Throwable">
+</parameter>
+</constructor>
+</class>
+<class name="LambdaMetafactory"
+ extends="java.lang.Object"
+ interface="false"
+ abstract="false"
+ static="false"
+ final="false"
+ visibility="public"
+>
+<field name="FLAG_BRIDGES"
+ type="int"
+ transient="false"
+ volatile="false"
+ static="true"
+ final="true"
+ visibility="public"
+ value="4"
+>
+</field>
+<field name="FLAG_MARKERS"
+ type="int"
+ transient="false"
+ volatile="false"
+ static="true"
+ final="true"
+ visibility="public"
+ value="2"
+>
+</field>
+<field name="FLAG_SERIALIZABLE"
+ type="int"
+ transient="false"
+ volatile="false"
+ static="true"
+ final="true"
+ visibility="public"
+ value="1"
+>
+</field>
+<constructor name="LambdaMetafactory"
+ type="java.lang.invoke.LambdaMetafactory"
+ static="false"
+ final="false"
+ visibility="public"
+>
+</constructor>
+<method name="altMetafactory"
+ return="java.lang.invoke.CallSite"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="true"
+ final="false"
+ visibility="public"
+>
+<parameter name="arg0" type="java.lang.invoke.MethodHandles.Lookup">
+</parameter>
+<parameter name="arg1" type="java.lang.String">
+</parameter>
+<parameter name="arg2" type="java.lang.invoke.MethodType">
+</parameter>
+<parameter name="arg3" type="java.lang.Object[]">
+</parameter>
+</method>
+<method name="metafactory"
+ return="java.lang.invoke.CallSite"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="true"
+ final="false"
+ visibility="public"
+>
+<parameter name="arg0" type="java.lang.invoke.MethodHandles.Lookup">
+</parameter>
+<parameter name="arg1" type="java.lang.String">
+</parameter>
+<parameter name="arg2" type="java.lang.invoke.MethodType">
+</parameter>
+<parameter name="arg3" type="java.lang.invoke.MethodType">
+</parameter>
+<parameter name="arg4" type="java.lang.invoke.MethodHandle">
+</parameter>
+<parameter name="arg5" type="java.lang.invoke.MethodType">
+</parameter>
+</method>
+</class>
+<class name="MethodHandle"
+ extends="java.lang.Object"
+ interface="false"
+ abstract="true"
+ static="false"
+ final="false"
+ visibility="public"
+>
+<constructor name="MethodHandle"
+ type="java.lang.invoke.MethodHandle"
+ static="false"
+ final="false"
+ visibility="public"
+>
+</constructor>
+<method name="asCollector"
+ return="java.lang.invoke.MethodHandle"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ visibility="public"
+>
+<parameter name="arg0" type="java.lang.Class">
+</parameter>
+<parameter name="arg1" type="int">
+</parameter>
+</method>
+<method name="asFixedArity"
+ return="java.lang.invoke.MethodHandle"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ visibility="public"
+>
+</method>
+<method name="asType"
+ return="java.lang.invoke.MethodHandle"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ visibility="public"
+>
+<parameter name="arg0" type="java.lang.invoke.MethodType">
+</parameter>
+</method>
+<method name="asVarargsCollector"
+ return="java.lang.invoke.MethodHandle"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ visibility="public"
+>
+<parameter name="arg0" type="java.lang.Class">
+</parameter>
+</method>
+<method name="bindTo"
+ return="java.lang.invoke.MethodHandle"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ visibility="public"
+>
+<parameter name="arg0" type="java.lang.Object">
+</parameter>
+</method>
+<method name="invoke"
+ return="java.lang.Object"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="true"
+ visibility="public"
+>
+<parameter name="arg0" type="java.lang.Object[]">
+</parameter>
+</method>
+<method name="invokeExact"
+ return="java.lang.Object"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="true"
+ visibility="public"
+>
+<parameter name="arg0" type="java.lang.Object[]">
+</parameter>
+</method>
+<method name="invokeWithArguments"
+ return="java.lang.Object"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ visibility="public"
+>
+<parameter name="arg0" type="java.util.List">
+</parameter>
+</method>
+<method name="invokeWithArguments"
+ return="java.lang.Object"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ visibility="public"
+>
+<parameter name="arg0" type="java.lang.Object[]">
+</parameter>
+</method>
+<method name="isVarargsCollector"
+ return="boolean"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ visibility="public"
+>
+</method>
+<method name="type"
+ return="java.lang.invoke.MethodType"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ visibility="public"
+>
+</method>
+</class>
+<class name="MethodHandleInfo"
+ extends="java.lang.Object"
+ interface="true"
+ abstract="true"
+ static="false"
+ final="false"
+ visibility="public"
+>
+<field name="REF_getField"
+ type="int"
+ transient="false"
+ volatile="false"
+ static="true"
+ final="true"
+ visibility="public"
+>
+</field>
+<field name="REF_getStatic"
+ type="int"
+ transient="false"
+ volatile="false"
+ static="true"
+ final="true"
+ visibility="public"
+>
+</field>
+<field name="REF_invokeInterface"
+ type="int"
+ transient="false"
+ volatile="false"
+ static="true"
+ final="true"
+ visibility="public"
+>
+</field>
+<field name="REF_invokeSpecial"
+ type="int"
+ transient="false"
+ volatile="false"
+ static="true"
+ final="true"
+ visibility="public"
+>
+</field>
+<field name="REF_invokeStatic"
+ type="int"
+ transient="false"
+ volatile="false"
+ static="true"
+ final="true"
+ visibility="public"
+>
+</field>
+<field name="REF_invokeVirtual"
+ type="int"
+ transient="false"
+ volatile="false"
+ static="true"
+ final="true"
+ visibility="public"
+>
+</field>
+<field name="REF_newInvokeSpecial"
+ type="int"
+ transient="false"
+ volatile="false"
+ static="true"
+ final="true"
+ visibility="public"
+>
+</field>
+<field name="REF_putField"
+ type="int"
+ transient="false"
+ volatile="false"
+ static="true"
+ final="true"
+ visibility="public"
+>
+</field>
+<field name="REF_putStatic"
+ type="int"
+ transient="false"
+ volatile="false"
+ static="true"
+ final="true"
+ visibility="public"
+>
+</field>
+<method name="referenceKindToString"
+ return="java.lang.String"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="true"
+ final="false"
+ visibility="public"
+>
+<parameter name="arg0" type="int">
+</parameter>
+</method>
+<method name="toString"
+ return="java.lang.String"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="true"
+ final="false"
+ visibility="public"
+>
+<parameter name="arg0" type="int">
+</parameter>
+<parameter name="arg1" type="java.lang.Class">
+</parameter>
+<parameter name="arg2" type="java.lang.String">
+</parameter>
+<parameter name="arg3" type="java.lang.invoke.MethodType">
+</parameter>
+</method>
+<method name="getDeclaringClass"
+ return="java.lang.Class"
+ abstract="true"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ visibility="public"
+>
+</method>
+<method name="getMethodType"
+ return="java.lang.invoke.MethodType"
+ abstract="true"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ visibility="public"
+>
+</method>
+<method name="getModifiers"
+ return="int"
+ abstract="true"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ visibility="public"
+>
+</method>
+<method name="getName"
+ return="java.lang.String"
+ abstract="true"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ visibility="public"
+>
+</method>
+<method name="getReferenceKind"
+ return="int"
+ abstract="true"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ visibility="public"
+>
+</method>
+<method name="isVarArgs"
+ return="boolean"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ visibility="public"
+>
+</method>
+<method name="reflectAs"
+ return="java.lang.reflect.Member"
+ abstract="true"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ visibility="public"
+>
+<parameter name="arg0" type="java.lang.Class">
+</parameter>
+<parameter name="arg1" type="java.lang.invoke.MethodHandles.Lookup">
+</parameter>
+</method>
+</class>
+<class name="MethodHandles.Lookup"
+ extends="java.lang.Object"
+ interface="false"
+ abstract="false"
+ static="false"
+ final="true"
+ visibility="public"
+>
+<field name="PACKAGE"
+ type="int"
+ transient="false"
+ volatile="false"
+ static="true"
+ final="true"
+ visibility="public"
+>
+</field>
+<field name="PRIVATE"
+ type="int"
+ transient="false"
+ volatile="false"
+ static="true"
+ final="true"
+ visibility="public"
+>
+</field>
+<field name="PROTECTED"
+ type="int"
+ transient="false"
+ volatile="false"
+ static="true"
+ final="true"
+ visibility="public"
+>
+</field>
+<field name="PUBLIC"
+ type="int"
+ transient="false"
+ volatile="false"
+ static="true"
+ final="true"
+ visibility="public"
+>
+</field>
+<constructor name="MethodHandles.Lookup"
+ type="java.lang.invoke.MethodHandles.Lookup"
+ static="false"
+ final="false"
+ visibility="public"
+>
+</constructor>
+<method name="bind"
+ return="java.lang.invoke.MethodHandle"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ visibility="public"
+>
+<parameter name="arg0" type="java.lang.Object">
+</parameter>
+<parameter name="arg1" type="java.lang.String">
+</parameter>
+<parameter name="arg2" type="java.lang.invoke.MethodType">
+</parameter>
+</method>
+<method name="findConstructor"
+ return="java.lang.invoke.MethodHandle"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ visibility="public"
+>
+<parameter name="arg0" type="java.lang.Class">
+</parameter>
+<parameter name="arg1" type="java.lang.invoke.MethodType">
+</parameter>
+</method>
+<method name="findGetter"
+ return="java.lang.invoke.MethodHandle"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ visibility="public"
+>
+<parameter name="arg0" type="java.lang.Class">
+</parameter>
+<parameter name="arg1" type="java.lang.String">
+</parameter>
+<parameter name="arg2" type="java.lang.Class">
+</parameter>
+</method>
+<method name="findSetter"
+ return="java.lang.invoke.MethodHandle"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ visibility="public"
+>
+<parameter name="arg0" type="java.lang.Class">
+</parameter>
+<parameter name="arg1" type="java.lang.String">
+</parameter>
+<parameter name="arg2" type="java.lang.Class">
+</parameter>
+</method>
+<method name="findSpecial"
+ return="java.lang.invoke.MethodHandle"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ visibility="public"
+>
+<parameter name="arg0" type="java.lang.Class">
+</parameter>
+<parameter name="arg1" type="java.lang.String">
+</parameter>
+<parameter name="arg2" type="java.lang.invoke.MethodType">
+</parameter>
+<parameter name="arg3" type="java.lang.Class">
+</parameter>
+</method>
+<method name="findStatic"
+ return="java.lang.invoke.MethodHandle"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ visibility="public"
+>
+<parameter name="arg0" type="java.lang.Class">
+</parameter>
+<parameter name="arg1" type="java.lang.String">
+</parameter>
+<parameter name="arg2" type="java.lang.invoke.MethodType">
+</parameter>
+</method>
+<method name="findStaticGetter"
+ return="java.lang.invoke.MethodHandle"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ visibility="public"
+>
+<parameter name="arg0" type="java.lang.Class">
+</parameter>
+<parameter name="arg1" type="java.lang.String">
+</parameter>
+<parameter name="arg2" type="java.lang.Class">
+</parameter>
+</method>
+<method name="findStaticSetter"
+ return="java.lang.invoke.MethodHandle"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ visibility="public"
+>
+<parameter name="arg0" type="java.lang.Class">
+</parameter>
+<parameter name="arg1" type="java.lang.String">
+</parameter>
+<parameter name="arg2" type="java.lang.Class">
+</parameter>
+</method>
+<method name="findVirtual"
+ return="java.lang.invoke.MethodHandle"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ visibility="public"
+>
+<parameter name="arg0" type="java.lang.Class">
+</parameter>
+<parameter name="arg1" type="java.lang.String">
+</parameter>
+<parameter name="arg2" type="java.lang.invoke.MethodType">
+</parameter>
+</method>
+<method name="in"
+ return="java.lang.invoke.MethodHandles.Lookup"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ visibility="public"
+>
+<parameter name="arg0" type="java.lang.Class">
+</parameter>
+</method>
+<method name="lookupClass"
+ return="java.lang.Class"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ visibility="public"
+>
+</method>
+<method name="lookupModes"
+ return="int"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ visibility="public"
+>
+</method>
+<method name="revealDirect"
+ return="java.lang.invoke.MethodHandleInfo"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ visibility="public"
+>
+<parameter name="arg0" type="java.lang.invoke.MethodHandle">
+</parameter>
+</method>
+<method name="unreflect"
+ return="java.lang.invoke.MethodHandle"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ visibility="public"
+>
+<parameter name="arg0" type="java.lang.reflect.Method">
+</parameter>
+</method>
+<method name="unreflectConstructor"
+ return="java.lang.invoke.MethodHandle"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ visibility="public"
+>
+<parameter name="arg0" type="java.lang.reflect.Constructor">
+</parameter>
+</method>
+<method name="unreflectGetter"
+ return="java.lang.invoke.MethodHandle"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ visibility="public"
+>
+<parameter name="arg0" type="java.lang.reflect.Field">
+</parameter>
+</method>
+<method name="unreflectSetter"
+ return="java.lang.invoke.MethodHandle"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ visibility="public"
+>
+<parameter name="arg0" type="java.lang.reflect.Field">
+</parameter>
+</method>
+<method name="unreflectSpecial"
+ return="java.lang.invoke.MethodHandle"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ visibility="public"
+>
+<parameter name="arg0" type="java.lang.reflect.Method">
+</parameter>
+<parameter name="arg1" type="java.lang.Class">
+</parameter>
+</method>
+</class>
+<class name="MethodHandles"
+ extends="java.lang.Object"
+ interface="false"
+ abstract="false"
+ static="false"
+ final="false"
+ visibility="public"
+>
+<constructor name="MethodHandles"
+ type="java.lang.invoke.MethodHandles"
+ static="false"
+ final="false"
+ visibility="public"
+>
+</constructor>
+<method name="arrayElementGetter"
+ return="java.lang.invoke.MethodHandle"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="true"
+ final="false"
+ visibility="public"
+>
+<parameter name="arg0" type="java.lang.Class">
+</parameter>
+</method>
+<method name="arrayElementSetter"
+ return="java.lang.invoke.MethodHandle"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="true"
+ final="false"
+ visibility="public"
+>
+<parameter name="arg0" type="java.lang.Class">
+</parameter>
+</method>
+<method name="catchException"
+ return="java.lang.invoke.MethodHandle"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="true"
+ final="false"
+ visibility="public"
+>
+<parameter name="arg0" type="java.lang.invoke.MethodHandle">
+</parameter>
+<parameter name="arg1" type="java.lang.Class">
+</parameter>
+<parameter name="arg2" type="java.lang.invoke.MethodHandle">
+</parameter>
+</method>
+<method name="collectArguments"
+ return="java.lang.invoke.MethodHandle"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="true"
+ final="false"
+ visibility="public"
+>
+<parameter name="arg0" type="java.lang.invoke.MethodHandle">
+</parameter>
+<parameter name="arg1" type="int">
+</parameter>
+<parameter name="arg2" type="java.lang.invoke.MethodHandle">
+</parameter>
+</method>
+<method name="constant"
+ return="java.lang.invoke.MethodHandle"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="true"
+ final="false"
+ visibility="public"
+>
+<parameter name="arg0" type="java.lang.Class">
+</parameter>
+<parameter name="arg1" type="java.lang.Object">
+</parameter>
+</method>
+<method name="dropArguments"
+ return="java.lang.invoke.MethodHandle"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="true"
+ final="false"
+ visibility="public"
+>
+<parameter name="arg0" type="java.lang.invoke.MethodHandle">
+</parameter>
+<parameter name="arg1" type="int">
+</parameter>
+<parameter name="arg2" type="java.util.List">
+</parameter>
+</method>
+<method name="dropArguments"
+ return="java.lang.invoke.MethodHandle"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="true"
+ final="false"
+ visibility="public"
+>
+<parameter name="arg0" type="java.lang.invoke.MethodHandle">
+</parameter>
+<parameter name="arg1" type="int">
+</parameter>
+<parameter name="arg2" type="java.lang.Class[]">
+</parameter>
+</method>
+<method name="exactInvoker"
+ return="java.lang.invoke.MethodHandle"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="true"
+ final="false"
+ visibility="public"
+>
+<parameter name="arg0" type="java.lang.invoke.MethodType">
+</parameter>
+</method>
+<method name="explicitCastArguments"
+ return="java.lang.invoke.MethodHandle"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="true"
+ final="false"
+ visibility="public"
+>
+<parameter name="arg0" type="java.lang.invoke.MethodHandle">
+</parameter>
+<parameter name="arg1" type="java.lang.invoke.MethodType">
+</parameter>
+</method>
+<method name="filterArguments"
+ return="java.lang.invoke.MethodHandle"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="true"
+ final="false"
+ visibility="public"
+>
+<parameter name="arg0" type="java.lang.invoke.MethodHandle">
+</parameter>
+<parameter name="arg1" type="int">
+</parameter>
+<parameter name="arg2" type="java.lang.invoke.MethodHandle[]">
+</parameter>
+</method>
+<method name="filterReturnValue"
+ return="java.lang.invoke.MethodHandle"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="true"
+ final="false"
+ visibility="public"
+>
+<parameter name="arg0" type="java.lang.invoke.MethodHandle">
+</parameter>
+<parameter name="arg1" type="java.lang.invoke.MethodHandle">
+</parameter>
+</method>
+<method name="foldArguments"
+ return="java.lang.invoke.MethodHandle"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="true"
+ final="false"
+ visibility="public"
+>
+<parameter name="arg0" type="java.lang.invoke.MethodHandle">
+</parameter>
+<parameter name="arg1" type="java.lang.invoke.MethodHandle">
+</parameter>
+</method>
+<method name="guardWithTest"
+ return="java.lang.invoke.MethodHandle"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="true"
+ final="false"
+ visibility="public"
+>
+<parameter name="arg0" type="java.lang.invoke.MethodHandle">
+</parameter>
+<parameter name="arg1" type="java.lang.invoke.MethodHandle">
+</parameter>
+<parameter name="arg2" type="java.lang.invoke.MethodHandle">
+</parameter>
+</method>
+<method name="identity"
+ return="java.lang.invoke.MethodHandle"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="true"
+ final="false"
+ visibility="public"
+>
+<parameter name="arg0" type="java.lang.Class">
+</parameter>
+</method>
+<method name="insertArguments"
+ return="java.lang.invoke.MethodHandle"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="true"
+ final="false"
+ visibility="public"
+>
+<parameter name="arg0" type="java.lang.invoke.MethodHandle">
+</parameter>
+<parameter name="arg1" type="int">
+</parameter>
+<parameter name="arg2" type="java.lang.Object[]">
+</parameter>
+</method>
+<method name="invoker"
+ return="java.lang.invoke.MethodHandle"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="true"
+ final="false"
+ visibility="public"
+>
+<parameter name="arg0" type="java.lang.invoke.MethodType">
+</parameter>
+</method>
+<method name="lookup"
+ return="java.lang.invoke.MethodHandles.Lookup"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="true"
+ final="false"
+ visibility="public"
+>
+</method>
+<method name="permuteArguments"
+ return="java.lang.invoke.MethodHandle"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="true"
+ final="false"
+ visibility="public"
+>
+<parameter name="arg0" type="java.lang.invoke.MethodHandle">
+</parameter>
+<parameter name="arg1" type="java.lang.invoke.MethodType">
+</parameter>
+<parameter name="arg2" type="int[]">
+</parameter>
+</method>
+<method name="publicLookup"
+ return="java.lang.invoke.MethodHandles.Lookup"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="true"
+ final="false"
+ visibility="public"
+>
+</method>
+<method name="reflectAs"
+ return="java.lang.reflect.Member"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="true"
+ final="false"
+ visibility="public"
+>
+<parameter name="arg0" type="java.lang.Class">
+</parameter>
+<parameter name="arg1" type="java.lang.invoke.MethodHandle">
+</parameter>
+</method>
+<method name="spreadInvoker"
+ return="java.lang.invoke.MethodHandle"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="true"
+ final="false"
+ visibility="public"
+>
+<parameter name="arg0" type="java.lang.invoke.MethodType">
+</parameter>
+<parameter name="arg1" type="int">
+</parameter>
+</method>
+<method name="throwException"
+ return="java.lang.invoke.MethodHandle"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="true"
+ final="false"
+ visibility="public"
+>
+<parameter name="arg0" type="java.lang.Class">
+</parameter>
+<parameter name="arg1" type="java.lang.Class">
+</parameter>
+</method>
+</class>
+<class name="MethodType"
+ extends="java.lang.Object"
+ interface="false"
+ abstract="false"
+ static="false"
+ final="true"
+ visibility="public"
+>
+<implements name="java.io.Serializable">
+</implements>
+<constructor name="MethodType"
+ type="java.lang.invoke.MethodType"
+ static="false"
+ final="false"
+ visibility="public"
+>
+</constructor>
+<method name="fromMethodDescriptorString"
+ return="java.lang.invoke.MethodType"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="true"
+ final="false"
+ visibility="public"
+>
+<parameter name="arg0" type="java.lang.String">
+</parameter>
+<parameter name="arg1" type="java.lang.ClassLoader">
+</parameter>
+</method>
+<method name="genericMethodType"
+ return="java.lang.invoke.MethodType"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="true"
+ final="false"
+ visibility="public"
+>
+<parameter name="arg0" type="int">
+</parameter>
+</method>
+<method name="genericMethodType"
+ return="java.lang.invoke.MethodType"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="true"
+ final="false"
+ visibility="public"
+>
+<parameter name="arg0" type="int">
+</parameter>
+<parameter name="arg1" type="boolean">
+</parameter>
+</method>
+<method name="methodType"
+ return="java.lang.invoke.MethodType"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="true"
+ final="false"
+ visibility="public"
+>
+<parameter name="arg0" type="java.lang.Class">
+</parameter>
+</method>
+<method name="methodType"
+ return="java.lang.invoke.MethodType"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="true"
+ final="false"
+ visibility="public"
+>
+<parameter name="arg0" type="java.lang.Class">
+</parameter>
+<parameter name="arg1" type="java.lang.Class">
+</parameter>
+</method>
+<method name="methodType"
+ return="java.lang.invoke.MethodType"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="true"
+ final="false"
+ visibility="public"
+>
+<parameter name="arg0" type="java.lang.Class">
+</parameter>
+<parameter name="arg1" type="java.lang.Class">
+</parameter>
+<parameter name="arg2" type="java.lang.Class[]">
+</parameter>
+</method>
+<method name="methodType"
+ return="java.lang.invoke.MethodType"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="true"
+ final="false"
+ visibility="public"
+>
+<parameter name="arg0" type="java.lang.Class">
+</parameter>
+<parameter name="arg1" type="java.lang.invoke.MethodType">
+</parameter>
+</method>
+<method name="methodType"
+ return="java.lang.invoke.MethodType"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="true"
+ final="false"
+ visibility="public"
+>
+<parameter name="arg0" type="java.lang.Class">
+</parameter>
+<parameter name="arg1" type="java.util.List">
+</parameter>
+</method>
+<method name="methodType"
+ return="java.lang.invoke.MethodType"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="true"
+ final="false"
+ visibility="public"
+>
+<parameter name="arg0" type="java.lang.Class">
+</parameter>
+<parameter name="arg1" type="java.lang.Class[]">
+</parameter>
+</method>
+<method name="appendParameterTypes"
+ return="java.lang.invoke.MethodType"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ visibility="public"
+>
+<parameter name="arg0" type="java.util.List">
+</parameter>
+</method>
+<method name="appendParameterTypes"
+ return="java.lang.invoke.MethodType"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ visibility="public"
+>
+<parameter name="arg0" type="java.lang.Class[]">
+</parameter>
+</method>
+<method name="changeParameterType"
+ return="java.lang.invoke.MethodType"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ visibility="public"
+>
+<parameter name="arg0" type="int">
+</parameter>
+<parameter name="arg1" type="java.lang.Class">
+</parameter>
+</method>
+<method name="changeReturnType"
+ return="java.lang.invoke.MethodType"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ visibility="public"
+>
+<parameter name="arg0" type="java.lang.Class">
+</parameter>
+</method>
+<method name="dropParameterTypes"
+ return="java.lang.invoke.MethodType"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ visibility="public"
+>
+<parameter name="arg0" type="int">
+</parameter>
+<parameter name="arg1" type="int">
+</parameter>
+</method>
+<method name="erase"
+ return="java.lang.invoke.MethodType"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ visibility="public"
+>
+</method>
+<method name="generic"
+ return="java.lang.invoke.MethodType"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ visibility="public"
+>
+</method>
+<method name="hasPrimitives"
+ return="boolean"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ visibility="public"
+>
+</method>
+<method name="hasWrappers"
+ return="boolean"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ visibility="public"
+>
+</method>
+<method name="insertParameterTypes"
+ return="java.lang.invoke.MethodType"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ visibility="public"
+>
+<parameter name="arg0" type="int">
+</parameter>
+<parameter name="arg1" type="java.util.List">
+</parameter>
+</method>
+<method name="insertParameterTypes"
+ return="java.lang.invoke.MethodType"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ visibility="public"
+>
+<parameter name="arg0" type="int">
+</parameter>
+<parameter name="arg1" type="java.lang.Class[]">
+</parameter>
+</method>
+<method name="parameterArray"
+ return="java.lang.Class[]"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ visibility="public"
+>
+</method>
+<method name="parameterCount"
+ return="int"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ visibility="public"
+>
+</method>
+<method name="parameterList"
+ return="java.util.List"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ visibility="public"
+>
+</method>
+<method name="parameterType"
+ return="java.lang.Class"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ visibility="public"
+>
+<parameter name="arg0" type="int">
+</parameter>
+</method>
+<method name="returnType"
+ return="java.lang.Class"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ visibility="public"
+>
+</method>
+<method name="toMethodDescriptorString"
+ return="java.lang.String"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ visibility="public"
+>
+</method>
+<method name="unwrap"
+ return="java.lang.invoke.MethodType"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ visibility="public"
+>
+</method>
+<method name="wrap"
+ return="java.lang.invoke.MethodType"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ visibility="public"
+>
+</method>
+</class>
+<class name="SerializedLambda"
+ extends="java.lang.Object"
+ interface="false"
+ abstract="false"
+ static="false"
+ final="true"
+ visibility="public"
+>
+<implements name="java.io.Serializable">
+</implements>
+<constructor name="SerializedLambda"
+ type="java.lang.invoke.SerializedLambda"
+ static="false"
+ final="false"
+ visibility="public"
+>
+<parameter name="arg0" type="java.lang.Class">
+</parameter>
+<parameter name="arg1" type="java.lang.String">
+</parameter>
+<parameter name="arg2" type="java.lang.String">
+</parameter>
+<parameter name="arg3" type="java.lang.String">
+</parameter>
+<parameter name="arg4" type="int">
+</parameter>
+<parameter name="arg5" type="java.lang.String">
+</parameter>
+<parameter name="arg6" type="java.lang.String">
+</parameter>
+<parameter name="arg7" type="java.lang.String">
+</parameter>
+<parameter name="arg8" type="java.lang.String">
+</parameter>
+<parameter name="arg9" type="java.lang.Object[]">
+</parameter>
+</constructor>
+<method name="getCapturedArg"
+ return="java.lang.Object"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ visibility="public"
+>
+<parameter name="arg0" type="int">
+</parameter>
+</method>
+<method name="getCapturedArgCount"
+ return="int"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ visibility="public"
+>
+</method>
+<method name="getCapturingClass"
+ return="java.lang.String"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ visibility="public"
+>
+</method>
+<method name="getFunctionalInterfaceClass"
+ return="java.lang.String"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ visibility="public"
+>
+</method>
+<method name="getFunctionalInterfaceMethodName"
+ return="java.lang.String"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ visibility="public"
+>
+</method>
+<method name="getFunctionalInterfaceMethodSignature"
+ return="java.lang.String"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ visibility="public"
+>
+</method>
+<method name="getImplClass"
+ return="java.lang.String"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ visibility="public"
+>
+</method>
+<method name="getImplMethodKind"
+ return="int"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ visibility="public"
+>
+</method>
+<method name="getImplMethodName"
+ return="java.lang.String"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ visibility="public"
+>
+</method>
+<method name="getImplMethodSignature"
+ return="java.lang.String"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ visibility="public"
+>
+</method>
+<method name="getInstantiatedMethodType"
+ return="java.lang.String"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="true"
+ visibility="public"
+>
+</method>
+</class>
+</package>
+</api>

@@ -1,0 +1,79 @@
+<!-- This file contains <public> resource definitions for all
+     resources that were generated from the source data. -->
+
+<resources>
+
+  <!-- PRIVATE SECTION.  These resources have not been declared public.
+       You can make them public my moving these lines into a file in res/values. -->
+
+  <!-- Declared at res/drawable-mdpi-v4/car_ic_mode.png:0 -->
+  <!-- Declared at res/drawable-hdpi-v4/car_ic_mode.png:0 -->
+  <!-- Declared at res/drawable-xhdpi-v4/car_ic_mode.png:0 -->
+  <!-- Declared at res/drawable-xxhdpi-v4/car_ic_mode.png:0 -->
+  <public type="drawable" name="car_ic_mode" id="0x7f020000" />
+
+  <!-- Declared at res/layout/instrument_cluster.xml:0 -->
+  <public type="layout" name="instrument_cluster" id="0x7f030000" />
+
+  <!-- Declared at packages/services/Car/service/res/values/config.xml:39 -->
+  <public type="array" name="audioRoutingPolicy" id="0x7f040000" />
+
+  <!-- Declared at packages/services/Car/service/res/values/config.xml:48 -->
+  <public type="string" name="inputInjectionDeviceNode" id="0x7f050000" />
+  <!-- Declared at packages/services/Car/service/res/values/config.xml:50 -->
+  <public type="string" name="instrumentClusterRendererPackage" id="0x7f050001" />
+  <!-- Declared at packages/services/Car/service/res/values/config.xml:51 -->
+  <public type="string" name="instrumentClusterRendererFactoryClass" id="0x7f050002" />
+  <!-- Declared at packages/services/Car/service/res/values/strings.xml:19 -->
+  <public type="string" name="car_permission_label" id="0x7f050003" />
+  <!-- Declared at packages/services/Car/service/res/values/strings.xml:21 -->
+  <public type="string" name="car_permission_desc" id="0x7f050004" />
+  <!-- Declared at packages/services/Car/service/res/values/strings.xml:23 -->
+  <public type="string" name="car_permission_label_camera" id="0x7f050005" />
+  <!-- Declared at packages/services/Car/service/res/values/strings.xml:25 -->
+  <public type="string" name="car_permission_desc_camera" id="0x7f050006" />
+  <!-- Declared at packages/services/Car/service/res/values/strings.xml:27 -->
+  <public type="string" name="car_permission_label_fuel" id="0x7f050007" />
+  <!-- Declared at packages/services/Car/service/res/values/strings.xml:29 -->
+  <public type="string" name="car_permission_desc_fuel" id="0x7f050008" />
+  <!-- Declared at packages/services/Car/service/res/values/strings.xml:31 -->
+  <public type="string" name="car_permission_label_hvac" id="0x7f050009" />
+  <!-- Declared at packages/services/Car/service/res/values/strings.xml:33 -->
+  <public type="string" name="car_permission_desc_hvac" id="0x7f05000a" />
+  <!-- Declared at packages/services/Car/service/res/values/strings.xml:35 -->
+  <public type="string" name="car_permission_label_mileage" id="0x7f05000b" />
+  <!-- Declared at packages/services/Car/service/res/values/strings.xml:37 -->
+  <public type="string" name="car_permission_desc_mileage" id="0x7f05000c" />
+  <!-- Declared at packages/services/Car/service/res/values/strings.xml:39 -->
+  <public type="string" name="car_permission_label_speed" id="0x7f05000d" />
+  <!-- Declared at packages/services/Car/service/res/values/strings.xml:41 -->
+  <public type="string" name="car_permission_desc_speed" id="0x7f05000e" />
+  <!-- Declared at packages/services/Car/service/res/values/strings.xml:43 -->
+  <public type="string" name="car_permission_label_vendor_extension" id="0x7f05000f" />
+  <!-- Declared at packages/services/Car/service/res/values/strings.xml:46 -->
+  <public type="string" name="car_permission_desc_vendor_extension" id="0x7f050010" />
+  <!-- Declared at packages/services/Car/service/res/values/strings.xml:48 -->
+  <public type="string" name="car_permission_label_radio" id="0x7f050011" />
+  <!-- Declared at packages/services/Car/service/res/values/strings.xml:50 -->
+  <public type="string" name="car_permission_desc_radio" id="0x7f050012" />
+  <!-- Declared at packages/services/Car/service/res/values/strings.xml:52 -->
+  <public type="string" name="car_permission_label_projection" id="0x7f050013" />
+  <!-- Declared at packages/services/Car/service/res/values/strings.xml:54 -->
+  <public type="string" name="car_permission_desc_projection" id="0x7f050014" />
+  <!-- Declared at packages/services/Car/service/res/values/strings.xml:55 -->
+  <public type="string" name="car_permission_label_mock_vehicle_hal" id="0x7f050015" />
+  <!-- Declared at packages/services/Car/service/res/values/strings.xml:58 -->
+  <public type="string" name="car_permission_desc_mock_vehicle_hal" id="0x7f050016" />
+  <!-- Declared at packages/services/Car/service/res/values/strings.xml:59 -->
+  <public type="string" name="car_permission_label_control_app_blocking" id="0x7f050017" />
+  <!-- Declared at packages/services/Car/service/res/values/strings.xml:62 -->
+  <public type="string" name="car_permission_desc_control_app_blocking" id="0x7f050018" />
+  <!-- Declared at packages/services/Car/service/res/values/strings.xml:63 -->
+  <public type="string" name="car_permission_car_navigation_manager" id="0x7f050019" />
+  <!-- Declared at packages/services/Car/service/res/values/strings.xml:67 -->
+  <public type="string" name="car_permission_desc_car_navigation_manager" id="0x7f05001a" />
+
+  <!-- Declared at packages/services/Car/service/res/layout/instrument_cluster.xml:16 -->
+  <public type="id" name="instrument_cluster_layout" id="0x7f060000" />
+
+</resources>

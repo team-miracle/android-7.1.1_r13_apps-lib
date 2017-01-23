@@ -1,0 +1,128 @@
+# Referenced at frameworks/support/v17/leanback/res/transition-v19/lb_browse_headers_in.xml:21
+# Referenced at frameworks/support/v17/leanback/res/transition-v19/lb_browse_headers_out.xml:21
+-keep class android.support.v17.leanback.Scale { <init>(...); }
+
+# Referenced at frameworks/support/v17/leanback/res/layout/lb_guidedstep_fragment.xml:18
+-keep class android.support.v17.leanback.app.GuidedStepRootLayout { <init>(...); }
+
+# Referenced at frameworks/support/v17/leanback/res/transition-v21/lb_guidedstep_activity_enter_bottom.xml:18
+-keep class android.support.v17.leanback.transition.FadeAndShortSlide { <init>(...); }
+
+# Referenced at frameworks/support/v17/leanback/res/transition-v21/lb_title_in.xml:17
+# Referenced at frameworks/support/v17/leanback/res/transition-v21/lb_title_out.xml:17
+-keep class android.support.v17.leanback.transition.SlideKitkat { <init>(...); }
+
+# Referenced at frameworks/support/v17/leanback/res/transition-v21/lb_details_enter_transition.xml:19
+# Referenced at frameworks/support/v17/leanback/res/transition-v21/lb_details_return_transition.xml:18
+-keep class android.support.v17.leanback.transition.SlideNoPropagation { <init>(...); }
+
+# Referenced at frameworks/support/v17/leanback/res/layout/lb_browse_fragment.xml:24
+# Referenced at frameworks/support/v17/leanback/res/layout/lb_details_fragment.xml:22
+# Referenced at frameworks/support/v17/leanback/res/layout/lb_vertical_grid_fragment.xml:22
+-keep class android.support.v17.leanback.widget.BrowseFrameLayout { <init>(...); }
+
+# Referenced at frameworks/support/v17/leanback/res/layout/lb_browse_fragment.xml:32
+-keep class android.support.v17.leanback.widget.BrowseRowsFrameLayout { <init>(...); }
+
+# Referenced at frameworks/support/v17/leanback/res/layout/lb_guidedactions_item.xml:23
+-keep class android.support.v17.leanback.widget.CheckableImageView { <init>(...); }
+
+# Referenced at frameworks/support/v17/leanback/res/layout/lb_control_bar.xml:18
+# Referenced at frameworks/support/v17/leanback/res/layout/lb_playback_controls.xml:49
+-keep class android.support.v17.leanback.widget.ControlBar { <init>(...); }
+
+# Referenced at frameworks/support/v17/leanback/res/layout/lb_guidance.xml:22
+-keep class android.support.v17.leanback.widget.GuidanceStylingRelativeLayout { <init>(...); }
+
+# Referenced at frameworks/support/v17/leanback/res/layout/lb_guidedactions_item.xml:37
+# Referenced at frameworks/support/v17/leanback/res/layout/lb_guidedactions_item.xml:41
+-keep class android.support.v17.leanback.widget.GuidedActionEditText { <init>(...); }
+
+# Referenced at frameworks/support/v17/leanback/res/layout/lb_guidedactions_datepicker_item.xml:18
+# Referenced at frameworks/support/v17/leanback/res/layout/lb_guidedactions_item.xml:18
+-keep class android.support.v17.leanback.widget.GuidedActionItemContainer { <init>(...); }
+
+# Referenced at frameworks/support/v17/leanback/res/layout/lb_details_overview.xml:76
+# Referenced at frameworks/support/v17/leanback/res/layout/lb_fullwidth_details_overview.xml:54
+# Referenced at frameworks/support/v17/leanback/res/layout/lb_list_row.xml:18
+-keep class android.support.v17.leanback.widget.HorizontalGridView { <init>(...); }
+
+# Referenced at frameworks/support/v17/leanback/res/layout/lb_media_item_number_view_flipper.xml:36
+-keep class android.support.v17.leanback.widget.MediaNowPlayingView { <init>(...); }
+
+# Referenced at frameworks/support/v17/leanback/res/layout/lb_row_media_item.xml:32
+-keep class android.support.v17.leanback.widget.MediaRowFocusView { <init>(...); }
+
+# Referenced at frameworks/support/v17/leanback/res/layout/lb_details_overview.xml:63
+# Referenced at frameworks/support/v17/leanback/res/layout/lb_fullwidth_details_overview.xml:68
+# Referenced at frameworks/support/v17/leanback/res/layout/lb_guidedbuttonactions.xml:33
+# Referenced at frameworks/support/v17/leanback/res/layout/lb_guidedstep_fragment.xml:39
+# Referenced at frameworks/support/v17/leanback/res/layout/lb_guidedstep_fragment.xml:46
+-keep class android.support.v17.leanback.widget.NonOverlappingFrameLayout { <init>(...); }
+
+# Referenced at frameworks/support/v17/leanback/res/layout/lb_guidedactions_item.xml:33
+# Referenced at frameworks/support/v17/leanback/res/layout/lb_guidedstep_fragment.xml:69
+# Referenced at frameworks/support/v17/leanback/res/layout/lb_row_container.xml:18
+-keep class android.support.v17.leanback.widget.NonOverlappingLinearLayout { <init>(...); }
+
+# Referenced at frameworks/support/v17/leanback/res/layout/lb_guidedactions.xml:34
+# Referenced at frameworks/support/v17/leanback/res/layout/lb_image_card_view.xml:25
+-keep class android.support.v17.leanback.widget.NonOverlappingRelativeLayout { <init>(...); }
+
+# Referenced at frameworks/support/v17/leanback/res/layout/lb_guidedactions.xml:26
+# Referenced at frameworks/support/v17/leanback/res/layout/lb_guidedactions.xml:44
+# Referenced at frameworks/support/v17/leanback/res/layout/lb_guidedbuttonactions.xml:26
+# Referenced at frameworks/support/v17/leanback/res/layout/lb_guidedstep_background.xml:17
+# Referenced at frameworks/support/v17/leanback/res/layout/lb_guidedstep_fragment.xml:59
+# Referenced at frameworks/support/v17/leanback/res/layout/lb_shadow.xml:18
+# Referenced at frameworks/support/v17/leanback/res/layout/lb_shadow.xml:23
+-keep class android.support.v17.leanback.widget.NonOverlappingView { <init>(...); }
+
+# Referenced at frameworks/support/v17/leanback/res/layout/lb_onboarding_fragment.xml:55
+-keep class android.support.v17.leanback.widget.PagingIndicator { <init>(...); }
+
+# Referenced at frameworks/support/v17/leanback/res/layout/lb_playback_controls.xml:33
+# Referenced at frameworks/support/v17/leanback/res/layout/lb_playback_controls.xml:43
+-keep class android.support.v17.leanback.widget.PersistentFocusWrapper { <init>(...); }
+
+# Referenced at frameworks/support/v17/leanback/res/layout/lb_playback_controls_row.xml:21
+-keep class android.support.v17.leanback.widget.PlaybackControlsRowView { <init>(...); }
+
+# Referenced at frameworks/support/v17/leanback/res/layout/lb_details_description.xml:26
+-keep class android.support.v17.leanback.widget.ResizingTextView { <init>(...); }
+
+# Referenced at frameworks/support/v17/leanback/res/layout/lb_header.xml:18
+# Referenced at frameworks/support/v17/leanback/res/layout/lb_row_header.xml:18
+# Referenced at frameworks/support/v17/leanback/res/layout/lb_section_header.xml:18
+-keep class android.support.v17.leanback.widget.RowHeaderView { <init>(...); }
+
+# Referenced at frameworks/support/v17/leanback/res/layout/lb_browse_fragment.xml:37
+-keep class android.support.v17.leanback.widget.ScaleFrameLayout { <init>(...); }
+
+# Referenced at frameworks/support/v17/leanback/res/layout/lb_search_fragment.xml:27
+-keep class android.support.v17.leanback.widget.SearchBar { <init>(...); }
+
+# Referenced at frameworks/support/v17/leanback/res/layout/lb_search_bar.xml:53
+-keep class android.support.v17.leanback.widget.SearchEditText { <init>(...); }
+
+# Referenced at frameworks/support/v17/leanback/res/layout/lb_title_view.xml:37
+-keep class android.support.v17.leanback.widget.SearchOrbView { <init>(...); }
+
+# Referenced at frameworks/support/v17/leanback/res/layout/lb_search_bar.xml:18
+-keep class android.support.v17.leanback.widget.SpeechOrbView { <init>(...); }
+
+# Referenced at frameworks/support/v17/leanback/res/layout/lb_browse_title.xml:17
+-keep class android.support.v17.leanback.widget.TitleView { <init>(...); }
+
+# Referenced at frameworks/support/v17/leanback/res/layout/lb_guidedactions.xml:40
+# Referenced at frameworks/support/v17/leanback/res/layout/lb_guidedactions.xml:55
+# Referenced at frameworks/support/v17/leanback/res/layout/lb_guidedbuttonactions.xml:39
+# Referenced at frameworks/support/v17/leanback/res/layout/lb_headers_fragment.xml:26
+# Referenced at frameworks/support/v17/leanback/res/layout/lb_picker_column.xml:17
+# Referenced at frameworks/support/v17/leanback/res/layout/lb_rows_fragment.xml:17
+# Referenced at frameworks/support/v17/leanback/res/layout/lb_vertical_grid.xml:18
+-keep class android.support.v17.leanback.widget.VerticalGridView { <init>(...); }
+
+# Referenced at frameworks/support/v17/leanback/res/layout/lb_guidedactions_datepicker_item.xml:34
+-keep class android.support.v17.leanback.widget.picker.DatePicker { <init>(...); }
+

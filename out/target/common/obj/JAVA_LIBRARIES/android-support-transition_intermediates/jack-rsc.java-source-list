@@ -1,0 +1,8 @@
+frameworks/support/transition/src/android/support/transition/AutoTransition.java
+frameworks/support/transition/src/android/support/transition/ChangeBounds.java
+frameworks/support/transition/src/android/support/transition/Fade.java
+frameworks/support/transition/src/android/support/transition/Scene.java
+frameworks/support/transition/src/android/support/transition/Transition.java
+frameworks/support/transition/src/android/support/transition/TransitionManager.java
+frameworks/support/transition/src/android/support/transition/TransitionSet.java
+frameworks/support/transition/src/android/support/transition/Visibility.java

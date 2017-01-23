@@ -1,0 +1,16 @@
+external/junit/src/junit/extensions/ActiveTestSuite.java
+external/junit/src/junit/extensions/RepeatedTest.java
+external/junit/src/junit/extensions/TestDecorator.java
+external/junit/src/junit/extensions/TestSetup.java
+external/junit/src/junit/extensions/package-info.java
+external/junit/src/junit/framework/Assert.java
+external/junit/src/junit/framework/AssertionFailedError.java
+external/junit/src/junit/framework/ComparisonCompactor.java
+external/junit/src/junit/framework/ComparisonFailure.java
+external/junit/src/junit/framework/Protectable.java
+external/junit/src/junit/framework/Test.java
+external/junit/src/junit/framework/TestCase.java
+external/junit/src/junit/framework/TestFailure.java
+external/junit/src/junit/framework/TestListener.java
+external/junit/src/junit/framework/TestResult.java
+external/junit/src/junit/framework/TestSuite.java

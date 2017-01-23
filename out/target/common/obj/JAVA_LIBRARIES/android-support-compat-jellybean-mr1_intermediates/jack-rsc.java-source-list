@@ -1,0 +1,9 @@
+frameworks/support/compat/jellybean-mr1/android/support/v4/content/res/ConfigurationHelperJellybeanMr1.java
+frameworks/support/compat/jellybean-mr1/android/support/v4/graphics/drawable/DrawableCompatJellybeanMr1.java
+frameworks/support/compat/jellybean-mr1/android/support/v4/hardware/display/DisplayManagerJellybeanMr1.java
+frameworks/support/compat/jellybean-mr1/android/support/v4/text/TextUtilsCompatJellybeanMr1.java
+frameworks/support/compat/jellybean-mr1/android/support/v4/view/GravityCompatJellybeanMr1.java
+frameworks/support/compat/jellybean-mr1/android/support/v4/view/MarginLayoutParamsCompatJellybeanMr1.java
+frameworks/support/compat/jellybean-mr1/android/support/v4/view/ViewCompatJellybeanMr1.java
+frameworks/support/compat/jellybean-mr1/android/support/v4/view/accessibility/AccessibilityNodeInfoCompatJellybeanMr1.java
+frameworks/support/compat/jellybean-mr1/android/support/v4/widget/TextViewCompatJbMr1.java

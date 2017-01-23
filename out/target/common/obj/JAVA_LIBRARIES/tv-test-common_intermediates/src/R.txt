@@ -1,0 +1,7 @@
+int drawable blue 0x7f020000
+int drawable blue_small 0x7f020001
+int drawable crash_test_android_logo 0x7f020002
+int drawable green 0x7f020003
+int drawable green_large 0x7f020004
+int drawable red 0x7f020005
+int drawable red_large 0x7f020006

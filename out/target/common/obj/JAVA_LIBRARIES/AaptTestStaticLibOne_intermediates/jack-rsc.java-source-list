@@ -1,0 +1,2 @@
+frameworks/base/tools/aapt2/integration-tests/StaticLibOne/src/com/android/aapt/staticlib/one/StaticLibOne.java
+out/target/common/obj/JAVA_LIBRARIES/AaptTestStaticLibOne_intermediates/src/com/android/aapt/staticlib/one/R.java

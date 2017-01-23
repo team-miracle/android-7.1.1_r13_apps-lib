@@ -1,0 +1,4 @@
+frameworks/support/compat/honeycomb_mr2/android/support/v4/content/res/ConfigurationHelperHoneycombMr2.java
+frameworks/support/compat/honeycomb_mr2/android/support/v4/net/ConnectivityManagerCompatHoneycombMR2.java
+frameworks/support/compat/honeycomb_mr2/android/support/v4/os/ParcelableCompatCreatorCallbacks.java
+frameworks/support/compat/honeycomb_mr2/android/support/v4/os/ParcelableCompatHoneycombMR2.java

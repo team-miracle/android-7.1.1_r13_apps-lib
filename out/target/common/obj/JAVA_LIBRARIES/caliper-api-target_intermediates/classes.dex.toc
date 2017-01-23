@@ -1,0 +1,90 @@
+<api>
+<package name="com.google.caliper"
+>
+<class name="AfterExperiment"
+ extends="java.lang.Object"
+ interface="true"
+ abstract="true"
+ static="false"
+ final="false"
+ visibility="public"
+>
+<implements name="java.lang.annotation.Annotation">
+</implements>
+<method name="value"
+ return="java.lang.Class"
+ abstract="true"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ visibility="public"
+>
+</method>
+</class>
+<class name="All"
+ extends="java.lang.Object"
+ interface="true"
+ abstract="true"
+ static="false"
+ final="false"
+ visibility="public"
+>
+<implements name="java.lang.annotation.Annotation">
+</implements>
+</class>
+<class name="BeforeExperiment"
+ extends="java.lang.Object"
+ interface="true"
+ abstract="true"
+ static="false"
+ final="false"
+ visibility="public"
+>
+<implements name="java.lang.annotation.Annotation">
+</implements>
+<method name="value"
+ return="java.lang.Class"
+ abstract="true"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ visibility="public"
+>
+</method>
+</class>
+<class name="Benchmark"
+ extends="java.lang.Object"
+ interface="true"
+ abstract="true"
+ static="false"
+ final="false"
+ visibility="public"
+>
+<implements name="java.lang.annotation.Annotation">
+</implements>
+</class>
+<class name="Param"
+ extends="java.lang.Object"
+ interface="true"
+ abstract="true"
+ static="false"
+ final="false"
+ visibility="public"
+>
+<implements name="java.lang.annotation.Annotation">
+</implements>
+<method name="value"
+ return="java.lang.String[]"
+ abstract="true"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ visibility="public"
+>
+</method>
+</class>
+</package>
+</api>

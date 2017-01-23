@@ -1,0 +1,2 @@
+frameworks/base/tools/aapt2/integration-tests/StaticLibTwo/src/com/android/aapt/staticlib/two/StaticLibTwo.java
+out/target/common/obj/JAVA_LIBRARIES/AaptTestStaticLibTwo_intermediates/src/com/android/aapt/staticlib/two/R.java

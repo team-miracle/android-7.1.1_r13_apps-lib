@@ -1,0 +1,11 @@
+out/target/common/obj/JAVA_LIBRARIES/libvehiclenetwork-java_intermediates/src/src/com/android/car/vehiclenetwork/IVehicleNetwork.java
+out/target/common/obj/JAVA_LIBRARIES/libvehiclenetwork-java_intermediates/src/src/com/android/car/vehiclenetwork/IVehicleNetworkHalMock.java
+out/target/common/obj/JAVA_LIBRARIES/libvehiclenetwork-java_intermediates/src/src/com/android/car/vehiclenetwork/IVehicleNetworkListener.java
+packages/services/Car/libvehiclenetwork/java/src/com/android/car/vehiclenetwork/VehicleNetwork.java
+packages/services/Car/libvehiclenetwork/java/src/com/android/car/vehiclenetwork/VehicleNetworkConsts.java
+packages/services/Car/libvehiclenetwork/java/src/com/android/car/vehiclenetwork/VehicleNetworkProtoUtil.java
+packages/services/Car/libvehiclenetwork/java/src/com/android/car/vehiclenetwork/VehiclePropConfigUtil.java
+packages/services/Car/libvehiclenetwork/java/src/com/android/car/vehiclenetwork/VehiclePropConfigsParcelable.java
+packages/services/Car/libvehiclenetwork/java/src/com/android/car/vehiclenetwork/VehiclePropValueParcelable.java
+packages/services/Car/libvehiclenetwork/java/src/com/android/car/vehiclenetwork/VehiclePropValueUtil.java
+packages/services/Car/libvehiclenetwork/java/src/com/android/car/vehiclenetwork/VehiclePropValuesParcelable.java

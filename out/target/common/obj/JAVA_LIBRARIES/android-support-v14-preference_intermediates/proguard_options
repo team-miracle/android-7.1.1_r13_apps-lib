@@ -1,0 +1,8 @@
+# Referenced at frameworks/support/v14/preference/res/layout-v17/preference_dropdown_material.xml:47
+# Referenced at frameworks/support/v14/preference/res/layout-v17/preference_material.xml:41
+# Referenced at frameworks/support/v14/preference/res/layout-v21/preference_dropdown_material.xml:47
+# Referenced at frameworks/support/v14/preference/res/layout-v21/preference_material.xml:41
+# Referenced at frameworks/support/v14/preference/res/layout/preference_dropdown_material.xml:47
+# Referenced at frameworks/support/v14/preference/res/layout/preference_material.xml:41
+-keep class android.support.v7.internal.widget.PreferenceImageView { <init>(...); }
+

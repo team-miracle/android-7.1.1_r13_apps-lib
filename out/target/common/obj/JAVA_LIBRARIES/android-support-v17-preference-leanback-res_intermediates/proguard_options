@@ -1,0 +1,11 @@
+# Referenced at frameworks/support/v17/preference-leanback/res/layout-v21/leanback_settings_fragment.xml:21
+-keep class android.support.v17.internal.widget.OutlineOnlyWithChildrenFrameLayout { <init>(...); }
+
+# Referenced at frameworks/support/v17/preference-leanback/res/layout/leanback_list_preference_fragment.xml:62
+# Referenced at frameworks/support/v17/preference-leanback/res/layout/leanback_preferences_list.xml:18
+-keep class android.support.v17.leanback.widget.VerticalGridView { <init>(...); }
+
+# Referenced at frameworks/support/v17/preference-leanback/res/layout-v21/leanback_settings_fragment.xml:17
+# Referenced at frameworks/support/v17/preference-leanback/res/layout/leanback_settings_fragment.xml:17
+-keep class android.support.v17.preference.LeanbackSettingsRootView { <init>(...); }
+

@@ -1,0 +1,6 @@
+# view AndroidManifest.xml #generated:111
+-keep class com.android.car.BootReceiver { <init>(...); }
+
+# view AndroidManifest.xml #generated:105
+-keep class com.android.car.CarService { <init>(...); }
+

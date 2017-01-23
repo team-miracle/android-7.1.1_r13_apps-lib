@@ -1,0 +1,3 @@
+external/dexmaker/src/mockito/java/com/google/dexmaker/mockito/DexmakerMockMaker.java
+external/dexmaker/src/mockito/java/com/google/dexmaker/mockito/InvocationHandlerAdapter.java
+external/dexmaker/src/mockito/java/com/google/dexmaker/mockito/UnsafeAllocator.java

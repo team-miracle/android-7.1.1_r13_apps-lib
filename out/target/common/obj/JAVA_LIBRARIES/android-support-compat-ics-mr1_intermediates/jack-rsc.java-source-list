@@ -1,0 +1,4 @@
+frameworks/support/compat/ics-mr1/android/support/v4/content/IntentCompatIcsMr1.java
+frameworks/support/compat/ics-mr1/android/support/v4/content/res/ResourcesCompatIcsMr1.java
+frameworks/support/compat/ics-mr1/android/support/v4/view/ViewCompatICSMr1.java
+frameworks/support/compat/ics-mr1/android/support/v4/view/accessibility/AccessibilityRecordCompatIcsMr1.java

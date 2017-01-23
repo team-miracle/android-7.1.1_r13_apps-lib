@@ -1,0 +1,8 @@
+platform_testing/libraries/annotations/src/android/platform/test/annotations/ApiTest.java
+platform_testing/libraries/annotations/src/android/platform/test/annotations/HermeticTest.java
+platform_testing/libraries/annotations/src/android/platform/test/annotations/Postsubmit.java
+platform_testing/libraries/annotations/src/android/platform/test/annotations/Presubmit.java
+platform_testing/libraries/annotations/src/android/platform/test/annotations/QualityTest.java
+platform_testing/libraries/annotations/src/android/platform/test/annotations/RestrictedBuildTest.java
+platform_testing/libraries/annotations/src/android/platform/test/annotations/RootPermissionTest.java
+platform_testing/libraries/annotations/src/android/platform/test/annotations/SecurityTest.java

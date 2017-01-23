@@ -1,0 +1,8 @@
+frameworks/base/services/voiceinteraction/java/com/android/server/soundtrigger/SoundTriggerDbHelper.java
+frameworks/base/services/voiceinteraction/java/com/android/server/soundtrigger/SoundTriggerHelper.java
+frameworks/base/services/voiceinteraction/java/com/android/server/soundtrigger/SoundTriggerInternal.java
+frameworks/base/services/voiceinteraction/java/com/android/server/soundtrigger/SoundTriggerService.java
+frameworks/base/services/voiceinteraction/java/com/android/server/voiceinteraction/DatabaseHelper.java
+frameworks/base/services/voiceinteraction/java/com/android/server/voiceinteraction/VoiceInteractionManagerService.java
+frameworks/base/services/voiceinteraction/java/com/android/server/voiceinteraction/VoiceInteractionManagerServiceImpl.java
+frameworks/base/services/voiceinteraction/java/com/android/server/voiceinteraction/VoiceInteractionSessionConnection.java

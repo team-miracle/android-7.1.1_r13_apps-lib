@@ -1,0 +1,9 @@
+frameworks/ex/camera2/public/src/com/android/ex/camera2/blocking/BlockingCameraManager.java
+frameworks/ex/camera2/public/src/com/android/ex/camera2/blocking/BlockingCaptureCallback.java
+frameworks/ex/camera2/public/src/com/android/ex/camera2/blocking/BlockingSessionCallback.java
+frameworks/ex/camera2/public/src/com/android/ex/camera2/blocking/BlockingStateCallback.java
+frameworks/ex/camera2/public/src/com/android/ex/camera2/exceptions/TimeoutRuntimeException.java
+frameworks/ex/camera2/public/src/com/android/ex/camera2/pos/AutoFocusStateMachine.java
+frameworks/ex/camera2/public/src/com/android/ex/camera2/utils/StateChangeListener.java
+frameworks/ex/camera2/public/src/com/android/ex/camera2/utils/StateWaiter.java
+frameworks/ex/camera2/public/src/com/android/ex/camera2/utils/SysTrace.java

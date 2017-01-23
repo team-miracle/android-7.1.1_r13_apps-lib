@@ -1,0 +1,12 @@
+frameworks/support/compat/api24/android/support/v4/app/ActivityOptionsCompat24.java
+frameworks/support/compat/api24/android/support/v4/app/NotificationCompatApi24.java
+frameworks/support/compat/api24/android/support/v4/app/NotificationManagerCompatApi24.java
+frameworks/support/compat/api24/android/support/v4/app/ServiceCompatApi24.java
+frameworks/support/compat/api24/android/support/v4/content/ContextCompatApi24.java
+frameworks/support/compat/api24/android/support/v4/net/ConnectivityManagerCompatApi24.java
+frameworks/support/compat/api24/android/support/v4/net/TrafficStatsCompatApi24.java
+frameworks/support/compat/api24/android/support/v4/os/UserManagerCompatApi24.java
+frameworks/support/compat/api24/android/support/v4/view/PointerIconCompatApi24.java
+frameworks/support/compat/api24/android/support/v4/view/ViewCompatApi24.java
+frameworks/support/compat/api24/android/support/v4/view/accessibility/AccessibilityNodeInfoCompatApi24.java
+frameworks/support/compat/api24/android/support/v4/view/accessibility/AccessibilityWindowInfoCompatApi24.java

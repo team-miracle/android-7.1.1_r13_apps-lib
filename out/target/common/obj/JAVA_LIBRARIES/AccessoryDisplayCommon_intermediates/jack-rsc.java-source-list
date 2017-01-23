@@ -1,0 +1,5 @@
+frameworks/base/tests/AccessoryDisplay/common/src/com/android/accessorydisplay/common/BufferPool.java
+frameworks/base/tests/AccessoryDisplay/common/src/com/android/accessorydisplay/common/Logger.java
+frameworks/base/tests/AccessoryDisplay/common/src/com/android/accessorydisplay/common/Protocol.java
+frameworks/base/tests/AccessoryDisplay/common/src/com/android/accessorydisplay/common/Service.java
+frameworks/base/tests/AccessoryDisplay/common/src/com/android/accessorydisplay/common/Transport.java

@@ -1,0 +1,10 @@
+frameworks/support/transition/kitkat/android/support/transition/ChangeBoundsKitKat.java
+frameworks/support/transition/kitkat/android/support/transition/FadeKitKat.java
+frameworks/support/transition/kitkat/android/support/transition/SceneKitKat.java
+frameworks/support/transition/kitkat/android/support/transition/SceneStaticsKitKat.java
+frameworks/support/transition/kitkat/android/support/transition/SceneWrapper.java
+frameworks/support/transition/kitkat/android/support/transition/TransitionKitKat.java
+frameworks/support/transition/kitkat/android/support/transition/TransitionManagerKitKat.java
+frameworks/support/transition/kitkat/android/support/transition/TransitionManagerStaticsKitKat.java
+frameworks/support/transition/kitkat/android/support/transition/TransitionSetKitKat.java
+frameworks/support/transition/kitkat/android/support/transition/VisibilityKitKat.java

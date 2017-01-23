@@ -1,0 +1,10 @@
+platform_testing/libraries/launcher-helper/src/android/support/test/launcherhelper/AospLauncherStrategy.java
+platform_testing/libraries/launcher-helper/src/android/support/test/launcherhelper/BaseLauncher3Strategy.java
+platform_testing/libraries/launcher-helper/src/android/support/test/launcherhelper/CommonLauncherHelper.java
+platform_testing/libraries/launcher-helper/src/android/support/test/launcherhelper/GoogleExperienceLauncherStrategy.java
+platform_testing/libraries/launcher-helper/src/android/support/test/launcherhelper/ILauncherStrategy.java
+platform_testing/libraries/launcher-helper/src/android/support/test/launcherhelper/ILeanbackLauncherStrategy.java
+platform_testing/libraries/launcher-helper/src/android/support/test/launcherhelper/Launcher3Strategy.java
+platform_testing/libraries/launcher-helper/src/android/support/test/launcherhelper/LauncherStrategyFactory.java
+platform_testing/libraries/launcher-helper/src/android/support/test/launcherhelper/LeanbackLauncherStrategy.java
+platform_testing/libraries/launcher-helper/src/android/support/test/launcherhelper/NexusLauncherStrategy.java

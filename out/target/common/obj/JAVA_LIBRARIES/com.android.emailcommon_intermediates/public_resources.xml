@@ -1,0 +1,28 @@
+<!-- This file contains <public> resource definitions for all
+     resources that were generated from the source data. -->
+
+<resources>
+
+  <!-- PRIVATE SECTION.  These resources have not been declared public.
+       You can make them public my moving these lines into a file in res/values. -->
+
+  <!-- Declared at packages/apps/Email/emailcommon/res/values/strings.xml:25 -->
+  <public type="string" name="mailbox_name_server_inbox" id="0x7f020000" />
+  <!-- Declared at packages/apps/Email/emailcommon/res/values/strings.xml:27 -->
+  <public type="string" name="mailbox_name_server_outbox" id="0x7f020001" />
+  <!-- Declared at packages/apps/Email/emailcommon/res/values/strings.xml:29 -->
+  <public type="string" name="mailbox_name_server_drafts" id="0x7f020002" />
+  <!-- Declared at packages/apps/Email/emailcommon/res/values/strings.xml:31 -->
+  <public type="string" name="mailbox_name_server_trash" id="0x7f020003" />
+  <!-- Declared at packages/apps/Email/emailcommon/res/values/strings.xml:33 -->
+  <public type="string" name="mailbox_name_server_sent" id="0x7f020004" />
+  <!-- Declared at packages/apps/Email/emailcommon/res/values/strings.xml:35 -->
+  <public type="string" name="mailbox_name_server_junk" id="0x7f020005" />
+  <!-- Declared at packages/apps/Email/emailcommon/res/values/strings.xml:37 -->
+  <public type="string" name="mailbox_name_server_starred" id="0x7f020006" />
+  <!-- Declared at packages/apps/Email/emailcommon/res/values/strings.xml:39 -->
+  <public type="string" name="mailbox_name_server_all_unread" id="0x7f020007" />
+  <!-- Declared at packages/apps/Email/emailcommon/res/values/strings.xml:43 -->
+  <public type="string" name="email_package_name" id="0x7f020008" />
+
+</resources>

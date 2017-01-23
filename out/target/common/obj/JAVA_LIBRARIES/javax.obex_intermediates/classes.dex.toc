@@ -1,0 +1,4478 @@
+<api>
+<package name="javax.obex"
+>
+<class name="ApplicationParameter.TRIPLET_LENGTH"
+ extends="java.lang.Object"
+ interface="false"
+ abstract="false"
+ static="false"
+ final="false"
+ visibility="public"
+>
+<field name="FILTER_LENGTH"
+ type="byte"
+ transient="false"
+ volatile="false"
+ static="true"
+ final="true"
+ visibility="public"
+ value="8"
+>
+</field>
+<field name="FORMAT_LENGTH"
+ type="byte"
+ transient="false"
+ volatile="false"
+ static="true"
+ final="true"
+ visibility="public"
+ value="1"
+>
+</field>
+<field name="LISTSTARTOFFSET_LENGTH"
+ type="byte"
+ transient="false"
+ volatile="false"
+ static="true"
+ final="true"
+ visibility="public"
+ value="2"
+>
+</field>
+<field name="MAXLISTCOUNT_LENGTH"
+ type="byte"
+ transient="false"
+ volatile="false"
+ static="true"
+ final="true"
+ visibility="public"
+ value="2"
+>
+</field>
+<field name="NEWMISSEDCALLS_LENGTH"
+ type="byte"
+ transient="false"
+ volatile="false"
+ static="true"
+ final="true"
+ visibility="public"
+ value="1"
+>
+</field>
+<field name="ORDER_LENGTH"
+ type="byte"
+ transient="false"
+ volatile="false"
+ static="true"
+ final="true"
+ visibility="public"
+ value="1"
+>
+</field>
+<field name="PHONEBOOKSIZE_LENGTH"
+ type="byte"
+ transient="false"
+ volatile="false"
+ static="true"
+ final="true"
+ visibility="public"
+ value="2"
+>
+</field>
+<field name="SEARCH_ATTRIBUTE_LENGTH"
+ type="byte"
+ transient="false"
+ volatile="false"
+ static="true"
+ final="true"
+ visibility="public"
+ value="1"
+>
+</field>
+<constructor name="ApplicationParameter.TRIPLET_LENGTH"
+ type="javax.obex.ApplicationParameter.TRIPLET_LENGTH"
+ static="false"
+ final="false"
+ visibility="public"
+>
+</constructor>
+</class>
+<class name="ApplicationParameter.TRIPLET_TAGID"
+ extends="java.lang.Object"
+ interface="false"
+ abstract="false"
+ static="false"
+ final="false"
+ visibility="public"
+>
+<field name="FILTER_TAGID"
+ type="byte"
+ transient="false"
+ volatile="false"
+ static="true"
+ final="true"
+ visibility="public"
+ value="6"
+>
+</field>
+<field name="FORMAT_TAGID"
+ type="byte"
+ transient="false"
+ volatile="false"
+ static="true"
+ final="true"
+ visibility="public"
+ value="7"
+>
+</field>
+<field name="LISTSTARTOFFSET_TAGID"
+ type="byte"
+ transient="false"
+ volatile="false"
+ static="true"
+ final="true"
+ visibility="public"
+ value="5"
+>
+</field>
+<field name="MAXLISTCOUNT_TAGID"
+ type="byte"
+ transient="false"
+ volatile="false"
+ static="true"
+ final="true"
+ visibility="public"
+ value="4"
+>
+</field>
+<field name="NEWMISSEDCALLS_TAGID"
+ type="byte"
+ transient="false"
+ volatile="false"
+ static="true"
+ final="true"
+ visibility="public"
+ value="9"
+>
+</field>
+<field name="ORDER_TAGID"
+ type="byte"
+ transient="false"
+ volatile="false"
+ static="true"
+ final="true"
+ visibility="public"
+ value="1"
+>
+</field>
+<field name="PHONEBOOKSIZE_TAGID"
+ type="byte"
+ transient="false"
+ volatile="false"
+ static="true"
+ final="true"
+ visibility="public"
+ value="8"
+>
+</field>
+<field name="SEARCH_ATTRIBUTE_TAGID"
+ type="byte"
+ transient="false"
+ volatile="false"
+ static="true"
+ final="true"
+ visibility="public"
+ value="3"
+>
+</field>
+<field name="SEARCH_VALUE_TAGID"
+ type="byte"
+ transient="false"
+ volatile="false"
+ static="true"
+ final="true"
+ visibility="public"
+ value="2"
+>
+</field>
+<constructor name="ApplicationParameter.TRIPLET_TAGID"
+ type="javax.obex.ApplicationParameter.TRIPLET_TAGID"
+ static="false"
+ final="false"
+ visibility="public"
+>
+</constructor>
+</class>
+<class name="ApplicationParameter.TRIPLET_VALUE.FORMAT"
+ extends="java.lang.Object"
+ interface="false"
+ abstract="false"
+ static="false"
+ final="false"
+ visibility="public"
+>
+<field name="VCARD_VERSION_21"
+ type="byte"
+ transient="false"
+ volatile="false"
+ static="true"
+ final="true"
+ visibility="public"
+ value="0"
+>
+</field>
+<field name="VCARD_VERSION_30"
+ type="byte"
+ transient="false"
+ volatile="false"
+ static="true"
+ final="true"
+ visibility="public"
+ value="1"
+>
+</field>
+<constructor name="ApplicationParameter.TRIPLET_VALUE.FORMAT"
+ type="javax.obex.ApplicationParameter.TRIPLET_VALUE.FORMAT"
+ static="false"
+ final="false"
+ visibility="public"
+>
+</constructor>
+</class>
+<class name="ApplicationParameter.TRIPLET_VALUE.ORDER"
+ extends="java.lang.Object"
+ interface="false"
+ abstract="false"
+ static="false"
+ final="false"
+ visibility="public"
+>
+<field name="ORDER_BY_ALPHANUMERIC"
+ type="byte"
+ transient="false"
+ volatile="false"
+ static="true"
+ final="true"
+ visibility="public"
+ value="1"
+>
+</field>
+<field name="ORDER_BY_INDEX"
+ type="byte"
+ transient="false"
+ volatile="false"
+ static="true"
+ final="true"
+ visibility="public"
+ value="0"
+>
+</field>
+<field name="ORDER_BY_PHONETIC"
+ type="byte"
+ transient="false"
+ volatile="false"
+ static="true"
+ final="true"
+ visibility="public"
+ value="2"
+>
+</field>
+<constructor name="ApplicationParameter.TRIPLET_VALUE.ORDER"
+ type="javax.obex.ApplicationParameter.TRIPLET_VALUE.ORDER"
+ static="false"
+ final="false"
+ visibility="public"
+>
+</constructor>
+</class>
+<class name="ApplicationParameter.TRIPLET_VALUE.SEARCHATTRIBUTE"
+ extends="java.lang.Object"
+ interface="false"
+ abstract="false"
+ static="false"
+ final="false"
+ visibility="public"
+>
+<field name="SEARCH_BY_NAME"
+ type="byte"
+ transient="false"
+ volatile="false"
+ static="true"
+ final="true"
+ visibility="public"
+ value="0"
+>
+</field>
+<field name="SEARCH_BY_NUMBER"
+ type="byte"
+ transient="false"
+ volatile="false"
+ static="true"
+ final="true"
+ visibility="public"
+ value="1"
+>
+</field>
+<field name="SEARCH_BY_SOUND"
+ type="byte"
+ transient="false"
+ volatile="false"
+ static="true"
+ final="true"
+ visibility="public"
+ value="2"
+>
+</field>
+<constructor name="ApplicationParameter.TRIPLET_VALUE.SEARCHATTRIBUTE"
+ type="javax.obex.ApplicationParameter.TRIPLET_VALUE.SEARCHATTRIBUTE"
+ static="false"
+ final="false"
+ visibility="public"
+>
+</constructor>
+</class>
+<class name="ApplicationParameter.TRIPLET_VALUE"
+ extends="java.lang.Object"
+ interface="false"
+ abstract="false"
+ static="false"
+ final="false"
+ visibility="public"
+>
+<constructor name="ApplicationParameter.TRIPLET_VALUE"
+ type="javax.obex.ApplicationParameter.TRIPLET_VALUE"
+ static="false"
+ final="false"
+ visibility="public"
+>
+</constructor>
+</class>
+<class name="ApplicationParameter"
+ extends="java.lang.Object"
+ interface="false"
+ abstract="false"
+ static="false"
+ final="true"
+ visibility="public"
+>
+<field name="mArray"
+ type="byte[]"
+ transient="false"
+ volatile="false"
+ static="false"
+ final="false"
+ visibility="private"
+>
+</field>
+<field name="mLength"
+ type="int"
+ transient="false"
+ volatile="false"
+ static="false"
+ final="false"
+ visibility="private"
+>
+</field>
+<field name="mMaxLength"
+ type="int"
+ transient="false"
+ volatile="false"
+ static="false"
+ final="false"
+ visibility="private"
+>
+</field>
+<constructor name="ApplicationParameter"
+ type="javax.obex.ApplicationParameter"
+ static="false"
+ final="false"
+ visibility="public"
+>
+</constructor>
+<method name="addAPPHeader"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ visibility="public"
+>
+<parameter name="arg0" type="byte">
+</parameter>
+<parameter name="arg1" type="byte">
+</parameter>
+<parameter name="arg2" type="byte[]">
+</parameter>
+</method>
+<method name="getAPPparam"
+ return="byte[]"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ visibility="public"
+>
+</method>
+</class>
+<class name="Authenticator"
+ extends="java.lang.Object"
+ interface="true"
+ abstract="true"
+ static="false"
+ final="false"
+ visibility="public"
+>
+<method name="onAuthenticationChallenge"
+ return="javax.obex.PasswordAuthentication"
+ abstract="true"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ visibility="public"
+>
+<parameter name="arg0" type="java.lang.String">
+</parameter>
+<parameter name="arg1" type="boolean">
+</parameter>
+<parameter name="arg2" type="boolean">
+</parameter>
+</method>
+<method name="onAuthenticationResponse"
+ return="byte[]"
+ abstract="true"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ visibility="public"
+>
+<parameter name="arg0" type="byte[]">
+</parameter>
+</method>
+</class>
+<class name="BaseStream"
+ extends="java.lang.Object"
+ interface="true"
+ abstract="true"
+ static="false"
+ final="false"
+ visibility="public"
+>
+<method name="continueOperation"
+ return="boolean"
+ abstract="true"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ visibility="public"
+>
+<parameter name="arg0" type="boolean">
+</parameter>
+<parameter name="arg1" type="boolean">
+</parameter>
+</method>
+<method name="ensureNotDone"
+ return="void"
+ abstract="true"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ visibility="public"
+>
+</method>
+<method name="ensureOpen"
+ return="void"
+ abstract="true"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ visibility="public"
+>
+</method>
+<method name="streamClosed"
+ return="void"
+ abstract="true"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ visibility="public"
+>
+<parameter name="arg0" type="boolean">
+</parameter>
+</method>
+</class>
+<class name="Operation"
+ extends="java.lang.Object"
+ interface="true"
+ abstract="true"
+ static="false"
+ final="false"
+ visibility="public"
+>
+<method name="abort"
+ return="void"
+ abstract="true"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ visibility="public"
+>
+</method>
+<method name="close"
+ return="void"
+ abstract="true"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ visibility="public"
+>
+</method>
+<method name="getEncoding"
+ return="java.lang.String"
+ abstract="true"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ visibility="public"
+>
+</method>
+<method name="getHeaderLength"
+ return="int"
+ abstract="true"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ visibility="public"
+>
+</method>
+<method name="getLength"
+ return="long"
+ abstract="true"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ visibility="public"
+>
+</method>
+<method name="getMaxPacketSize"
+ return="int"
+ abstract="true"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ visibility="public"
+>
+</method>
+<method name="getReceivedHeader"
+ return="javax.obex.HeaderSet"
+ abstract="true"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ visibility="public"
+>
+</method>
+<method name="getResponseCode"
+ return="int"
+ abstract="true"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ visibility="public"
+>
+</method>
+<method name="getType"
+ return="java.lang.String"
+ abstract="true"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ visibility="public"
+>
+</method>
+<method name="noBodyHeader"
+ return="void"
+ abstract="true"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ visibility="public"
+>
+</method>
+<method name="openDataInputStream"
+ return="java.io.DataInputStream"
+ abstract="true"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ visibility="public"
+>
+</method>
+<method name="openDataOutputStream"
+ return="java.io.DataOutputStream"
+ abstract="true"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ visibility="public"
+>
+</method>
+<method name="openInputStream"
+ return="java.io.InputStream"
+ abstract="true"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ visibility="public"
+>
+</method>
+<method name="openOutputStream"
+ return="java.io.OutputStream"
+ abstract="true"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ visibility="public"
+>
+</method>
+<method name="sendHeaders"
+ return="void"
+ abstract="true"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ visibility="public"
+>
+<parameter name="arg0" type="javax.obex.HeaderSet">
+</parameter>
+</method>
+</class>
+<class name="ClientOperation"
+ extends="java.lang.Object"
+ interface="false"
+ abstract="false"
+ static="false"
+ final="true"
+ visibility="public"
+>
+<implements name="javax.obex.Operation">
+</implements>
+<implements name="javax.obex.BaseStream">
+</implements>
+<field name="TAG"
+ type="java.lang.String"
+ transient="false"
+ volatile="false"
+ static="true"
+ final="true"
+ visibility="private"
+ value="ClientOperation"
+>
+</field>
+<field name="V"
+ type="boolean"
+ transient="false"
+ volatile="false"
+ static="true"
+ final="true"
+ visibility="private"
+>
+</field>
+<field name="mEndOfBodySent"
+ type="boolean"
+ transient="false"
+ volatile="false"
+ static="false"
+ final="false"
+ visibility="private"
+>
+</field>
+<field name="mExceptionMessage"
+ type="java.lang.String"
+ transient="false"
+ volatile="false"
+ static="false"
+ final="false"
+ visibility="private"
+>
+</field>
+<field name="mGetFinalFlag"
+ type="boolean"
+ transient="false"
+ volatile="false"
+ static="false"
+ final="false"
+ visibility="private"
+>
+</field>
+<field name="mGetOperation"
+ type="boolean"
+ transient="false"
+ volatile="false"
+ static="false"
+ final="false"
+ visibility="private"
+>
+</field>
+<field name="mInputOpen"
+ type="boolean"
+ transient="false"
+ volatile="false"
+ static="false"
+ final="false"
+ visibility="private"
+>
+</field>
+<field name="mMaxPacketSize"
+ type="int"
+ transient="false"
+ volatile="false"
+ static="false"
+ final="false"
+ visibility="private"
+>
+</field>
+<field name="mOperationDone"
+ type="boolean"
+ transient="false"
+ volatile="false"
+ static="false"
+ final="false"
+ visibility="private"
+>
+</field>
+<field name="mParent"
+ type="javax.obex.ClientSession"
+ transient="false"
+ volatile="false"
+ static="false"
+ final="false"
+ visibility="private"
+>
+</field>
+<field name="mPrivateInput"
+ type="javax.obex.PrivateInputStream"
+ transient="false"
+ volatile="false"
+ static="false"
+ final="false"
+ visibility="private"
+>
+</field>
+<field name="mPrivateInputOpen"
+ type="boolean"
+ transient="false"
+ volatile="false"
+ static="false"
+ final="false"
+ visibility="private"
+>
+</field>
+<field name="mPrivateOutput"
+ type="javax.obex.PrivateOutputStream"
+ transient="false"
+ volatile="false"
+ static="false"
+ final="false"
+ visibility="private"
+>
+</field>
+<field name="mPrivateOutputOpen"
+ type="boolean"
+ transient="false"
+ volatile="false"
+ static="false"
+ final="false"
+ visibility="private"
+>
+</field>
+<field name="mReplyHeader"
+ type="javax.obex.HeaderSet"
+ transient="false"
+ volatile="false"
+ static="false"
+ final="false"
+ visibility="private"
+>
+</field>
+<field name="mRequestHeader"
+ type="javax.obex.HeaderSet"
+ transient="false"
+ volatile="false"
+ static="false"
+ final="false"
+ visibility="private"
+>
+</field>
+<field name="mSendBodyHeader"
+ type="boolean"
+ transient="false"
+ volatile="false"
+ static="false"
+ final="false"
+ visibility="private"
+>
+</field>
+<field name="mSrmActive"
+ type="boolean"
+ transient="false"
+ volatile="false"
+ static="false"
+ final="false"
+ visibility="private"
+>
+</field>
+<field name="mSrmEnabled"
+ type="boolean"
+ transient="false"
+ volatile="false"
+ static="false"
+ final="false"
+ visibility="private"
+>
+</field>
+<field name="mSrmWaitingForRemote"
+ type="boolean"
+ transient="false"
+ volatile="false"
+ static="false"
+ final="false"
+ visibility="private"
+>
+</field>
+<constructor name="ClientOperation"
+ type="javax.obex.ClientOperation"
+ static="false"
+ final="false"
+ visibility="public"
+>
+<parameter name="arg0" type="int">
+</parameter>
+<parameter name="arg1" type="javax.obex.ClientSession">
+</parameter>
+<parameter name="arg2" type="javax.obex.HeaderSet">
+</parameter>
+<parameter name="arg3" type="boolean">
+</parameter>
+</constructor>
+<method name="checkForSrm"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ visibility="private"
+>
+</method>
+<method name="sendRequest"
+ return="boolean"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ visibility="private"
+>
+<parameter name="arg0" type="int">
+</parameter>
+</method>
+<method name="startProcessing"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="true"
+ static="false"
+ final="false"
+ visibility="private"
+>
+</method>
+<method name="validateConnection"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ visibility="private"
+>
+</method>
+<method name="abort"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="true"
+ static="false"
+ final="false"
+ visibility="public"
+>
+</method>
+<method name="close"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ visibility="public"
+>
+</method>
+<method name="continueOperation"
+ return="boolean"
+ abstract="false"
+ native="false"
+ synchronized="true"
+ static="false"
+ final="false"
+ visibility="public"
+>
+<parameter name="arg0" type="boolean">
+</parameter>
+<parameter name="arg1" type="boolean">
+</parameter>
+</method>
+<method name="ensureNotDone"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ visibility="public"
+>
+</method>
+<method name="ensureOpen"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ visibility="public"
+>
+</method>
+<method name="getEncoding"
+ return="java.lang.String"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ visibility="public"
+>
+</method>
+<method name="getHeaderLength"
+ return="int"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ visibility="public"
+>
+</method>
+<method name="getLength"
+ return="long"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ visibility="public"
+>
+</method>
+<method name="getMaxPacketSize"
+ return="int"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ visibility="public"
+>
+</method>
+<method name="getReceivedHeader"
+ return="javax.obex.HeaderSet"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ visibility="public"
+>
+</method>
+<method name="getResponseCode"
+ return="int"
+ abstract="false"
+ native="false"
+ synchronized="true"
+ static="false"
+ final="false"
+ visibility="public"
+>
+</method>
+<method name="getType"
+ return="java.lang.String"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ visibility="public"
+>
+</method>
+<method name="noBodyHeader"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ visibility="public"
+>
+</method>
+<method name="openDataInputStream"
+ return="java.io.DataInputStream"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ visibility="public"
+>
+</method>
+<method name="openDataOutputStream"
+ return="java.io.DataOutputStream"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ visibility="public"
+>
+</method>
+<method name="openInputStream"
+ return="java.io.InputStream"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ visibility="public"
+>
+</method>
+<method name="openOutputStream"
+ return="java.io.OutputStream"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ visibility="public"
+>
+</method>
+<method name="sendHeaders"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ visibility="public"
+>
+<parameter name="arg0" type="javax.obex.HeaderSet">
+</parameter>
+</method>
+<method name="setGetFinalFlag"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ visibility="public"
+>
+<parameter name="arg0" type="boolean">
+</parameter>
+</method>
+<method name="streamClosed"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ visibility="public"
+>
+<parameter name="arg0" type="boolean">
+</parameter>
+</method>
+</class>
+<class name="ObexSession"
+ extends="java.lang.Object"
+ interface="false"
+ abstract="false"
+ static="false"
+ final="false"
+ visibility="public"
+>
+<field name="TAG"
+ type="java.lang.String"
+ transient="false"
+ volatile="false"
+ static="true"
+ final="true"
+ visibility="private"
+ value="ObexSession"
+>
+</field>
+<field name="V"
+ type="boolean"
+ transient="false"
+ volatile="false"
+ static="true"
+ final="true"
+ visibility="private"
+>
+</field>
+<field name="mAuthenticator"
+ type="javax.obex.Authenticator"
+ transient="false"
+ volatile="false"
+ static="false"
+ final="false"
+ visibility="protected"
+>
+</field>
+<field name="mChallengeDigest"
+ type="byte[]"
+ transient="false"
+ volatile="false"
+ static="false"
+ final="false"
+ visibility="protected"
+>
+</field>
+<constructor name="ObexSession"
+ type="javax.obex.ObexSession"
+ static="false"
+ final="false"
+ visibility="public"
+>
+</constructor>
+<method name="handleAuthChall"
+ return="boolean"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ visibility="public"
+>
+<parameter name="arg0" type="javax.obex.HeaderSet">
+</parameter>
+</method>
+<method name="handleAuthResp"
+ return="boolean"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ visibility="public"
+>
+<parameter name="arg0" type="byte[]">
+</parameter>
+</method>
+</class>
+<class name="ClientSession"
+ extends="javax.obex.ObexSession"
+ interface="false"
+ abstract="false"
+ static="false"
+ final="true"
+ visibility="public"
+>
+<field name="TAG"
+ type="java.lang.String"
+ transient="false"
+ volatile="false"
+ static="true"
+ final="true"
+ visibility="private"
+ value="ClientSession"
+>
+</field>
+<field name="mConnectionId"
+ type="byte[]"
+ transient="false"
+ volatile="false"
+ static="false"
+ final="false"
+ visibility="private"
+>
+</field>
+<field name="mInput"
+ type="java.io.InputStream"
+ transient="false"
+ volatile="false"
+ static="false"
+ final="true"
+ visibility="private"
+>
+</field>
+<field name="mLocalSrmSupported"
+ type="boolean"
+ transient="false"
+ volatile="false"
+ static="false"
+ final="true"
+ visibility="private"
+>
+</field>
+<field name="mMaxTxPacketSize"
+ type="int"
+ transient="false"
+ volatile="false"
+ static="false"
+ final="false"
+ visibility="private"
+>
+</field>
+<field name="mObexConnected"
+ type="boolean"
+ transient="false"
+ volatile="false"
+ static="false"
+ final="false"
+ visibility="private"
+>
+</field>
+<field name="mOpen"
+ type="boolean"
+ transient="false"
+ volatile="false"
+ static="false"
+ final="false"
+ visibility="private"
+>
+</field>
+<field name="mOutput"
+ type="java.io.OutputStream"
+ transient="false"
+ volatile="false"
+ static="false"
+ final="true"
+ visibility="private"
+>
+</field>
+<field name="mRequestActive"
+ type="boolean"
+ transient="false"
+ volatile="false"
+ static="false"
+ final="false"
+ visibility="private"
+>
+</field>
+<field name="mTransport"
+ type="javax.obex.ObexTransport"
+ transient="false"
+ volatile="false"
+ static="false"
+ final="true"
+ visibility="private"
+>
+</field>
+<constructor name="ClientSession"
+ type="javax.obex.ClientSession"
+ static="false"
+ final="false"
+ visibility="public"
+>
+<parameter name="arg0" type="javax.obex.ObexTransport">
+</parameter>
+</constructor>
+<constructor name="ClientSession"
+ type="javax.obex.ClientSession"
+ static="false"
+ final="false"
+ visibility="public"
+>
+<parameter name="arg0" type="javax.obex.ObexTransport">
+</parameter>
+<parameter name="arg1" type="boolean">
+</parameter>
+</constructor>
+<method name="setRequestActive"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="true"
+ static="false"
+ final="false"
+ visibility="private"
+>
+</method>
+<method name="close"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ visibility="public"
+>
+</method>
+<method name="connect"
+ return="javax.obex.HeaderSet"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ visibility="public"
+>
+<parameter name="arg0" type="javax.obex.HeaderSet">
+</parameter>
+</method>
+<method name="delete"
+ return="javax.obex.HeaderSet"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ visibility="public"
+>
+<parameter name="arg0" type="javax.obex.HeaderSet">
+</parameter>
+</method>
+<method name="disconnect"
+ return="javax.obex.HeaderSet"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ visibility="public"
+>
+<parameter name="arg0" type="javax.obex.HeaderSet">
+</parameter>
+</method>
+<method name="ensureOpen"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="true"
+ static="false"
+ final="false"
+ visibility="public"
+>
+</method>
+<method name="get"
+ return="javax.obex.Operation"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ visibility="public"
+>
+<parameter name="arg0" type="javax.obex.HeaderSet">
+</parameter>
+</method>
+<method name="getConnectionID"
+ return="long"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ visibility="public"
+>
+</method>
+<method name="isSrmSupported"
+ return="boolean"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ visibility="public"
+>
+</method>
+<method name="put"
+ return="javax.obex.Operation"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ visibility="public"
+>
+<parameter name="arg0" type="javax.obex.HeaderSet">
+</parameter>
+</method>
+<method name="sendRequest"
+ return="boolean"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ visibility="public"
+>
+<parameter name="arg0" type="int">
+</parameter>
+<parameter name="arg1" type="byte[]">
+</parameter>
+<parameter name="arg2" type="javax.obex.HeaderSet">
+</parameter>
+<parameter name="arg3" type="javax.obex.PrivateInputStream">
+</parameter>
+<parameter name="arg4" type="boolean">
+</parameter>
+</method>
+<method name="setAuthenticator"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ visibility="public"
+>
+<parameter name="arg0" type="javax.obex.Authenticator">
+</parameter>
+</method>
+<method name="setConnectionID"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ visibility="public"
+>
+<parameter name="arg0" type="long">
+</parameter>
+</method>
+<method name="setPath"
+ return="javax.obex.HeaderSet"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ visibility="public"
+>
+<parameter name="arg0" type="javax.obex.HeaderSet">
+</parameter>
+<parameter name="arg1" type="boolean">
+</parameter>
+<parameter name="arg2" type="boolean">
+</parameter>
+</method>
+<method name="setRequestInactive"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="true"
+ static="false"
+ final="false"
+ visibility="package"
+>
+</method>
+</class>
+<class name="HeaderSet"
+ extends="java.lang.Object"
+ interface="false"
+ abstract="false"
+ static="false"
+ final="true"
+ visibility="public"
+>
+<field name="APPLICATION_PARAMETER"
+ type="int"
+ transient="false"
+ volatile="false"
+ static="true"
+ final="true"
+ visibility="public"
+ value="76"
+>
+</field>
+<field name="AUTH_CHALLENGE"
+ type="int"
+ transient="false"
+ volatile="false"
+ static="true"
+ final="true"
+ visibility="public"
+ value="77"
+>
+</field>
+<field name="AUTH_RESPONSE"
+ type="int"
+ transient="false"
+ volatile="false"
+ static="true"
+ final="true"
+ visibility="public"
+ value="78"
+>
+</field>
+<field name="BODY"
+ type="int"
+ transient="false"
+ volatile="false"
+ static="true"
+ final="true"
+ visibility="public"
+ value="72"
+>
+</field>
+<field name="CONNECTION_ID"
+ type="int"
+ transient="false"
+ volatile="false"
+ static="true"
+ final="true"
+ visibility="public"
+ value="203"
+>
+</field>
+<field name="COUNT"
+ type="int"
+ transient="false"
+ volatile="false"
+ static="true"
+ final="true"
+ visibility="public"
+ value="192"
+>
+</field>
+<field name="DESCRIPTION"
+ type="int"
+ transient="false"
+ volatile="false"
+ static="true"
+ final="true"
+ visibility="public"
+ value="5"
+>
+</field>
+<field name="END_OF_BODY"
+ type="int"
+ transient="false"
+ volatile="false"
+ static="true"
+ final="true"
+ visibility="public"
+ value="73"
+>
+</field>
+<field name="HTTP"
+ type="int"
+ transient="false"
+ volatile="false"
+ static="true"
+ final="true"
+ visibility="public"
+ value="71"
+>
+</field>
+<field name="LENGTH"
+ type="int"
+ transient="false"
+ volatile="false"
+ static="true"
+ final="true"
+ visibility="public"
+ value="195"
+>
+</field>
+<field name="NAME"
+ type="int"
+ transient="false"
+ volatile="false"
+ static="true"
+ final="true"
+ visibility="public"
+ value="1"
+>
+</field>
+<field name="OBJECT_CLASS"
+ type="int"
+ transient="false"
+ volatile="false"
+ static="true"
+ final="true"
+ visibility="public"
+ value="79"
+>
+</field>
+<field name="SINGLE_RESPONSE_MODE"
+ type="int"
+ transient="false"
+ volatile="false"
+ static="true"
+ final="true"
+ visibility="public"
+ value="151"
+>
+</field>
+<field name="SINGLE_RESPONSE_MODE_PARAMETER"
+ type="int"
+ transient="false"
+ volatile="false"
+ static="true"
+ final="true"
+ visibility="public"
+ value="152"
+>
+</field>
+<field name="TARGET"
+ type="int"
+ transient="false"
+ volatile="false"
+ static="true"
+ final="true"
+ visibility="public"
+ value="70"
+>
+</field>
+<field name="TIME_4_BYTE"
+ type="int"
+ transient="false"
+ volatile="false"
+ static="true"
+ final="true"
+ visibility="public"
+ value="196"
+>
+</field>
+<field name="TIME_ISO_8601"
+ type="int"
+ transient="false"
+ volatile="false"
+ static="true"
+ final="true"
+ visibility="public"
+ value="68"
+>
+</field>
+<field name="TYPE"
+ type="int"
+ transient="false"
+ volatile="false"
+ static="true"
+ final="true"
+ visibility="public"
+ value="66"
+>
+</field>
+<field name="WHO"
+ type="int"
+ transient="false"
+ volatile="false"
+ static="true"
+ final="true"
+ visibility="public"
+ value="74"
+>
+</field>
+<field name="mAppParam"
+ type="byte[]"
+ transient="false"
+ volatile="false"
+ static="false"
+ final="false"
+ visibility="private"
+>
+</field>
+<field name="mAuthChall"
+ type="byte[]"
+ transient="false"
+ volatile="false"
+ static="false"
+ final="false"
+ visibility="public"
+>
+</field>
+<field name="mAuthResp"
+ type="byte[]"
+ transient="false"
+ volatile="false"
+ static="false"
+ final="false"
+ visibility="public"
+>
+</field>
+<field name="mByteTime"
+ type="java.util.Calendar"
+ transient="false"
+ volatile="false"
+ static="false"
+ final="false"
+ visibility="private"
+>
+</field>
+<field name="mByteUserDefined"
+ type="java.lang.Byte[]"
+ transient="false"
+ volatile="false"
+ static="false"
+ final="false"
+ visibility="private"
+>
+</field>
+<field name="mConnectionID"
+ type="byte[]"
+ transient="false"
+ volatile="false"
+ static="false"
+ final="false"
+ visibility="public"
+>
+</field>
+<field name="mCount"
+ type="java.lang.Long"
+ transient="false"
+ volatile="false"
+ static="false"
+ final="false"
+ visibility="private"
+>
+</field>
+<field name="mDescription"
+ type="java.lang.String"
+ transient="false"
+ volatile="false"
+ static="false"
+ final="false"
+ visibility="private"
+>
+</field>
+<field name="mEmptyName"
+ type="boolean"
+ transient="false"
+ volatile="false"
+ static="false"
+ final="false"
+ visibility="private"
+>
+</field>
+<field name="mHttpHeader"
+ type="byte[]"
+ transient="false"
+ volatile="false"
+ static="false"
+ final="false"
+ visibility="private"
+>
+</field>
+<field name="mIntegerUserDefined"
+ type="java.lang.Long[]"
+ transient="false"
+ volatile="false"
+ static="false"
+ final="false"
+ visibility="private"
+>
+</field>
+<field name="mIsoTime"
+ type="java.util.Calendar"
+ transient="false"
+ volatile="false"
+ static="false"
+ final="false"
+ visibility="private"
+>
+</field>
+<field name="mLength"
+ type="java.lang.Long"
+ transient="false"
+ volatile="false"
+ static="false"
+ final="false"
+ visibility="private"
+>
+</field>
+<field name="mName"
+ type="java.lang.String"
+ transient="false"
+ volatile="false"
+ static="false"
+ final="false"
+ visibility="private"
+>
+</field>
+<field name="mObjectClass"
+ type="byte[]"
+ transient="false"
+ volatile="false"
+ static="false"
+ final="false"
+ visibility="private"
+>
+</field>
+<field name="mRandom"
+ type="java.security.SecureRandom"
+ transient="false"
+ volatile="false"
+ static="false"
+ final="false"
+ visibility="private"
+>
+</field>
+<field name="mSequenceUserDefined"
+ type="byte[][]"
+ transient="false"
+ volatile="false"
+ static="false"
+ final="false"
+ visibility="private"
+>
+</field>
+<field name="mSingleResponseMode"
+ type="java.lang.Byte"
+ transient="false"
+ volatile="false"
+ static="false"
+ final="false"
+ visibility="private"
+>
+</field>
+<field name="mSrmParam"
+ type="java.lang.Byte"
+ transient="false"
+ volatile="false"
+ static="false"
+ final="false"
+ visibility="private"
+>
+</field>
+<field name="mTarget"
+ type="byte[]"
+ transient="false"
+ volatile="false"
+ static="false"
+ final="false"
+ visibility="private"
+>
+</field>
+<field name="mType"
+ type="java.lang.String"
+ transient="false"
+ volatile="false"
+ static="false"
+ final="false"
+ visibility="private"
+>
+</field>
+<field name="mUnicodeUserDefined"
+ type="java.lang.String[]"
+ transient="false"
+ volatile="false"
+ static="false"
+ final="false"
+ visibility="private"
+>
+</field>
+<field name="mWho"
+ type="byte[]"
+ transient="false"
+ volatile="false"
+ static="false"
+ final="false"
+ visibility="private"
+>
+</field>
+<field name="nonce"
+ type="byte[]"
+ transient="false"
+ volatile="false"
+ static="false"
+ final="false"
+ visibility="package"
+>
+</field>
+<field name="responseCode"
+ type="int"
+ transient="false"
+ volatile="false"
+ static="false"
+ final="false"
+ visibility="public"
+>
+</field>
+<constructor name="HeaderSet"
+ type="javax.obex.HeaderSet"
+ static="false"
+ final="false"
+ visibility="public"
+>
+</constructor>
+<method name="createAuthenticationChallenge"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ visibility="public"
+>
+<parameter name="arg0" type="java.lang.String">
+</parameter>
+<parameter name="arg1" type="boolean">
+</parameter>
+<parameter name="arg2" type="boolean">
+</parameter>
+</method>
+<method name="getEmptyNameHeader"
+ return="boolean"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ visibility="public"
+>
+</method>
+<method name="getHeader"
+ return="java.lang.Object"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ visibility="public"
+>
+<parameter name="arg0" type="int">
+</parameter>
+</method>
+<method name="getHeaderList"
+ return="int[]"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ visibility="public"
+>
+</method>
+<method name="getResponseCode"
+ return="int"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ visibility="public"
+>
+</method>
+<method name="setEmptyNameHeader"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ visibility="public"
+>
+</method>
+<method name="setHeader"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ visibility="public"
+>
+<parameter name="arg0" type="int">
+</parameter>
+<parameter name="arg1" type="java.lang.Object">
+</parameter>
+</method>
+</class>
+<class name="ObexHelper"
+ extends="java.lang.Object"
+ interface="false"
+ abstract="false"
+ static="false"
+ final="true"
+ visibility="public"
+>
+<field name="BASE_PACKET_LENGTH"
+ type="int"
+ transient="false"
+ volatile="false"
+ static="true"
+ final="true"
+ visibility="public"
+ value="3"
+>
+</field>
+<field name="LOWER_LIMIT_MAX_PACKET_SIZE"
+ type="int"
+ transient="false"
+ volatile="false"
+ static="true"
+ final="true"
+ visibility="public"
+ value="255"
+>
+</field>
+<field name="MAX_CLIENT_PACKET_SIZE"
+ type="int"
+ transient="false"
+ volatile="false"
+ static="true"
+ final="true"
+ visibility="public"
+ value="64512"
+>
+</field>
+<field name="MAX_PACKET_SIZE_INT"
+ type="int"
+ transient="false"
+ volatile="false"
+ static="true"
+ final="true"
+ visibility="public"
+ value="65534"
+>
+</field>
+<field name="OBEX_AUTH_REALM_CHARSET_ASCII"
+ type="int"
+ transient="false"
+ volatile="false"
+ static="true"
+ final="true"
+ visibility="public"
+ value="0"
+>
+</field>
+<field name="OBEX_AUTH_REALM_CHARSET_ISO_8859_1"
+ type="int"
+ transient="false"
+ volatile="false"
+ static="true"
+ final="true"
+ visibility="public"
+ value="1"
+>
+</field>
+<field name="OBEX_AUTH_REALM_CHARSET_ISO_8859_2"
+ type="int"
+ transient="false"
+ volatile="false"
+ static="true"
+ final="true"
+ visibility="public"
+ value="2"
+>
+</field>
+<field name="OBEX_AUTH_REALM_CHARSET_ISO_8859_3"
+ type="int"
+ transient="false"
+ volatile="false"
+ static="true"
+ final="true"
+ visibility="public"
+ value="3"
+>
+</field>
+<field name="OBEX_AUTH_REALM_CHARSET_ISO_8859_4"
+ type="int"
+ transient="false"
+ volatile="false"
+ static="true"
+ final="true"
+ visibility="public"
+ value="4"
+>
+</field>
+<field name="OBEX_AUTH_REALM_CHARSET_ISO_8859_5"
+ type="int"
+ transient="false"
+ volatile="false"
+ static="true"
+ final="true"
+ visibility="public"
+ value="5"
+>
+</field>
+<field name="OBEX_AUTH_REALM_CHARSET_ISO_8859_6"
+ type="int"
+ transient="false"
+ volatile="false"
+ static="true"
+ final="true"
+ visibility="public"
+ value="6"
+>
+</field>
+<field name="OBEX_AUTH_REALM_CHARSET_ISO_8859_7"
+ type="int"
+ transient="false"
+ volatile="false"
+ static="true"
+ final="true"
+ visibility="public"
+ value="7"
+>
+</field>
+<field name="OBEX_AUTH_REALM_CHARSET_ISO_8859_8"
+ type="int"
+ transient="false"
+ volatile="false"
+ static="true"
+ final="true"
+ visibility="public"
+ value="8"
+>
+</field>
+<field name="OBEX_AUTH_REALM_CHARSET_ISO_8859_9"
+ type="int"
+ transient="false"
+ volatile="false"
+ static="true"
+ final="true"
+ visibility="public"
+ value="9"
+>
+</field>
+<field name="OBEX_AUTH_REALM_CHARSET_UNICODE"
+ type="int"
+ transient="false"
+ volatile="false"
+ static="true"
+ final="true"
+ visibility="public"
+ value="255"
+>
+</field>
+<field name="OBEX_OPCODE_ABORT"
+ type="int"
+ transient="false"
+ volatile="false"
+ static="true"
+ final="true"
+ visibility="public"
+ value="255"
+>
+</field>
+<field name="OBEX_OPCODE_CONNECT"
+ type="int"
+ transient="false"
+ volatile="false"
+ static="true"
+ final="true"
+ visibility="public"
+ value="128"
+>
+</field>
+<field name="OBEX_OPCODE_DISCONNECT"
+ type="int"
+ transient="false"
+ volatile="false"
+ static="true"
+ final="true"
+ visibility="public"
+ value="129"
+>
+</field>
+<field name="OBEX_OPCODE_FINAL_BIT_MASK"
+ type="int"
+ transient="false"
+ volatile="false"
+ static="true"
+ final="true"
+ visibility="public"
+ value="128"
+>
+</field>
+<field name="OBEX_OPCODE_GET"
+ type="int"
+ transient="false"
+ volatile="false"
+ static="true"
+ final="true"
+ visibility="public"
+ value="3"
+>
+</field>
+<field name="OBEX_OPCODE_GET_FINAL"
+ type="int"
+ transient="false"
+ volatile="false"
+ static="true"
+ final="true"
+ visibility="public"
+ value="131"
+>
+</field>
+<field name="OBEX_OPCODE_PUT"
+ type="int"
+ transient="false"
+ volatile="false"
+ static="true"
+ final="true"
+ visibility="public"
+ value="2"
+>
+</field>
+<field name="OBEX_OPCODE_PUT_FINAL"
+ type="int"
+ transient="false"
+ volatile="false"
+ static="true"
+ final="true"
+ visibility="public"
+ value="130"
+>
+</field>
+<field name="OBEX_OPCODE_RESERVED"
+ type="int"
+ transient="false"
+ volatile="false"
+ static="true"
+ final="true"
+ visibility="public"
+ value="4"
+>
+</field>
+<field name="OBEX_OPCODE_RESERVED_FINAL"
+ type="int"
+ transient="false"
+ volatile="false"
+ static="true"
+ final="true"
+ visibility="public"
+ value="132"
+>
+</field>
+<field name="OBEX_OPCODE_SETPATH"
+ type="int"
+ transient="false"
+ volatile="false"
+ static="true"
+ final="true"
+ visibility="public"
+ value="133"
+>
+</field>
+<field name="OBEX_SRMP_WAIT"
+ type="byte"
+ transient="false"
+ volatile="false"
+ static="true"
+ final="true"
+ visibility="public"
+ value="1"
+>
+</field>
+<field name="OBEX_SRM_DISABLE"
+ type="byte"
+ transient="false"
+ volatile="false"
+ static="true"
+ final="true"
+ visibility="public"
+ value="0"
+>
+</field>
+<field name="OBEX_SRM_ENABLE"
+ type="byte"
+ transient="false"
+ volatile="false"
+ static="true"
+ final="true"
+ visibility="public"
+ value="1"
+>
+</field>
+<field name="OBEX_SRM_SUPPORT"
+ type="byte"
+ transient="false"
+ volatile="false"
+ static="true"
+ final="true"
+ visibility="public"
+ value="2"
+>
+</field>
+<field name="TAG"
+ type="java.lang.String"
+ transient="false"
+ volatile="false"
+ static="true"
+ final="true"
+ visibility="private"
+ value="ObexHelper"
+>
+</field>
+<field name="VDBG"
+ type="boolean"
+ transient="false"
+ volatile="false"
+ static="true"
+ final="true"
+ visibility="public"
+>
+</field>
+<constructor name="ObexHelper"
+ type="javax.obex.ObexHelper"
+ static="false"
+ final="false"
+ visibility="private"
+>
+</constructor>
+<method name="computeAuthenticationChallenge"
+ return="byte[]"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="true"
+ final="false"
+ visibility="public"
+>
+<parameter name="arg0" type="byte[]">
+</parameter>
+<parameter name="arg1" type="java.lang.String">
+</parameter>
+<parameter name="arg2" type="boolean">
+</parameter>
+<parameter name="arg3" type="boolean">
+</parameter>
+</method>
+<method name="computeMd5Hash"
+ return="byte[]"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="true"
+ final="false"
+ visibility="public"
+>
+<parameter name="arg0" type="byte[]">
+</parameter>
+</method>
+<method name="convertToByteArray"
+ return="byte[]"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="true"
+ final="false"
+ visibility="public"
+>
+<parameter name="arg0" type="long">
+</parameter>
+</method>
+<method name="convertToLong"
+ return="long"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="true"
+ final="false"
+ visibility="public"
+>
+<parameter name="arg0" type="byte[]">
+</parameter>
+</method>
+<method name="convertToUnicode"
+ return="java.lang.String"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="true"
+ final="false"
+ visibility="public"
+>
+<parameter name="arg0" type="byte[]">
+</parameter>
+<parameter name="arg1" type="boolean">
+</parameter>
+</method>
+<method name="convertToUnicodeByteArray"
+ return="byte[]"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="true"
+ final="false"
+ visibility="public"
+>
+<parameter name="arg0" type="java.lang.String">
+</parameter>
+</method>
+<method name="createHeader"
+ return="byte[]"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="true"
+ final="false"
+ visibility="public"
+>
+<parameter name="arg0" type="javax.obex.HeaderSet">
+</parameter>
+<parameter name="arg1" type="boolean">
+</parameter>
+</method>
+<method name="findHeaderEnd"
+ return="int"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="true"
+ final="false"
+ visibility="public"
+>
+<parameter name="arg0" type="byte[]">
+</parameter>
+<parameter name="arg1" type="int">
+</parameter>
+<parameter name="arg2" type="int">
+</parameter>
+</method>
+<method name="findTag"
+ return="int"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="true"
+ final="false"
+ visibility="public"
+>
+<parameter name="arg0" type="byte">
+</parameter>
+<parameter name="arg1" type="byte[]">
+</parameter>
+</method>
+<method name="getMaxRxPacketSize"
+ return="int"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="true"
+ final="false"
+ visibility="public"
+>
+<parameter name="arg0" type="javax.obex.ObexTransport">
+</parameter>
+</method>
+<method name="getMaxTxPacketSize"
+ return="int"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="true"
+ final="false"
+ visibility="public"
+>
+<parameter name="arg0" type="javax.obex.ObexTransport">
+</parameter>
+</method>
+<method name="getTagValue"
+ return="byte[]"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="true"
+ final="false"
+ visibility="public"
+>
+<parameter name="arg0" type="byte">
+</parameter>
+<parameter name="arg1" type="byte[]">
+</parameter>
+</method>
+<method name="updateHeaderSet"
+ return="byte[]"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="true"
+ final="false"
+ visibility="public"
+>
+<parameter name="arg0" type="javax.obex.HeaderSet">
+</parameter>
+<parameter name="arg1" type="byte[]">
+</parameter>
+</method>
+<method name="validateMaxPacketSize"
+ return="int"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="true"
+ final="false"
+ visibility="private"
+>
+<parameter name="arg0" type="int">
+</parameter>
+</method>
+</class>
+<class name="ObexPacket"
+ extends="java.lang.Object"
+ interface="false"
+ abstract="false"
+ static="false"
+ final="false"
+ visibility="public"
+>
+<field name="mHeaderId"
+ type="int"
+ transient="false"
+ volatile="false"
+ static="false"
+ final="false"
+ visibility="public"
+>
+</field>
+<field name="mLength"
+ type="int"
+ transient="false"
+ volatile="false"
+ static="false"
+ final="false"
+ visibility="public"
+>
+</field>
+<field name="mPayload"
+ type="byte[]"
+ transient="false"
+ volatile="false"
+ static="false"
+ final="false"
+ visibility="public"
+>
+</field>
+<constructor name="ObexPacket"
+ type="javax.obex.ObexPacket"
+ static="false"
+ final="false"
+ visibility="private"
+>
+<parameter name="arg0" type="int">
+</parameter>
+<parameter name="arg1" type="int">
+</parameter>
+</constructor>
+<method name="read"
+ return="javax.obex.ObexPacket"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="true"
+ final="false"
+ visibility="public"
+>
+<parameter name="arg0" type="int">
+</parameter>
+<parameter name="arg1" type="java.io.InputStream">
+</parameter>
+</method>
+<method name="read"
+ return="javax.obex.ObexPacket"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="true"
+ final="false"
+ visibility="public"
+>
+<parameter name="arg0" type="java.io.InputStream">
+</parameter>
+</method>
+</class>
+<class name="ObexTransport"
+ extends="java.lang.Object"
+ interface="true"
+ abstract="true"
+ static="false"
+ final="false"
+ visibility="public"
+>
+<method name="close"
+ return="void"
+ abstract="true"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ visibility="public"
+>
+</method>
+<method name="connect"
+ return="void"
+ abstract="true"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ visibility="public"
+>
+</method>
+<method name="create"
+ return="void"
+ abstract="true"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ visibility="public"
+>
+</method>
+<method name="disconnect"
+ return="void"
+ abstract="true"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ visibility="public"
+>
+</method>
+<method name="getMaxReceivePacketSize"
+ return="int"
+ abstract="true"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ visibility="public"
+>
+</method>
+<method name="getMaxTransmitPacketSize"
+ return="int"
+ abstract="true"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ visibility="public"
+>
+</method>
+<method name="isSrmSupported"
+ return="boolean"
+ abstract="true"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ visibility="public"
+>
+</method>
+<method name="listen"
+ return="void"
+ abstract="true"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ visibility="public"
+>
+</method>
+<method name="openDataInputStream"
+ return="java.io.DataInputStream"
+ abstract="true"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ visibility="public"
+>
+</method>
+<method name="openDataOutputStream"
+ return="java.io.DataOutputStream"
+ abstract="true"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ visibility="public"
+>
+</method>
+<method name="openInputStream"
+ return="java.io.InputStream"
+ abstract="true"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ visibility="public"
+>
+</method>
+<method name="openOutputStream"
+ return="java.io.OutputStream"
+ abstract="true"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ visibility="public"
+>
+</method>
+</class>
+<class name="PasswordAuthentication"
+ extends="java.lang.Object"
+ interface="false"
+ abstract="false"
+ static="false"
+ final="true"
+ visibility="public"
+>
+<field name="mPassword"
+ type="byte[]"
+ transient="false"
+ volatile="false"
+ static="false"
+ final="true"
+ visibility="private"
+>
+</field>
+<field name="mUserName"
+ type="byte[]"
+ transient="false"
+ volatile="false"
+ static="false"
+ final="false"
+ visibility="private"
+>
+</field>
+<constructor name="PasswordAuthentication"
+ type="javax.obex.PasswordAuthentication"
+ static="false"
+ final="false"
+ visibility="public"
+>
+<parameter name="arg0" type="byte[]">
+</parameter>
+<parameter name="arg1" type="byte[]">
+</parameter>
+</constructor>
+<method name="getPassword"
+ return="byte[]"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ visibility="public"
+>
+</method>
+<method name="getUserName"
+ return="byte[]"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ visibility="public"
+>
+</method>
+</class>
+<class name="PrivateInputStream"
+ extends="java.io.InputStream"
+ interface="false"
+ abstract="false"
+ static="false"
+ final="true"
+ visibility="public"
+>
+<field name="mData"
+ type="byte[]"
+ transient="false"
+ volatile="false"
+ static="false"
+ final="false"
+ visibility="private"
+>
+</field>
+<field name="mIndex"
+ type="int"
+ transient="false"
+ volatile="false"
+ static="false"
+ final="false"
+ visibility="private"
+>
+</field>
+<field name="mOpen"
+ type="boolean"
+ transient="false"
+ volatile="false"
+ static="false"
+ final="false"
+ visibility="private"
+>
+</field>
+<field name="mParent"
+ type="javax.obex.BaseStream"
+ transient="false"
+ volatile="false"
+ static="false"
+ final="false"
+ visibility="private"
+>
+</field>
+<constructor name="PrivateInputStream"
+ type="javax.obex.PrivateInputStream"
+ static="false"
+ final="false"
+ visibility="public"
+>
+<parameter name="arg0" type="javax.obex.BaseStream">
+</parameter>
+</constructor>
+<method name="ensureOpen"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ visibility="private"
+>
+</method>
+<method name="available"
+ return="int"
+ abstract="false"
+ native="false"
+ synchronized="true"
+ static="false"
+ final="false"
+ visibility="public"
+>
+</method>
+<method name="close"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ visibility="public"
+>
+</method>
+<method name="read"
+ return="int"
+ abstract="false"
+ native="false"
+ synchronized="true"
+ static="false"
+ final="false"
+ visibility="public"
+>
+</method>
+<method name="read"
+ return="int"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ visibility="public"
+>
+<parameter name="arg0" type="byte[]">
+</parameter>
+</method>
+<method name="read"
+ return="int"
+ abstract="false"
+ native="false"
+ synchronized="true"
+ static="false"
+ final="false"
+ visibility="public"
+>
+<parameter name="arg0" type="byte[]">
+</parameter>
+<parameter name="arg1" type="int">
+</parameter>
+<parameter name="arg2" type="int">
+</parameter>
+</method>
+<method name="writeBytes"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="true"
+ static="false"
+ final="false"
+ visibility="public"
+>
+<parameter name="arg0" type="byte[]">
+</parameter>
+<parameter name="arg1" type="int">
+</parameter>
+</method>
+</class>
+<class name="PrivateOutputStream"
+ extends="java.io.OutputStream"
+ interface="false"
+ abstract="false"
+ static="false"
+ final="true"
+ visibility="public"
+>
+<field name="mArray"
+ type="java.io.ByteArrayOutputStream"
+ transient="false"
+ volatile="false"
+ static="false"
+ final="false"
+ visibility="private"
+>
+</field>
+<field name="mMaxPacketSize"
+ type="int"
+ transient="false"
+ volatile="false"
+ static="false"
+ final="false"
+ visibility="private"
+>
+</field>
+<field name="mOpen"
+ type="boolean"
+ transient="false"
+ volatile="false"
+ static="false"
+ final="false"
+ visibility="private"
+>
+</field>
+<field name="mParent"
+ type="javax.obex.BaseStream"
+ transient="false"
+ volatile="false"
+ static="false"
+ final="false"
+ visibility="private"
+>
+</field>
+<constructor name="PrivateOutputStream"
+ type="javax.obex.PrivateOutputStream"
+ static="false"
+ final="false"
+ visibility="public"
+>
+<parameter name="arg0" type="javax.obex.BaseStream">
+</parameter>
+<parameter name="arg1" type="int">
+</parameter>
+</constructor>
+<method name="ensureOpen"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ visibility="private"
+>
+</method>
+<method name="close"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ visibility="public"
+>
+</method>
+<method name="isClosed"
+ return="boolean"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ visibility="public"
+>
+</method>
+<method name="readBytes"
+ return="byte[]"
+ abstract="false"
+ native="false"
+ synchronized="true"
+ static="false"
+ final="false"
+ visibility="public"
+>
+<parameter name="arg0" type="int">
+</parameter>
+</method>
+<method name="size"
+ return="int"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ visibility="public"
+>
+</method>
+<method name="write"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="true"
+ static="false"
+ final="false"
+ visibility="public"
+>
+<parameter name="arg0" type="int">
+</parameter>
+</method>
+<method name="write"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ visibility="public"
+>
+<parameter name="arg0" type="byte[]">
+</parameter>
+</method>
+<method name="write"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="true"
+ static="false"
+ final="false"
+ visibility="public"
+>
+<parameter name="arg0" type="byte[]">
+</parameter>
+<parameter name="arg1" type="int">
+</parameter>
+<parameter name="arg2" type="int">
+</parameter>
+</method>
+</class>
+<class name="ResponseCodes"
+ extends="java.lang.Object"
+ interface="false"
+ abstract="false"
+ static="false"
+ final="true"
+ visibility="public"
+>
+<field name="OBEX_DATABASE_FULL"
+ type="int"
+ transient="false"
+ volatile="false"
+ static="true"
+ final="true"
+ visibility="public"
+ value="224"
+>
+</field>
+<field name="OBEX_DATABASE_LOCKED"
+ type="int"
+ transient="false"
+ volatile="false"
+ static="true"
+ final="true"
+ visibility="public"
+ value="225"
+>
+</field>
+<field name="OBEX_HTTP_ACCEPTED"
+ type="int"
+ transient="false"
+ volatile="false"
+ static="true"
+ final="true"
+ visibility="public"
+ value="162"
+>
+</field>
+<field name="OBEX_HTTP_BAD_GATEWAY"
+ type="int"
+ transient="false"
+ volatile="false"
+ static="true"
+ final="true"
+ visibility="public"
+ value="210"
+>
+</field>
+<field name="OBEX_HTTP_BAD_METHOD"
+ type="int"
+ transient="false"
+ volatile="false"
+ static="true"
+ final="true"
+ visibility="public"
+ value="197"
+>
+</field>
+<field name="OBEX_HTTP_BAD_REQUEST"
+ type="int"
+ transient="false"
+ volatile="false"
+ static="true"
+ final="true"
+ visibility="public"
+ value="192"
+>
+</field>
+<field name="OBEX_HTTP_CONFLICT"
+ type="int"
+ transient="false"
+ volatile="false"
+ static="true"
+ final="true"
+ visibility="public"
+ value="201"
+>
+</field>
+<field name="OBEX_HTTP_CONTINUE"
+ type="int"
+ transient="false"
+ volatile="false"
+ static="true"
+ final="true"
+ visibility="public"
+ value="144"
+>
+</field>
+<field name="OBEX_HTTP_CREATED"
+ type="int"
+ transient="false"
+ volatile="false"
+ static="true"
+ final="true"
+ visibility="public"
+ value="161"
+>
+</field>
+<field name="OBEX_HTTP_ENTITY_TOO_LARGE"
+ type="int"
+ transient="false"
+ volatile="false"
+ static="true"
+ final="true"
+ visibility="public"
+ value="205"
+>
+</field>
+<field name="OBEX_HTTP_FORBIDDEN"
+ type="int"
+ transient="false"
+ volatile="false"
+ static="true"
+ final="true"
+ visibility="public"
+ value="195"
+>
+</field>
+<field name="OBEX_HTTP_GATEWAY_TIMEOUT"
+ type="int"
+ transient="false"
+ volatile="false"
+ static="true"
+ final="true"
+ visibility="public"
+ value="212"
+>
+</field>
+<field name="OBEX_HTTP_GONE"
+ type="int"
+ transient="false"
+ volatile="false"
+ static="true"
+ final="true"
+ visibility="public"
+ value="202"
+>
+</field>
+<field name="OBEX_HTTP_INTERNAL_ERROR"
+ type="int"
+ transient="false"
+ volatile="false"
+ static="true"
+ final="true"
+ visibility="public"
+ value="208"
+>
+</field>
+<field name="OBEX_HTTP_LENGTH_REQUIRED"
+ type="int"
+ transient="false"
+ volatile="false"
+ static="true"
+ final="true"
+ visibility="public"
+ value="203"
+>
+</field>
+<field name="OBEX_HTTP_MOVED_PERM"
+ type="int"
+ transient="false"
+ volatile="false"
+ static="true"
+ final="true"
+ visibility="public"
+ value="177"
+>
+</field>
+<field name="OBEX_HTTP_MOVED_TEMP"
+ type="int"
+ transient="false"
+ volatile="false"
+ static="true"
+ final="true"
+ visibility="public"
+ value="178"
+>
+</field>
+<field name="OBEX_HTTP_MULT_CHOICE"
+ type="int"
+ transient="false"
+ volatile="false"
+ static="true"
+ final="true"
+ visibility="public"
+ value="176"
+>
+</field>
+<field name="OBEX_HTTP_NOT_ACCEPTABLE"
+ type="int"
+ transient="false"
+ volatile="false"
+ static="true"
+ final="true"
+ visibility="public"
+ value="198"
+>
+</field>
+<field name="OBEX_HTTP_NOT_AUTHORITATIVE"
+ type="int"
+ transient="false"
+ volatile="false"
+ static="true"
+ final="true"
+ visibility="public"
+ value="163"
+>
+</field>
+<field name="OBEX_HTTP_NOT_FOUND"
+ type="int"
+ transient="false"
+ volatile="false"
+ static="true"
+ final="true"
+ visibility="public"
+ value="196"
+>
+</field>
+<field name="OBEX_HTTP_NOT_IMPLEMENTED"
+ type="int"
+ transient="false"
+ volatile="false"
+ static="true"
+ final="true"
+ visibility="public"
+ value="209"
+>
+</field>
+<field name="OBEX_HTTP_NOT_MODIFIED"
+ type="int"
+ transient="false"
+ volatile="false"
+ static="true"
+ final="true"
+ visibility="public"
+ value="180"
+>
+</field>
+<field name="OBEX_HTTP_NO_CONTENT"
+ type="int"
+ transient="false"
+ volatile="false"
+ static="true"
+ final="true"
+ visibility="public"
+ value="164"
+>
+</field>
+<field name="OBEX_HTTP_OK"
+ type="int"
+ transient="false"
+ volatile="false"
+ static="true"
+ final="true"
+ visibility="public"
+ value="160"
+>
+</field>
+<field name="OBEX_HTTP_PARTIAL"
+ type="int"
+ transient="false"
+ volatile="false"
+ static="true"
+ final="true"
+ visibility="public"
+ value="166"
+>
+</field>
+<field name="OBEX_HTTP_PAYMENT_REQUIRED"
+ type="int"
+ transient="false"
+ volatile="false"
+ static="true"
+ final="true"
+ visibility="public"
+ value="194"
+>
+</field>
+<field name="OBEX_HTTP_PRECON_FAILED"
+ type="int"
+ transient="false"
+ volatile="false"
+ static="true"
+ final="true"
+ visibility="public"
+ value="204"
+>
+</field>
+<field name="OBEX_HTTP_PROXY_AUTH"
+ type="int"
+ transient="false"
+ volatile="false"
+ static="true"
+ final="true"
+ visibility="public"
+ value="199"
+>
+</field>
+<field name="OBEX_HTTP_REQ_TOO_LARGE"
+ type="int"
+ transient="false"
+ volatile="false"
+ static="true"
+ final="true"
+ visibility="public"
+ value="206"
+>
+</field>
+<field name="OBEX_HTTP_RESET"
+ type="int"
+ transient="false"
+ volatile="false"
+ static="true"
+ final="true"
+ visibility="public"
+ value="165"
+>
+</field>
+<field name="OBEX_HTTP_SEE_OTHER"
+ type="int"
+ transient="false"
+ volatile="false"
+ static="true"
+ final="true"
+ visibility="public"
+ value="179"
+>
+</field>
+<field name="OBEX_HTTP_TIMEOUT"
+ type="int"
+ transient="false"
+ volatile="false"
+ static="true"
+ final="true"
+ visibility="public"
+ value="200"
+>
+</field>
+<field name="OBEX_HTTP_UNAUTHORIZED"
+ type="int"
+ transient="false"
+ volatile="false"
+ static="true"
+ final="true"
+ visibility="public"
+ value="193"
+>
+</field>
+<field name="OBEX_HTTP_UNAVAILABLE"
+ type="int"
+ transient="false"
+ volatile="false"
+ static="true"
+ final="true"
+ visibility="public"
+ value="211"
+>
+</field>
+<field name="OBEX_HTTP_UNSUPPORTED_TYPE"
+ type="int"
+ transient="false"
+ volatile="false"
+ static="true"
+ final="true"
+ visibility="public"
+ value="207"
+>
+</field>
+<field name="OBEX_HTTP_USE_PROXY"
+ type="int"
+ transient="false"
+ volatile="false"
+ static="true"
+ final="true"
+ visibility="public"
+ value="181"
+>
+</field>
+<field name="OBEX_HTTP_VERSION"
+ type="int"
+ transient="false"
+ volatile="false"
+ static="true"
+ final="true"
+ visibility="public"
+ value="213"
+>
+</field>
+<constructor name="ResponseCodes"
+ type="javax.obex.ResponseCodes"
+ static="false"
+ final="false"
+ visibility="private"
+>
+</constructor>
+</class>
+<class name="ServerOperation"
+ extends="java.lang.Object"
+ interface="false"
+ abstract="false"
+ static="false"
+ final="true"
+ visibility="public"
+>
+<implements name="javax.obex.Operation">
+</implements>
+<implements name="javax.obex.BaseStream">
+</implements>
+<field name="TAG"
+ type="java.lang.String"
+ transient="false"
+ volatile="false"
+ static="true"
+ final="true"
+ visibility="private"
+ value="ServerOperation"
+>
+</field>
+<field name="V"
+ type="boolean"
+ transient="false"
+ volatile="false"
+ static="true"
+ final="true"
+ visibility="private"
+>
+</field>
+<field name="finalBitSet"
+ type="boolean"
+ transient="false"
+ volatile="false"
+ static="false"
+ final="false"
+ visibility="public"
+>
+</field>
+<field name="isAborted"
+ type="boolean"
+ transient="false"
+ volatile="false"
+ static="false"
+ final="false"
+ visibility="public"
+>
+</field>
+<field name="mClosed"
+ type="boolean"
+ transient="false"
+ volatile="false"
+ static="false"
+ final="false"
+ visibility="private"
+>
+</field>
+<field name="mExceptionString"
+ type="java.lang.String"
+ transient="false"
+ volatile="false"
+ static="false"
+ final="false"
+ visibility="private"
+>
+</field>
+<field name="mGetOperation"
+ type="boolean"
+ transient="false"
+ volatile="false"
+ static="false"
+ final="false"
+ visibility="private"
+>
+</field>
+<field name="mHasBody"
+ type="boolean"
+ transient="false"
+ volatile="false"
+ static="false"
+ final="false"
+ visibility="private"
+>
+</field>
+<field name="mInput"
+ type="java.io.InputStream"
+ transient="false"
+ volatile="false"
+ static="false"
+ final="false"
+ visibility="private"
+>
+</field>
+<field name="mListener"
+ type="javax.obex.ServerRequestHandler"
+ transient="false"
+ volatile="false"
+ static="false"
+ final="false"
+ visibility="private"
+>
+</field>
+<field name="mMaxPacketLength"
+ type="int"
+ transient="false"
+ volatile="false"
+ static="false"
+ final="false"
+ visibility="private"
+>
+</field>
+<field name="mParent"
+ type="javax.obex.ServerSession"
+ transient="false"
+ volatile="false"
+ static="false"
+ final="false"
+ visibility="private"
+>
+</field>
+<field name="mPrivateInput"
+ type="javax.obex.PrivateInputStream"
+ transient="false"
+ volatile="false"
+ static="false"
+ final="false"
+ visibility="private"
+>
+</field>
+<field name="mPrivateOutput"
+ type="javax.obex.PrivateOutputStream"
+ transient="false"
+ volatile="false"
+ static="false"
+ final="false"
+ visibility="private"
+>
+</field>
+<field name="mPrivateOutputOpen"
+ type="boolean"
+ transient="false"
+ volatile="false"
+ static="false"
+ final="false"
+ visibility="private"
+>
+</field>
+<field name="mRequestFinished"
+ type="boolean"
+ transient="false"
+ volatile="false"
+ static="false"
+ final="false"
+ visibility="private"
+>
+</field>
+<field name="mResponseSize"
+ type="int"
+ transient="false"
+ volatile="false"
+ static="false"
+ final="false"
+ visibility="private"
+>
+</field>
+<field name="mSendBodyHeader"
+ type="boolean"
+ transient="false"
+ volatile="false"
+ static="false"
+ final="false"
+ visibility="private"
+>
+</field>
+<field name="mSrmActive"
+ type="boolean"
+ transient="false"
+ volatile="false"
+ static="false"
+ final="false"
+ visibility="private"
+>
+</field>
+<field name="mSrmEnabled"
+ type="boolean"
+ transient="false"
+ volatile="false"
+ static="false"
+ final="false"
+ visibility="private"
+>
+</field>
+<field name="mSrmLocalWait"
+ type="boolean"
+ transient="false"
+ volatile="false"
+ static="false"
+ final="false"
+ visibility="private"
+>
+</field>
+<field name="mSrmResponseSent"
+ type="boolean"
+ transient="false"
+ volatile="false"
+ static="false"
+ final="false"
+ visibility="private"
+>
+</field>
+<field name="mSrmWaitingForRemote"
+ type="boolean"
+ transient="false"
+ volatile="false"
+ static="false"
+ final="false"
+ visibility="private"
+>
+</field>
+<field name="mTransport"
+ type="javax.obex.ObexTransport"
+ transient="false"
+ volatile="false"
+ static="false"
+ final="false"
+ visibility="private"
+>
+</field>
+<field name="replyHeader"
+ type="javax.obex.HeaderSet"
+ transient="false"
+ volatile="false"
+ static="false"
+ final="false"
+ visibility="public"
+>
+</field>
+<field name="requestHeader"
+ type="javax.obex.HeaderSet"
+ transient="false"
+ volatile="false"
+ static="false"
+ final="false"
+ visibility="public"
+>
+</field>
+<constructor name="ServerOperation"
+ type="javax.obex.ServerOperation"
+ static="false"
+ final="false"
+ visibility="public"
+>
+<parameter name="arg0" type="javax.obex.ServerSession">
+</parameter>
+<parameter name="arg1" type="java.io.InputStream">
+</parameter>
+<parameter name="arg2" type="int">
+</parameter>
+<parameter name="arg3" type="int">
+</parameter>
+<parameter name="arg4" type="javax.obex.ServerRequestHandler">
+</parameter>
+</constructor>
+<method name="checkForSrmWait"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ visibility="private"
+>
+<parameter name="arg0" type="int">
+</parameter>
+</method>
+<method name="checkSrmRemoteAbort"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ visibility="private"
+>
+</method>
+<method name="handleObexPacket"
+ return="boolean"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ visibility="private"
+>
+<parameter name="arg0" type="javax.obex.ObexPacket">
+</parameter>
+</method>
+<method name="handleRemoteAbort"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ visibility="private"
+>
+</method>
+<method name="updateRequestHeaders"
+ return="byte[]"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ visibility="private"
+>
+<parameter name="arg0" type="javax.obex.ObexPacket">
+</parameter>
+</method>
+<method name="abort"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ visibility="public"
+>
+</method>
+<method name="close"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ visibility="public"
+>
+</method>
+<method name="continueOperation"
+ return="boolean"
+ abstract="false"
+ native="false"
+ synchronized="true"
+ static="false"
+ final="false"
+ visibility="public"
+>
+<parameter name="arg0" type="boolean">
+</parameter>
+<parameter name="arg1" type="boolean">
+</parameter>
+</method>
+<method name="ensureNotDone"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ visibility="public"
+>
+</method>
+<method name="ensureOpen"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ visibility="public"
+>
+</method>
+<method name="getEncoding"
+ return="java.lang.String"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ visibility="public"
+>
+</method>
+<method name="getHeaderLength"
+ return="int"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ visibility="public"
+>
+</method>
+<method name="getLength"
+ return="long"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ visibility="public"
+>
+</method>
+<method name="getMaxPacketSize"
+ return="int"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ visibility="public"
+>
+</method>
+<method name="getReceivedHeader"
+ return="javax.obex.HeaderSet"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ visibility="public"
+>
+</method>
+<method name="getResponseCode"
+ return="int"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ visibility="public"
+>
+</method>
+<method name="getType"
+ return="java.lang.String"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ visibility="public"
+>
+</method>
+<method name="isValidBody"
+ return="boolean"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ visibility="public"
+>
+</method>
+<method name="noBodyHeader"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ visibility="public"
+>
+</method>
+<method name="openDataInputStream"
+ return="java.io.DataInputStream"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ visibility="public"
+>
+</method>
+<method name="openDataOutputStream"
+ return="java.io.DataOutputStream"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ visibility="public"
+>
+</method>
+<method name="openInputStream"
+ return="java.io.InputStream"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ visibility="public"
+>
+</method>
+<method name="openOutputStream"
+ return="java.io.OutputStream"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ visibility="public"
+>
+</method>
+<method name="sendHeaders"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ visibility="public"
+>
+<parameter name="arg0" type="javax.obex.HeaderSet">
+</parameter>
+</method>
+<method name="sendReply"
+ return="boolean"
+ abstract="false"
+ native="false"
+ synchronized="true"
+ static="false"
+ final="false"
+ visibility="public"
+>
+<parameter name="arg0" type="int">
+</parameter>
+</method>
+<method name="streamClosed"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ visibility="public"
+>
+<parameter name="arg0" type="boolean">
+</parameter>
+</method>
+</class>
+<class name="ServerRequestHandler"
+ extends="java.lang.Object"
+ interface="false"
+ abstract="false"
+ static="false"
+ final="false"
+ visibility="public"
+>
+<field name="mConnectionId"
+ type="long"
+ transient="false"
+ volatile="false"
+ static="false"
+ final="false"
+ visibility="private"
+>
+</field>
+<constructor name="ServerRequestHandler"
+ type="javax.obex.ServerRequestHandler"
+ static="false"
+ final="false"
+ visibility="protected"
+>
+</constructor>
+<method name="getConnectionId"
+ return="long"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ visibility="public"
+>
+</method>
+<method name="isSrmSupported"
+ return="boolean"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ visibility="public"
+>
+</method>
+<method name="onAbort"
+ return="int"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ visibility="public"
+>
+<parameter name="arg0" type="javax.obex.HeaderSet">
+</parameter>
+<parameter name="arg1" type="javax.obex.HeaderSet">
+</parameter>
+</method>
+<method name="onAuthenticationFailure"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ visibility="public"
+>
+<parameter name="arg0" type="byte[]">
+</parameter>
+</method>
+<method name="onClose"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ visibility="public"
+>
+</method>
+<method name="onConnect"
+ return="int"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ visibility="public"
+>
+<parameter name="arg0" type="javax.obex.HeaderSet">
+</parameter>
+<parameter name="arg1" type="javax.obex.HeaderSet">
+</parameter>
+</method>
+<method name="onDelete"
+ return="int"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ visibility="public"
+>
+<parameter name="arg0" type="javax.obex.HeaderSet">
+</parameter>
+<parameter name="arg1" type="javax.obex.HeaderSet">
+</parameter>
+</method>
+<method name="onDisconnect"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ visibility="public"
+>
+<parameter name="arg0" type="javax.obex.HeaderSet">
+</parameter>
+<parameter name="arg1" type="javax.obex.HeaderSet">
+</parameter>
+</method>
+<method name="onGet"
+ return="int"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ visibility="public"
+>
+<parameter name="arg0" type="javax.obex.Operation">
+</parameter>
+</method>
+<method name="onPut"
+ return="int"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ visibility="public"
+>
+<parameter name="arg0" type="javax.obex.Operation">
+</parameter>
+</method>
+<method name="onSetPath"
+ return="int"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ visibility="public"
+>
+<parameter name="arg0" type="javax.obex.HeaderSet">
+</parameter>
+<parameter name="arg1" type="javax.obex.HeaderSet">
+</parameter>
+<parameter name="arg2" type="boolean">
+</parameter>
+<parameter name="arg3" type="boolean">
+</parameter>
+</method>
+<method name="setConnectionId"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ visibility="public"
+>
+<parameter name="arg0" type="long">
+</parameter>
+</method>
+<method name="updateStatus"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ visibility="public"
+>
+<parameter name="arg0" type="java.lang.String">
+</parameter>
+</method>
+</class>
+<class name="ServerSession"
+ extends="javax.obex.ObexSession"
+ interface="false"
+ abstract="false"
+ static="false"
+ final="true"
+ visibility="public"
+>
+<implements name="java.lang.Runnable">
+</implements>
+<field name="TAG"
+ type="java.lang.String"
+ transient="false"
+ volatile="false"
+ static="true"
+ final="true"
+ visibility="private"
+ value="Obex ServerSession"
+>
+</field>
+<field name="V"
+ type="boolean"
+ transient="false"
+ volatile="false"
+ static="true"
+ final="true"
+ visibility="private"
+>
+</field>
+<field name="mClosed"
+ type="boolean"
+ transient="false"
+ volatile="false"
+ static="false"
+ final="false"
+ visibility="private"
+>
+</field>
+<field name="mInput"
+ type="java.io.InputStream"
+ transient="false"
+ volatile="false"
+ static="false"
+ final="false"
+ visibility="private"
+>
+</field>
+<field name="mListener"
+ type="javax.obex.ServerRequestHandler"
+ transient="false"
+ volatile="false"
+ static="false"
+ final="false"
+ visibility="private"
+>
+</field>
+<field name="mMaxPacketLength"
+ type="int"
+ transient="false"
+ volatile="false"
+ static="false"
+ final="false"
+ visibility="private"
+>
+</field>
+<field name="mOutput"
+ type="java.io.OutputStream"
+ transient="false"
+ volatile="false"
+ static="false"
+ final="false"
+ visibility="private"
+>
+</field>
+<field name="mProcessThread"
+ type="java.lang.Thread"
+ transient="false"
+ volatile="false"
+ static="false"
+ final="false"
+ visibility="private"
+>
+</field>
+<field name="mTransport"
+ type="javax.obex.ObexTransport"
+ transient="false"
+ volatile="false"
+ static="false"
+ final="false"
+ visibility="private"
+>
+</field>
+<constructor name="ServerSession"
+ type="javax.obex.ServerSession"
+ static="false"
+ final="false"
+ visibility="public"
+>
+<parameter name="arg0" type="javax.obex.ObexTransport">
+</parameter>
+<parameter name="arg1" type="javax.obex.ServerRequestHandler">
+</parameter>
+<parameter name="arg2" type="javax.obex.Authenticator">
+</parameter>
+</constructor>
+<method name="handleAbortRequest"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ visibility="private"
+>
+</method>
+<method name="handleConnectRequest"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ visibility="private"
+>
+</method>
+<method name="handleDisconnectRequest"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ visibility="private"
+>
+</method>
+<method name="handleGetRequest"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ visibility="private"
+>
+<parameter name="arg0" type="int">
+</parameter>
+</method>
+<method name="handlePutRequest"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ visibility="private"
+>
+<parameter name="arg0" type="int">
+</parameter>
+</method>
+<method name="handleSetPathRequest"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ visibility="private"
+>
+</method>
+<method name="validateResponseCode"
+ return="int"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ visibility="private"
+>
+<parameter name="arg0" type="int">
+</parameter>
+</method>
+<method name="close"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="true"
+ static="false"
+ final="false"
+ visibility="public"
+>
+</method>
+<method name="getTransport"
+ return="javax.obex.ObexTransport"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ visibility="public"
+>
+</method>
+<method name="run"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ visibility="public"
+>
+</method>
+<method name="sendResponse"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ visibility="public"
+>
+<parameter name="arg0" type="int">
+</parameter>
+<parameter name="arg1" type="byte[]">
+</parameter>
+</method>
+</class>
+<class name="SessionNotifier"
+ extends="java.lang.Object"
+ interface="true"
+ abstract="true"
+ static="false"
+ final="false"
+ visibility="public"
+>
+<method name="acceptAndOpen"
+ return="javax.obex.ObexSession"
+ abstract="true"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ visibility="public"
+>
+<parameter name="arg0" type="javax.obex.ServerRequestHandler">
+</parameter>
+</method>
+<method name="acceptAndOpen"
+ return="javax.obex.ObexSession"
+ abstract="true"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ visibility="public"
+>
+<parameter name="arg0" type="javax.obex.ServerRequestHandler">
+</parameter>
+<parameter name="arg1" type="javax.obex.Authenticator">
+</parameter>
+</method>
+</class>
+</package>
+</api>

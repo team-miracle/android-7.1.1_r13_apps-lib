@@ -1,0 +1,10 @@
+# Referenced at frameworks/support/v7/preference/res/layout-v11/preference.xml:32
+# Referenced at frameworks/support/v7/preference/res/layout-v11/preference_dropdown.xml:38
+-keep class android.support.v7.internal.widget.PreferenceImageView { <init>(...); }
+
+# Referenced at frameworks/support/v7/preference/res/layout/preference_recyclerview.xml:18
+-keep class android.support.v7.widget.RecyclerView { <init>(...); }
+
+# Referenced at frameworks/support/v7/preference/res/layout/preference_widget_switch_compat.xml:20
+-keep class android.support.v7.widget.SwitchCompat { <init>(...); }
+

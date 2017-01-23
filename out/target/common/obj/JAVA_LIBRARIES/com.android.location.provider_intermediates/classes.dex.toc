@@ -1,0 +1,2610 @@
+<api>
+<package name="com.android.location.provider"
+>
+<class name="ActivityChangedEvent"
+ extends="java.lang.Object"
+ interface="false"
+ abstract="false"
+ static="false"
+ final="false"
+ visibility="public"
+>
+<field name="mActivityRecognitionEvents"
+ type="java.util.List"
+ transient="false"
+ volatile="false"
+ static="false"
+ final="true"
+ visibility="private"
+>
+</field>
+<constructor name="ActivityChangedEvent"
+ type="com.android.location.provider.ActivityChangedEvent"
+ static="false"
+ final="false"
+ visibility="public"
+>
+<parameter name="arg0" type="java.util.List">
+</parameter>
+</constructor>
+<method name="getActivityRecognitionEvents"
+ return="java.lang.Iterable"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ visibility="public"
+>
+</method>
+<method name="toString"
+ return="java.lang.String"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ visibility="public"
+>
+</method>
+</class>
+<class name="ActivityRecognitionEvent"
+ extends="java.lang.Object"
+ interface="false"
+ abstract="false"
+ static="false"
+ final="false"
+ visibility="public"
+>
+<field name="mActivity"
+ type="java.lang.String"
+ transient="false"
+ volatile="false"
+ static="false"
+ final="true"
+ visibility="private"
+>
+</field>
+<field name="mEventType"
+ type="int"
+ transient="false"
+ volatile="false"
+ static="false"
+ final="true"
+ visibility="private"
+>
+</field>
+<field name="mTimestampNs"
+ type="long"
+ transient="false"
+ volatile="false"
+ static="false"
+ final="true"
+ visibility="private"
+>
+</field>
+<constructor name="ActivityRecognitionEvent"
+ type="com.android.location.provider.ActivityRecognitionEvent"
+ static="false"
+ final="false"
+ visibility="public"
+>
+<parameter name="arg0" type="java.lang.String">
+</parameter>
+<parameter name="arg1" type="int">
+</parameter>
+<parameter name="arg2" type="long">
+</parameter>
+</constructor>
+<method name="getActivity"
+ return="java.lang.String"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ visibility="public"
+>
+</method>
+<method name="getEventType"
+ return="int"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ visibility="public"
+>
+</method>
+<method name="getTimestampNs"
+ return="long"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ visibility="public"
+>
+</method>
+<method name="toString"
+ return="java.lang.String"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ visibility="public"
+>
+</method>
+</class>
+<class name="ActivityRecognitionProvider.Sink"
+ extends="java.lang.Object"
+ interface="true"
+ abstract="true"
+ static="false"
+ final="false"
+ visibility="public"
+>
+<method name="onActivityChanged"
+ return="void"
+ abstract="true"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ visibility="public"
+>
+<parameter name="arg0" type="com.android.location.provider.ActivityChangedEvent">
+</parameter>
+</method>
+</class>
+<class name="ActivityRecognitionProvider.SinkTransport"
+ extends="android.hardware.location.IActivityRecognitionHardwareSink.Stub"
+ interface="false"
+ abstract="false"
+ static="false"
+ final="true"
+ visibility="package"
+>
+<field name="this$0"
+ type="com.android.location.provider.ActivityRecognitionProvider"
+ transient="false"
+ volatile="false"
+ static="false"
+ final="true"
+ visibility="package"
+>
+</field>
+<constructor name="ActivityRecognitionProvider.SinkTransport"
+ type="com.android.location.provider.ActivityRecognitionProvider.SinkTransport"
+ static="false"
+ final="false"
+ visibility="private"
+>
+<parameter name="arg0" type="com.android.location.provider.ActivityRecognitionProvider">
+</parameter>
+</constructor>
+<constructor name="ActivityRecognitionProvider.SinkTransport"
+ type="com.android.location.provider.ActivityRecognitionProvider.SinkTransport"
+ static="false"
+ final="false"
+ visibility="package"
+>
+<parameter name="arg0" type="com.android.location.provider.ActivityRecognitionProvider">
+</parameter>
+<parameter name="arg1" type="com.android.location.provider.ActivityRecognitionProvider.SinkTransport">
+</parameter>
+</constructor>
+<method name="onActivityChanged"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ visibility="public"
+>
+<parameter name="arg0" type="android.hardware.location.ActivityChangedEvent">
+</parameter>
+</method>
+</class>
+<class name="ActivityRecognitionProvider"
+ extends="java.lang.Object"
+ interface="false"
+ abstract="false"
+ static="false"
+ final="true"
+ visibility="public"
+>
+<field name="ACTIVITY_IN_VEHICLE"
+ type="java.lang.String"
+ transient="false"
+ volatile="false"
+ static="true"
+ final="true"
+ visibility="public"
+ value="android.activity_recognition.in_vehicle"
+>
+</field>
+<field name="ACTIVITY_ON_BICYCLE"
+ type="java.lang.String"
+ transient="false"
+ volatile="false"
+ static="true"
+ final="true"
+ visibility="public"
+ value="android.activity_recognition.on_bicycle"
+>
+</field>
+<field name="ACTIVITY_RUNNING"
+ type="java.lang.String"
+ transient="false"
+ volatile="false"
+ static="true"
+ final="true"
+ visibility="public"
+ value="android.activity_recognition.running"
+>
+</field>
+<field name="ACTIVITY_STILL"
+ type="java.lang.String"
+ transient="false"
+ volatile="false"
+ static="true"
+ final="true"
+ visibility="public"
+ value="android.activity_recognition.still"
+>
+</field>
+<field name="ACTIVITY_TILTING"
+ type="java.lang.String"
+ transient="false"
+ volatile="false"
+ static="true"
+ final="true"
+ visibility="public"
+ value="android.activity_recognition.tilting"
+>
+</field>
+<field name="ACTIVITY_WALKING"
+ type="java.lang.String"
+ transient="false"
+ volatile="false"
+ static="true"
+ final="true"
+ visibility="public"
+ value="android.activity_recognition.walking"
+>
+</field>
+<field name="EVENT_TYPE_ENTER"
+ type="int"
+ transient="false"
+ volatile="false"
+ static="true"
+ final="true"
+ visibility="public"
+ value="1"
+>
+</field>
+<field name="EVENT_TYPE_EXIT"
+ type="int"
+ transient="false"
+ volatile="false"
+ static="true"
+ final="true"
+ visibility="public"
+ value="2"
+>
+</field>
+<field name="EVENT_TYPE_FLUSH_COMPLETE"
+ type="int"
+ transient="false"
+ volatile="false"
+ static="true"
+ final="true"
+ visibility="public"
+>
+</field>
+<field name="mService"
+ type="android.hardware.location.IActivityRecognitionHardware"
+ transient="false"
+ volatile="false"
+ static="false"
+ final="true"
+ visibility="private"
+>
+</field>
+<field name="mSinkSet"
+ type="java.util.HashSet"
+ transient="false"
+ volatile="false"
+ static="false"
+ final="true"
+ visibility="private"
+>
+</field>
+<method name="-get0"
+ return="java.util.HashSet"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="true"
+ final="false"
+ visibility="package"
+>
+<parameter name="arg0" type="com.android.location.provider.ActivityRecognitionProvider">
+</parameter>
+</method>
+<constructor name="ActivityRecognitionProvider"
+ type="com.android.location.provider.ActivityRecognitionProvider"
+ static="false"
+ final="false"
+ visibility="public"
+>
+<parameter name="arg0" type="android.hardware.location.IActivityRecognitionHardware">
+</parameter>
+</constructor>
+<method name="disableActivityEvent"
+ return="boolean"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ visibility="public"
+>
+<parameter name="arg0" type="java.lang.String">
+</parameter>
+<parameter name="arg1" type="int">
+</parameter>
+</method>
+<method name="enableActivityEvent"
+ return="boolean"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ visibility="public"
+>
+<parameter name="arg0" type="java.lang.String">
+</parameter>
+<parameter name="arg1" type="int">
+</parameter>
+<parameter name="arg2" type="long">
+</parameter>
+</method>
+<method name="flush"
+ return="boolean"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ visibility="public"
+>
+</method>
+<method name="getSupportedActivities"
+ return="java.lang.String[]"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ visibility="public"
+>
+</method>
+<method name="isActivitySupported"
+ return="boolean"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ visibility="public"
+>
+<parameter name="arg0" type="java.lang.String">
+</parameter>
+</method>
+<method name="registerSink"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ visibility="public"
+>
+<parameter name="arg0" type="com.android.location.provider.ActivityRecognitionProvider.Sink">
+</parameter>
+</method>
+<method name="unregisterSink"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ visibility="public"
+>
+<parameter name="arg0" type="com.android.location.provider.ActivityRecognitionProvider.Sink">
+</parameter>
+</method>
+</class>
+<class name="ActivityRecognitionProviderClient.1"
+ extends="android.hardware.location.IActivityRecognitionHardwareClient.Stub"
+ interface="false"
+ abstract="false"
+ static="false"
+ final="false"
+ visibility="package"
+>
+<field name="this$0"
+ type="com.android.location.provider.ActivityRecognitionProviderClient"
+ transient="false"
+ volatile="false"
+ static="false"
+ final="true"
+ visibility="package"
+>
+</field>
+<constructor name="ActivityRecognitionProviderClient.1"
+ type="com.android.location.provider.ActivityRecognitionProviderClient.1"
+ static="false"
+ final="false"
+ visibility="package"
+>
+<parameter name="arg0" type="com.android.location.provider.ActivityRecognitionProviderClient">
+</parameter>
+</constructor>
+<method name="onAvailabilityChanged"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ visibility="public"
+>
+<parameter name="arg0" type="boolean">
+</parameter>
+<parameter name="arg1" type="android.hardware.location.IActivityRecognitionHardware">
+</parameter>
+</method>
+</class>
+<class name="ActivityRecognitionProviderClient"
+ extends="java.lang.Object"
+ interface="false"
+ abstract="true"
+ static="false"
+ final="false"
+ visibility="public"
+>
+<field name="TAG"
+ type="java.lang.String"
+ transient="false"
+ volatile="false"
+ static="true"
+ final="true"
+ visibility="private"
+ value="ArProviderClient"
+>
+</field>
+<field name="mClient"
+ type="android.hardware.location.IActivityRecognitionHardwareClient.Stub"
+ transient="false"
+ volatile="false"
+ static="false"
+ final="false"
+ visibility="private"
+>
+</field>
+<constructor name="ActivityRecognitionProviderClient"
+ type="com.android.location.provider.ActivityRecognitionProviderClient"
+ static="false"
+ final="false"
+ visibility="protected"
+>
+</constructor>
+<method name="getBinder"
+ return="android.os.IBinder"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ visibility="public"
+>
+</method>
+<method name="onProviderChanged"
+ return="void"
+ abstract="true"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ visibility="public"
+>
+<parameter name="arg0" type="boolean">
+</parameter>
+<parameter name="arg1" type="com.android.location.provider.ActivityRecognitionProvider">
+</parameter>
+</method>
+</class>
+<class name="ActivityRecognitionProviderWatcher.1"
+ extends="android.hardware.location.IActivityRecognitionHardwareWatcher.Stub"
+ interface="false"
+ abstract="false"
+ static="false"
+ final="false"
+ visibility="package"
+>
+<field name="this$0"
+ type="com.android.location.provider.ActivityRecognitionProviderWatcher"
+ transient="false"
+ volatile="false"
+ static="false"
+ final="true"
+ visibility="package"
+>
+</field>
+<constructor name="ActivityRecognitionProviderWatcher.1"
+ type="com.android.location.provider.ActivityRecognitionProviderWatcher.1"
+ static="false"
+ final="false"
+ visibility="package"
+>
+<parameter name="arg0" type="com.android.location.provider.ActivityRecognitionProviderWatcher">
+</parameter>
+</constructor>
+<method name="onInstanceChanged"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ visibility="public"
+>
+<parameter name="arg0" type="android.hardware.location.IActivityRecognitionHardware">
+</parameter>
+</method>
+</class>
+<class name="ActivityRecognitionProviderWatcher"
+ extends="java.lang.Object"
+ interface="false"
+ abstract="false"
+ static="false"
+ final="false"
+ visibility="public"
+>
+<field name="TAG"
+ type="java.lang.String"
+ transient="false"
+ volatile="false"
+ static="true"
+ final="true"
+ visibility="private"
+ value="ActivityRecognitionProviderWatcher"
+>
+</field>
+<field name="sWatcher"
+ type="com.android.location.provider.ActivityRecognitionProviderWatcher"
+ transient="false"
+ volatile="false"
+ static="true"
+ final="false"
+ visibility="private"
+>
+</field>
+<field name="sWatcherLock"
+ type="java.lang.Object"
+ transient="false"
+ volatile="false"
+ static="true"
+ final="true"
+ visibility="private"
+>
+</field>
+<field name="mActivityRecognitionProvider"
+ type="com.android.location.provider.ActivityRecognitionProvider"
+ transient="false"
+ volatile="false"
+ static="false"
+ final="false"
+ visibility="private"
+>
+</field>
+<field name="mWatcherStub"
+ type="android.hardware.location.IActivityRecognitionHardwareWatcher.Stub"
+ transient="false"
+ volatile="false"
+ static="false"
+ final="false"
+ visibility="private"
+>
+</field>
+<method name="-set0"
+ return="com.android.location.provider.ActivityRecognitionProvider"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="true"
+ final="false"
+ visibility="package"
+>
+<parameter name="arg0" type="com.android.location.provider.ActivityRecognitionProviderWatcher">
+</parameter>
+<parameter name="arg1" type="com.android.location.provider.ActivityRecognitionProvider">
+</parameter>
+</method>
+<constructor name="ActivityRecognitionProviderWatcher"
+ type="com.android.location.provider.ActivityRecognitionProviderWatcher"
+ static="true"
+ final="false"
+ visibility="package"
+>
+</constructor>
+<constructor name="ActivityRecognitionProviderWatcher"
+ type="com.android.location.provider.ActivityRecognitionProviderWatcher"
+ static="false"
+ final="false"
+ visibility="private"
+>
+</constructor>
+<method name="getInstance"
+ return="com.android.location.provider.ActivityRecognitionProviderWatcher"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="true"
+ final="false"
+ visibility="public"
+>
+</method>
+<method name="getActivityRecognitionProvider"
+ return="com.android.location.provider.ActivityRecognitionProvider"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ visibility="public"
+>
+</method>
+<method name="getBinder"
+ return="android.os.IBinder"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ visibility="public"
+>
+</method>
+</class>
+<class name="FusedLocationHardware.1"
+ extends="android.hardware.location.IFusedLocationHardwareSink.Stub"
+ interface="false"
+ abstract="false"
+ static="false"
+ final="false"
+ visibility="package"
+>
+<field name="this$0"
+ type="com.android.location.provider.FusedLocationHardware"
+ transient="false"
+ volatile="false"
+ static="false"
+ final="true"
+ visibility="package"
+>
+</field>
+<constructor name="FusedLocationHardware.1"
+ type="com.android.location.provider.FusedLocationHardware.1"
+ static="false"
+ final="false"
+ visibility="package"
+>
+<parameter name="arg0" type="com.android.location.provider.FusedLocationHardware">
+</parameter>
+</constructor>
+<method name="onCapabilities"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ visibility="public"
+>
+<parameter name="arg0" type="int">
+</parameter>
+</method>
+<method name="onDiagnosticDataAvailable"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ visibility="public"
+>
+<parameter name="arg0" type="java.lang.String">
+</parameter>
+</method>
+<method name="onLocationAvailable"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ visibility="public"
+>
+<parameter name="arg0" type="android.location.Location[]">
+</parameter>
+</method>
+<method name="onStatusChanged"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ visibility="public"
+>
+<parameter name="arg0" type="int">
+</parameter>
+</method>
+</class>
+<class name="FusedLocationHardware.DispatcherHandler"
+ extends="android.os.Handler"
+ interface="false"
+ abstract="false"
+ static="false"
+ final="false"
+ visibility="package"
+>
+<field name="DISPATCH_CAPABILITIES"
+ type="int"
+ transient="false"
+ volatile="false"
+ static="true"
+ final="true"
+ visibility="public"
+ value="3"
+>
+</field>
+<field name="DISPATCH_DIAGNOSTIC_DATA"
+ type="int"
+ transient="false"
+ volatile="false"
+ static="true"
+ final="true"
+ visibility="public"
+ value="2"
+>
+</field>
+<field name="DISPATCH_LOCATION"
+ type="int"
+ transient="false"
+ volatile="false"
+ static="true"
+ final="true"
+ visibility="public"
+ value="1"
+>
+</field>
+<field name="DISPATCH_STATUS"
+ type="int"
+ transient="false"
+ volatile="false"
+ static="true"
+ final="true"
+ visibility="public"
+ value="4"
+>
+</field>
+<field name="this$0"
+ type="com.android.location.provider.FusedLocationHardware"
+ transient="false"
+ volatile="false"
+ static="false"
+ final="true"
+ visibility="package"
+>
+</field>
+<constructor name="FusedLocationHardware.DispatcherHandler"
+ type="com.android.location.provider.FusedLocationHardware.DispatcherHandler"
+ static="false"
+ final="false"
+ visibility="public"
+>
+<parameter name="arg0" type="com.android.location.provider.FusedLocationHardware">
+</parameter>
+<parameter name="arg1" type="android.os.Looper">
+</parameter>
+</constructor>
+<method name="handleMessage"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ visibility="public"
+>
+<parameter name="arg0" type="android.os.Message">
+</parameter>
+</method>
+</class>
+<class name="FusedLocationHardware.MessageCommand"
+ extends="java.lang.Object"
+ interface="false"
+ abstract="false"
+ static="false"
+ final="false"
+ visibility="package"
+>
+<field name="mCapabilities"
+ type="int"
+ transient="false"
+ volatile="false"
+ static="false"
+ final="true"
+ visibility="private"
+>
+</field>
+<field name="mData"
+ type="java.lang.String"
+ transient="false"
+ volatile="false"
+ static="false"
+ final="true"
+ visibility="private"
+>
+</field>
+<field name="mLocations"
+ type="android.location.Location[]"
+ transient="false"
+ volatile="false"
+ static="false"
+ final="true"
+ visibility="private"
+>
+</field>
+<field name="mSink"
+ type="com.android.location.provider.FusedLocationHardwareSink"
+ transient="false"
+ volatile="false"
+ static="false"
+ final="true"
+ visibility="private"
+>
+</field>
+<field name="mStatus"
+ type="int"
+ transient="false"
+ volatile="false"
+ static="false"
+ final="true"
+ visibility="private"
+>
+</field>
+<field name="this$0"
+ type="com.android.location.provider.FusedLocationHardware"
+ transient="false"
+ volatile="false"
+ static="false"
+ final="true"
+ visibility="package"
+>
+</field>
+<constructor name="FusedLocationHardware.MessageCommand"
+ type="com.android.location.provider.FusedLocationHardware.MessageCommand"
+ static="false"
+ final="false"
+ visibility="public"
+>
+<parameter name="arg0" type="com.android.location.provider.FusedLocationHardware">
+</parameter>
+<parameter name="arg1" type="com.android.location.provider.FusedLocationHardwareSink">
+</parameter>
+<parameter name="arg2" type="android.location.Location[]">
+</parameter>
+<parameter name="arg3" type="java.lang.String">
+</parameter>
+<parameter name="arg4" type="int">
+</parameter>
+<parameter name="arg5" type="int">
+</parameter>
+</constructor>
+<method name="dispatchCapabilities"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ visibility="public"
+>
+</method>
+<method name="dispatchDiagnosticData"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ visibility="public"
+>
+</method>
+<method name="dispatchLocation"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ visibility="public"
+>
+</method>
+<method name="dispatchStatus"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ visibility="public"
+>
+</method>
+</class>
+<class name="FusedLocationHardware"
+ extends="java.lang.Object"
+ interface="false"
+ abstract="false"
+ static="false"
+ final="true"
+ visibility="public"
+>
+<field name="TAG"
+ type="java.lang.String"
+ transient="false"
+ volatile="false"
+ static="true"
+ final="true"
+ visibility="private"
+ value="FusedLocationHardware"
+>
+</field>
+<field name="mInternalSink"
+ type="android.hardware.location.IFusedLocationHardwareSink"
+ transient="false"
+ volatile="false"
+ static="false"
+ final="false"
+ visibility="private"
+>
+</field>
+<field name="mLocationHardware"
+ type="android.hardware.location.IFusedLocationHardware"
+ transient="false"
+ volatile="false"
+ static="false"
+ final="false"
+ visibility="private"
+>
+</field>
+<field name="mSinkList"
+ type="java.util.HashMap"
+ transient="false"
+ volatile="false"
+ static="false"
+ final="false"
+ visibility="package"
+>
+</field>
+<method name="-wrap0"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="true"
+ final="false"
+ visibility="package"
+>
+<parameter name="arg0" type="com.android.location.provider.FusedLocationHardware">
+</parameter>
+<parameter name="arg1" type="int">
+</parameter>
+</method>
+<method name="-wrap1"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="true"
+ final="false"
+ visibility="package"
+>
+<parameter name="arg0" type="com.android.location.provider.FusedLocationHardware">
+</parameter>
+<parameter name="arg1" type="java.lang.String">
+</parameter>
+</method>
+<method name="-wrap2"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="true"
+ final="false"
+ visibility="package"
+>
+<parameter name="arg0" type="com.android.location.provider.FusedLocationHardware">
+</parameter>
+<parameter name="arg1" type="android.location.Location[]">
+</parameter>
+</method>
+<method name="-wrap3"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="true"
+ final="false"
+ visibility="package"
+>
+<parameter name="arg0" type="com.android.location.provider.FusedLocationHardware">
+</parameter>
+<parameter name="arg1" type="int">
+</parameter>
+</method>
+<constructor name="FusedLocationHardware"
+ type="com.android.location.provider.FusedLocationHardware"
+ static="false"
+ final="false"
+ visibility="public"
+>
+<parameter name="arg0" type="android.hardware.location.IFusedLocationHardware">
+</parameter>
+</constructor>
+<method name="dispatchCapabilities"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ visibility="private"
+>
+<parameter name="arg0" type="int">
+</parameter>
+</method>
+<method name="dispatchDiagnosticData"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ visibility="private"
+>
+<parameter name="arg0" type="java.lang.String">
+</parameter>
+</method>
+<method name="dispatchLocations"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ visibility="private"
+>
+<parameter name="arg0" type="android.location.Location[]">
+</parameter>
+</method>
+<method name="dispatchStatus"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ visibility="private"
+>
+<parameter name="arg0" type="int">
+</parameter>
+</method>
+<method name="flushBatchedLocations"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ visibility="public"
+>
+</method>
+<method name="getSupportedBatchSize"
+ return="int"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ visibility="public"
+>
+</method>
+<method name="getVersion"
+ return="int"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ visibility="public"
+>
+</method>
+<method name="injectDeviceContext"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ visibility="public"
+>
+<parameter name="arg0" type="int">
+</parameter>
+</method>
+<method name="injectDiagnosticData"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ visibility="public"
+>
+<parameter name="arg0" type="java.lang.String">
+</parameter>
+</method>
+<method name="registerSink"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ visibility="public"
+>
+<parameter name="arg0" type="com.android.location.provider.FusedLocationHardwareSink">
+</parameter>
+<parameter name="arg1" type="android.os.Looper">
+</parameter>
+</method>
+<method name="requestBatchOfLocations"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ visibility="public"
+>
+<parameter name="arg0" type="int">
+</parameter>
+</method>
+<method name="startBatching"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ visibility="public"
+>
+<parameter name="arg0" type="int">
+</parameter>
+<parameter name="arg1" type="com.android.location.provider.GmsFusedBatchOptions">
+</parameter>
+</method>
+<method name="stopBatching"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ visibility="public"
+>
+<parameter name="arg0" type="int">
+</parameter>
+</method>
+<method name="supportsDeviceContextInjection"
+ return="boolean"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ visibility="public"
+>
+</method>
+<method name="supportsDiagnosticDataInjection"
+ return="boolean"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ visibility="public"
+>
+</method>
+<method name="unregisterSink"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ visibility="public"
+>
+<parameter name="arg0" type="com.android.location.provider.FusedLocationHardwareSink">
+</parameter>
+</method>
+<method name="updateBatchingOptions"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ visibility="public"
+>
+<parameter name="arg0" type="int">
+</parameter>
+<parameter name="arg1" type="com.android.location.provider.GmsFusedBatchOptions">
+</parameter>
+</method>
+</class>
+<class name="FusedLocationHardwareSink"
+ extends="java.lang.Object"
+ interface="false"
+ abstract="false"
+ static="false"
+ final="false"
+ visibility="public"
+>
+<constructor name="FusedLocationHardwareSink"
+ type="com.android.location.provider.FusedLocationHardwareSink"
+ static="false"
+ final="false"
+ visibility="public"
+>
+</constructor>
+<method name="onCapabilities"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ visibility="public"
+>
+<parameter name="arg0" type="int">
+</parameter>
+</method>
+<method name="onDiagnosticDataAvailable"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ visibility="public"
+>
+<parameter name="arg0" type="java.lang.String">
+</parameter>
+</method>
+<method name="onLocationAvailable"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ visibility="public"
+>
+<parameter name="arg0" type="android.location.Location[]">
+</parameter>
+</method>
+<method name="onStatusChanged"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ visibility="public"
+>
+<parameter name="arg0" type="int">
+</parameter>
+</method>
+</class>
+<class name="FusedProvider.1"
+ extends="android.location.IFusedProvider.Stub"
+ interface="false"
+ abstract="false"
+ static="false"
+ final="false"
+ visibility="package"
+>
+<field name="this$0"
+ type="com.android.location.provider.FusedProvider"
+ transient="false"
+ volatile="false"
+ static="false"
+ final="true"
+ visibility="package"
+>
+</field>
+<constructor name="FusedProvider.1"
+ type="com.android.location.provider.FusedProvider.1"
+ static="false"
+ final="false"
+ visibility="package"
+>
+<parameter name="arg0" type="com.android.location.provider.FusedProvider">
+</parameter>
+</constructor>
+<method name="onFusedLocationHardwareChange"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ visibility="public"
+>
+<parameter name="arg0" type="android.hardware.location.IFusedLocationHardware">
+</parameter>
+</method>
+</class>
+<class name="FusedProvider"
+ extends="java.lang.Object"
+ interface="false"
+ abstract="true"
+ static="false"
+ final="false"
+ visibility="public"
+>
+<field name="mProvider"
+ type="android.location.IFusedProvider.Stub"
+ transient="false"
+ volatile="false"
+ static="false"
+ final="false"
+ visibility="private"
+>
+</field>
+<constructor name="FusedProvider"
+ type="com.android.location.provider.FusedProvider"
+ static="false"
+ final="false"
+ visibility="public"
+>
+</constructor>
+<method name="getBinder"
+ return="android.os.IBinder"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ visibility="public"
+>
+</method>
+<method name="setFusedLocationHardware"
+ return="void"
+ abstract="true"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ visibility="public"
+>
+<parameter name="arg0" type="com.android.location.provider.FusedLocationHardware">
+</parameter>
+</method>
+</class>
+<class name="GeocodeProvider.1"
+ extends="android.location.IGeocodeProvider.Stub"
+ interface="false"
+ abstract="false"
+ static="false"
+ final="false"
+ visibility="package"
+>
+<field name="this$0"
+ type="com.android.location.provider.GeocodeProvider"
+ transient="false"
+ volatile="false"
+ static="false"
+ final="true"
+ visibility="package"
+>
+</field>
+<constructor name="GeocodeProvider.1"
+ type="com.android.location.provider.GeocodeProvider.1"
+ static="false"
+ final="false"
+ visibility="package"
+>
+<parameter name="arg0" type="com.android.location.provider.GeocodeProvider">
+</parameter>
+</constructor>
+<method name="getFromLocation"
+ return="java.lang.String"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ visibility="public"
+>
+<parameter name="arg0" type="double">
+</parameter>
+<parameter name="arg1" type="double">
+</parameter>
+<parameter name="arg2" type="int">
+</parameter>
+<parameter name="arg3" type="android.location.GeocoderParams">
+</parameter>
+<parameter name="arg4" type="java.util.List">
+</parameter>
+</method>
+<method name="getFromLocationName"
+ return="java.lang.String"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ visibility="public"
+>
+<parameter name="arg0" type="java.lang.String">
+</parameter>
+<parameter name="arg1" type="double">
+</parameter>
+<parameter name="arg2" type="double">
+</parameter>
+<parameter name="arg3" type="double">
+</parameter>
+<parameter name="arg4" type="double">
+</parameter>
+<parameter name="arg5" type="int">
+</parameter>
+<parameter name="arg6" type="android.location.GeocoderParams">
+</parameter>
+<parameter name="arg7" type="java.util.List">
+</parameter>
+</method>
+</class>
+<class name="GeocodeProvider"
+ extends="java.lang.Object"
+ interface="false"
+ abstract="true"
+ static="false"
+ final="false"
+ visibility="public"
+>
+<field name="mProvider"
+ type="android.location.IGeocodeProvider.Stub"
+ transient="false"
+ volatile="false"
+ static="false"
+ final="false"
+ visibility="private"
+>
+</field>
+<constructor name="GeocodeProvider"
+ type="com.android.location.provider.GeocodeProvider"
+ static="false"
+ final="false"
+ visibility="public"
+>
+</constructor>
+<method name="getBinder"
+ return="android.os.IBinder"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ visibility="public"
+>
+</method>
+<method name="onGetFromLocation"
+ return="java.lang.String"
+ abstract="true"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ visibility="public"
+>
+<parameter name="arg0" type="double">
+</parameter>
+<parameter name="arg1" type="double">
+</parameter>
+<parameter name="arg2" type="int">
+</parameter>
+<parameter name="arg3" type="android.location.GeocoderParams">
+</parameter>
+<parameter name="arg4" type="java.util.List">
+</parameter>
+</method>
+<method name="onGetFromLocationName"
+ return="java.lang.String"
+ abstract="true"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ visibility="public"
+>
+<parameter name="arg0" type="java.lang.String">
+</parameter>
+<parameter name="arg1" type="double">
+</parameter>
+<parameter name="arg2" type="double">
+</parameter>
+<parameter name="arg3" type="double">
+</parameter>
+<parameter name="arg4" type="double">
+</parameter>
+<parameter name="arg5" type="int">
+</parameter>
+<parameter name="arg6" type="android.location.GeocoderParams">
+</parameter>
+<parameter name="arg7" type="java.util.List">
+</parameter>
+</method>
+</class>
+<class name="GeofenceProvider.1"
+ extends="android.location.IGeofenceProvider.Stub"
+ interface="false"
+ abstract="false"
+ static="false"
+ final="false"
+ visibility="package"
+>
+<field name="this$0"
+ type="com.android.location.provider.GeofenceProvider"
+ transient="false"
+ volatile="false"
+ static="false"
+ final="true"
+ visibility="package"
+>
+</field>
+<constructor name="GeofenceProvider.1"
+ type="com.android.location.provider.GeofenceProvider.1"
+ static="false"
+ final="false"
+ visibility="package"
+>
+<parameter name="arg0" type="com.android.location.provider.GeofenceProvider">
+</parameter>
+</constructor>
+<method name="setGeofenceHardware"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ visibility="public"
+>
+<parameter name="arg0" type="android.hardware.location.IGeofenceHardware">
+</parameter>
+</method>
+</class>
+<class name="GeofenceProvider"
+ extends="java.lang.Object"
+ interface="false"
+ abstract="true"
+ static="false"
+ final="false"
+ visibility="public"
+>
+<field name="mGeofenceHardware"
+ type="android.hardware.location.GeofenceHardware"
+ transient="false"
+ volatile="false"
+ static="false"
+ final="false"
+ visibility="private"
+>
+</field>
+<field name="mProvider"
+ type="android.location.IGeofenceProvider.Stub"
+ transient="false"
+ volatile="false"
+ static="false"
+ final="false"
+ visibility="private"
+>
+</field>
+<method name="-get0"
+ return="android.hardware.location.GeofenceHardware"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="true"
+ final="false"
+ visibility="package"
+>
+<parameter name="arg0" type="com.android.location.provider.GeofenceProvider">
+</parameter>
+</method>
+<method name="-set0"
+ return="android.hardware.location.GeofenceHardware"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="true"
+ final="false"
+ visibility="package"
+>
+<parameter name="arg0" type="com.android.location.provider.GeofenceProvider">
+</parameter>
+<parameter name="arg1" type="android.hardware.location.GeofenceHardware">
+</parameter>
+</method>
+<constructor name="GeofenceProvider"
+ type="com.android.location.provider.GeofenceProvider"
+ static="false"
+ final="false"
+ visibility="public"
+>
+</constructor>
+<method name="getBinder"
+ return="android.os.IBinder"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ visibility="public"
+>
+</method>
+<method name="onGeofenceHardwareChange"
+ return="void"
+ abstract="true"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ visibility="public"
+>
+<parameter name="arg0" type="android.hardware.location.GeofenceHardware">
+</parameter>
+</method>
+</class>
+<class name="GmsFusedBatchOptions.BatchFlags"
+ extends="java.lang.Object"
+ interface="false"
+ abstract="false"
+ static="false"
+ final="true"
+ visibility="public"
+>
+<field name="CALLBACK_ON_LOCATION_FIX"
+ type="int"
+ transient="false"
+ volatile="false"
+ static="true"
+ final="false"
+ visibility="public"
+>
+</field>
+<field name="WAKEUP_ON_FIFO_FULL"
+ type="int"
+ transient="false"
+ volatile="false"
+ static="true"
+ final="false"
+ visibility="public"
+>
+</field>
+<constructor name="GmsFusedBatchOptions.BatchFlags"
+ type="com.android.location.provider.GmsFusedBatchOptions.BatchFlags"
+ static="true"
+ final="false"
+ visibility="package"
+>
+</constructor>
+<constructor name="GmsFusedBatchOptions.BatchFlags"
+ type="com.android.location.provider.GmsFusedBatchOptions.BatchFlags"
+ static="false"
+ final="false"
+ visibility="public"
+>
+</constructor>
+</class>
+<class name="GmsFusedBatchOptions.SourceTechnologies"
+ extends="java.lang.Object"
+ interface="false"
+ abstract="false"
+ static="false"
+ final="true"
+ visibility="public"
+>
+<field name="BLUETOOTH"
+ type="int"
+ transient="false"
+ volatile="false"
+ static="true"
+ final="false"
+ visibility="public"
+>
+</field>
+<field name="CELL"
+ type="int"
+ transient="false"
+ volatile="false"
+ static="true"
+ final="false"
+ visibility="public"
+>
+</field>
+<field name="GNSS"
+ type="int"
+ transient="false"
+ volatile="false"
+ static="true"
+ final="false"
+ visibility="public"
+>
+</field>
+<field name="SENSORS"
+ type="int"
+ transient="false"
+ volatile="false"
+ static="true"
+ final="false"
+ visibility="public"
+>
+</field>
+<field name="WIFI"
+ type="int"
+ transient="false"
+ volatile="false"
+ static="true"
+ final="false"
+ visibility="public"
+>
+</field>
+<constructor name="GmsFusedBatchOptions.SourceTechnologies"
+ type="com.android.location.provider.GmsFusedBatchOptions.SourceTechnologies"
+ static="true"
+ final="false"
+ visibility="package"
+>
+</constructor>
+<constructor name="GmsFusedBatchOptions.SourceTechnologies"
+ type="com.android.location.provider.GmsFusedBatchOptions.SourceTechnologies"
+ static="false"
+ final="false"
+ visibility="public"
+>
+</constructor>
+</class>
+<class name="GmsFusedBatchOptions"
+ extends="java.lang.Object"
+ interface="false"
+ abstract="false"
+ static="false"
+ final="false"
+ visibility="public"
+>
+<field name="mOptions"
+ type="android.location.FusedBatchOptions"
+ transient="false"
+ volatile="false"
+ static="false"
+ final="false"
+ visibility="private"
+>
+</field>
+<constructor name="GmsFusedBatchOptions"
+ type="com.android.location.provider.GmsFusedBatchOptions"
+ static="false"
+ final="false"
+ visibility="public"
+>
+</constructor>
+<method name="getFlags"
+ return="int"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ visibility="public"
+>
+</method>
+<method name="getMaxPowerAllocationInMW"
+ return="double"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ visibility="public"
+>
+</method>
+<method name="getParcelableOptions"
+ return="android.location.FusedBatchOptions"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ visibility="public"
+>
+</method>
+<method name="getPeriodInNS"
+ return="long"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ visibility="public"
+>
+</method>
+<method name="getSmallestDisplacementMeters"
+ return="float"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ visibility="public"
+>
+</method>
+<method name="getSourcesToUse"
+ return="int"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ visibility="public"
+>
+</method>
+<method name="isFlagSet"
+ return="boolean"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ visibility="public"
+>
+<parameter name="arg0" type="int">
+</parameter>
+</method>
+<method name="isSourceToUseSet"
+ return="boolean"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ visibility="public"
+>
+<parameter name="arg0" type="int">
+</parameter>
+</method>
+<method name="resetFlag"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ visibility="public"
+>
+<parameter name="arg0" type="int">
+</parameter>
+</method>
+<method name="resetSourceToUse"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ visibility="public"
+>
+<parameter name="arg0" type="int">
+</parameter>
+</method>
+<method name="setFlag"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ visibility="public"
+>
+<parameter name="arg0" type="int">
+</parameter>
+</method>
+<method name="setMaxPowerAllocationInMW"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ visibility="public"
+>
+<parameter name="arg0" type="double">
+</parameter>
+</method>
+<method name="setPeriodInNS"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ visibility="public"
+>
+<parameter name="arg0" type="long">
+</parameter>
+</method>
+<method name="setSmallestDisplacementMeters"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ visibility="public"
+>
+<parameter name="arg0" type="float">
+</parameter>
+</method>
+<method name="setSourceToUse"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ visibility="public"
+>
+<parameter name="arg0" type="int">
+</parameter>
+</method>
+</class>
+<class name="LocationProviderBase.Service"
+ extends="com.android.internal.location.ILocationProvider.Stub"
+ interface="false"
+ abstract="false"
+ static="false"
+ final="true"
+ visibility="package"
+>
+<field name="this$0"
+ type="com.android.location.provider.LocationProviderBase"
+ transient="false"
+ volatile="false"
+ static="false"
+ final="true"
+ visibility="package"
+>
+</field>
+<constructor name="LocationProviderBase.Service"
+ type="com.android.location.provider.LocationProviderBase.Service"
+ static="false"
+ final="false"
+ visibility="private"
+>
+<parameter name="arg0" type="com.android.location.provider.LocationProviderBase">
+</parameter>
+</constructor>
+<constructor name="LocationProviderBase.Service"
+ type="com.android.location.provider.LocationProviderBase.Service"
+ static="false"
+ final="false"
+ visibility="package"
+>
+<parameter name="arg0" type="com.android.location.provider.LocationProviderBase">
+</parameter>
+<parameter name="arg1" type="com.android.location.provider.LocationProviderBase.Service">
+</parameter>
+</constructor>
+<method name="disable"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ visibility="public"
+>
+</method>
+<method name="dump"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ visibility="public"
+>
+<parameter name="arg0" type="java.io.FileDescriptor">
+</parameter>
+<parameter name="arg1" type="java.lang.String[]">
+</parameter>
+</method>
+<method name="enable"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ visibility="public"
+>
+</method>
+<method name="getProperties"
+ return="com.android.internal.location.ProviderProperties"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ visibility="public"
+>
+</method>
+<method name="getStatus"
+ return="int"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ visibility="public"
+>
+<parameter name="arg0" type="android.os.Bundle">
+</parameter>
+</method>
+<method name="getStatusUpdateTime"
+ return="long"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ visibility="public"
+>
+</method>
+<method name="sendExtraCommand"
+ return="boolean"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ visibility="public"
+>
+<parameter name="arg0" type="java.lang.String">
+</parameter>
+<parameter name="arg1" type="android.os.Bundle">
+</parameter>
+</method>
+<method name="setRequest"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ visibility="public"
+>
+<parameter name="arg0" type="com.android.internal.location.ProviderRequest">
+</parameter>
+<parameter name="arg1" type="android.os.WorkSource">
+</parameter>
+</method>
+</class>
+<class name="LocationProviderBase"
+ extends="java.lang.Object"
+ interface="false"
+ abstract="true"
+ static="false"
+ final="false"
+ visibility="public"
+>
+<field name="EXTRA_NO_GPS_LOCATION"
+ type="java.lang.String"
+ transient="false"
+ volatile="false"
+ static="true"
+ final="true"
+ visibility="public"
+ value="noGPSLocation"
+>
+</field>
+<field name="FUSED_PROVIDER"
+ type="java.lang.String"
+ transient="false"
+ volatile="false"
+ static="true"
+ final="true"
+ visibility="public"
+ value="fused"
+>
+</field>
+<field name="TAG"
+ type="java.lang.String"
+ transient="false"
+ volatile="false"
+ static="false"
+ final="true"
+ visibility="private"
+>
+</field>
+<field name="mBinder"
+ type="android.os.IBinder"
+ transient="false"
+ volatile="false"
+ static="false"
+ final="true"
+ visibility="private"
+>
+</field>
+<field name="mLocationManager"
+ type="android.location.ILocationManager"
+ transient="false"
+ volatile="false"
+ static="false"
+ final="true"
+ visibility="protected"
+>
+</field>
+<field name="mProperties"
+ type="com.android.internal.location.ProviderProperties"
+ transient="false"
+ volatile="false"
+ static="false"
+ final="true"
+ visibility="private"
+>
+</field>
+<method name="-get0"
+ return="com.android.internal.location.ProviderProperties"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="true"
+ final="false"
+ visibility="package"
+>
+<parameter name="arg0" type="com.android.location.provider.LocationProviderBase">
+</parameter>
+</method>
+<constructor name="LocationProviderBase"
+ type="com.android.location.provider.LocationProviderBase"
+ static="false"
+ final="false"
+ visibility="public"
+>
+<parameter name="arg0" type="java.lang.String">
+</parameter>
+<parameter name="arg1" type="com.android.location.provider.ProviderPropertiesUnbundled">
+</parameter>
+</constructor>
+<method name="getBinder"
+ return="android.os.IBinder"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ visibility="public"
+>
+</method>
+<method name="onDisable"
+ return="void"
+ abstract="true"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ visibility="public"
+>
+</method>
+<method name="onDump"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ visibility="public"
+>
+<parameter name="arg0" type="java.io.FileDescriptor">
+</parameter>
+<parameter name="arg1" type="java.io.PrintWriter">
+</parameter>
+<parameter name="arg2" type="java.lang.String[]">
+</parameter>
+</method>
+<method name="onEnable"
+ return="void"
+ abstract="true"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ visibility="public"
+>
+</method>
+<method name="onGetStatus"
+ return="int"
+ abstract="true"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ visibility="public"
+>
+<parameter name="arg0" type="android.os.Bundle">
+</parameter>
+</method>
+<method name="onGetStatusUpdateTime"
+ return="long"
+ abstract="true"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ visibility="public"
+>
+</method>
+<method name="onSendExtraCommand"
+ return="boolean"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ visibility="public"
+>
+<parameter name="arg0" type="java.lang.String">
+</parameter>
+<parameter name="arg1" type="android.os.Bundle">
+</parameter>
+</method>
+<method name="onSetRequest"
+ return="void"
+ abstract="true"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ visibility="public"
+>
+<parameter name="arg0" type="com.android.location.provider.ProviderRequestUnbundled">
+</parameter>
+<parameter name="arg1" type="android.os.WorkSource">
+</parameter>
+</method>
+<method name="reportLocation"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="true"
+ visibility="public"
+>
+<parameter name="arg0" type="android.location.Location">
+</parameter>
+</method>
+</class>
+<class name="LocationRequestUnbundled"
+ extends="java.lang.Object"
+ interface="false"
+ abstract="false"
+ static="false"
+ final="true"
+ visibility="public"
+>
+<field name="ACCURACY_BLOCK"
+ type="int"
+ transient="false"
+ volatile="false"
+ static="true"
+ final="true"
+ visibility="public"
+ value="102"
+>
+</field>
+<field name="ACCURACY_CITY"
+ type="int"
+ transient="false"
+ volatile="false"
+ static="true"
+ final="true"
+ visibility="public"
+ value="104"
+>
+</field>
+<field name="ACCURACY_FINE"
+ type="int"
+ transient="false"
+ volatile="false"
+ static="true"
+ final="true"
+ visibility="public"
+ value="100"
+>
+</field>
+<field name="POWER_HIGH"
+ type="int"
+ transient="false"
+ volatile="false"
+ static="true"
+ final="true"
+ visibility="public"
+ value="203"
+>
+</field>
+<field name="POWER_LOW"
+ type="int"
+ transient="false"
+ volatile="false"
+ static="true"
+ final="true"
+ visibility="public"
+ value="201"
+>
+</field>
+<field name="POWER_NONE"
+ type="int"
+ transient="false"
+ volatile="false"
+ static="true"
+ final="true"
+ visibility="public"
+ value="200"
+>
+</field>
+<field name="delegate"
+ type="android.location.LocationRequest"
+ transient="false"
+ volatile="false"
+ static="false"
+ final="true"
+ visibility="private"
+>
+</field>
+<constructor name="LocationRequestUnbundled"
+ type="com.android.location.provider.LocationRequestUnbundled"
+ static="false"
+ final="false"
+ visibility="package"
+>
+<parameter name="arg0" type="android.location.LocationRequest">
+</parameter>
+</constructor>
+<method name="getFastestInterval"
+ return="long"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ visibility="public"
+>
+</method>
+<method name="getInterval"
+ return="long"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ visibility="public"
+>
+</method>
+<method name="getQuality"
+ return="int"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ visibility="public"
+>
+</method>
+<method name="getSmallestDisplacement"
+ return="float"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ visibility="public"
+>
+</method>
+<method name="toString"
+ return="java.lang.String"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ visibility="public"
+>
+</method>
+</class>
+<class name="ProviderPropertiesUnbundled"
+ extends="java.lang.Object"
+ interface="false"
+ abstract="false"
+ static="false"
+ final="true"
+ visibility="public"
+>
+<field name="mProperties"
+ type="com.android.internal.location.ProviderProperties"
+ transient="false"
+ volatile="false"
+ static="false"
+ final="true"
+ visibility="private"
+>
+</field>
+<constructor name="ProviderPropertiesUnbundled"
+ type="com.android.location.provider.ProviderPropertiesUnbundled"
+ static="false"
+ final="false"
+ visibility="private"
+>
+<parameter name="arg0" type="com.android.internal.location.ProviderProperties">
+</parameter>
+</constructor>
+<method name="create"
+ return="com.android.location.provider.ProviderPropertiesUnbundled"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="true"
+ final="false"
+ visibility="public"
+>
+<parameter name="arg0" type="boolean">
+</parameter>
+<parameter name="arg1" type="boolean">
+</parameter>
+<parameter name="arg2" type="boolean">
+</parameter>
+<parameter name="arg3" type="boolean">
+</parameter>
+<parameter name="arg4" type="boolean">
+</parameter>
+<parameter name="arg5" type="boolean">
+</parameter>
+<parameter name="arg6" type="boolean">
+</parameter>
+<parameter name="arg7" type="int">
+</parameter>
+<parameter name="arg8" type="int">
+</parameter>
+</method>
+<method name="getProviderProperties"
+ return="com.android.internal.location.ProviderProperties"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ visibility="public"
+>
+</method>
+<method name="toString"
+ return="java.lang.String"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ visibility="public"
+>
+</method>
+</class>
+<class name="ProviderRequestUnbundled"
+ extends="java.lang.Object"
+ interface="false"
+ abstract="false"
+ static="false"
+ final="true"
+ visibility="public"
+>
+<field name="mRequest"
+ type="com.android.internal.location.ProviderRequest"
+ transient="false"
+ volatile="false"
+ static="false"
+ final="true"
+ visibility="private"
+>
+</field>
+<constructor name="ProviderRequestUnbundled"
+ type="com.android.location.provider.ProviderRequestUnbundled"
+ static="false"
+ final="false"
+ visibility="public"
+>
+<parameter name="arg0" type="com.android.internal.location.ProviderRequest">
+</parameter>
+</constructor>
+<method name="getInterval"
+ return="long"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ visibility="public"
+>
+</method>
+<method name="getLocationRequests"
+ return="java.util.List"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ visibility="public"
+>
+</method>
+<method name="getReportLocation"
+ return="boolean"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ visibility="public"
+>
+</method>
+<method name="toString"
+ return="java.lang.String"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ visibility="public"
+>
+</method>
+</class>
+</package>
+</api>

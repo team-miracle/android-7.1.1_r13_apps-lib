@@ -1,0 +1,6 @@
+frameworks/support/documents-archive/src/android/support/provider/DocumentArchive.java
+frameworks/support/documents-archive/src/android/support/provider/DocumentArchiveHelper.java
+frameworks/support/documents-archive/src/android/support/provider/IoUtils.java
+frameworks/support/documents-archive/src/android/support/provider/ParsedDocumentId.java
+frameworks/support/documents-archive/src/android/support/provider/Preconditions.java
+out/target/common/obj/JAVA_LIBRARIES/android-support-documents-archive_intermediates/src/android/support/provider/R.java

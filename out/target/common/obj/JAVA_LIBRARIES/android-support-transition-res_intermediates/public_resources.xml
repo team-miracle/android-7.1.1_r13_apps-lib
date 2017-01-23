@@ -1,0 +1,14 @@
+<!-- This file contains <public> resource definitions for all
+     resources that were generated from the source data. -->
+
+<resources>
+
+  <!-- PRIVATE SECTION.  These resources have not been declared public.
+       You can make them public my moving these lines into a file in res/values. -->
+
+  <!-- Declared at frameworks/support/transition/res/values/ids.xml:18 -->
+  <public type="id" name="transition_scene_layoutid_cache" id="0x7f020000" />
+  <!-- Declared at frameworks/support/transition/res/values/ids.xml:19 -->
+  <public type="id" name="transition_current_scene" id="0x7f020001" />
+
+</resources>

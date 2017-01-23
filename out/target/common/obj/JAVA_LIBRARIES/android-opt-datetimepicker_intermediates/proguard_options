@@ -1,0 +1,19 @@
+# view res/layout/date_picker_selected_date.xml #generated:27
+-keep class com.android.datetimepicker.AccessibleLinearLayout { <init>(...); }
+
+# view res/layout/date_picker_selected_date.xml #generated:60
+# view res/layout/time_header_label.xml #generated:100
+# view res/layout/time_header_label.xml #generated:50
+# view res/layout/time_header_label.xml #generated:91
+-keep class com.android.datetimepicker.AccessibleTextView { <init>(...); }
+
+# view res/layout/date_picker_view_animator.xml #generated:16
+-keep class com.android.datetimepicker.date.AccessibleDateAnimator { <init>(...); }
+
+# view res/layout/year_label_text_view.xml #generated:16
+-keep class com.android.datetimepicker.date.TextViewWithCircularIndicator { <init>(...); }
+
+# view land/res/layout-land/time_picker_dialog.xml #generated:58
+# view res/layout/time_picker_dialog.xml #generated:34
+-keep class com.android.datetimepicker.time.RadialPickerLayout { <init>(...); }
+

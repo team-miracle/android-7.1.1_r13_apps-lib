@@ -1,0 +1,3 @@
+frameworks/base/services/retaildemo/java/com/android/server/retaildemo/PreloadAppsInstaller.java
+frameworks/base/services/retaildemo/java/com/android/server/retaildemo/RetailDemoModeService.java
+frameworks/base/services/retaildemo/java/com/android/server/retaildemo/UserInactivityCountdownDialog.java

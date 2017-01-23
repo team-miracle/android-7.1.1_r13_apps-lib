@@ -1,0 +1,3519 @@
+<api>
+<package name="junit.extensions"
+>
+<class name="ActiveTestSuite.1"
+ extends="java.lang.Thread"
+ interface="false"
+ abstract="false"
+ static="false"
+ final="false"
+ visibility="package"
+>
+<field name="this$0"
+ type="junit.extensions.ActiveTestSuite"
+ transient="false"
+ volatile="false"
+ static="false"
+ final="true"
+ visibility="package"
+>
+</field>
+<field name="val$result"
+ type="junit.framework.TestResult"
+ transient="false"
+ volatile="false"
+ static="false"
+ final="true"
+ visibility="package"
+>
+</field>
+<field name="val$test"
+ type="junit.framework.Test"
+ transient="false"
+ volatile="false"
+ static="false"
+ final="true"
+ visibility="package"
+>
+</field>
+<constructor name="ActiveTestSuite.1"
+ type="junit.extensions.ActiveTestSuite.1"
+ static="false"
+ final="false"
+ visibility="package"
+>
+<parameter name="arg0" type="junit.extensions.ActiveTestSuite">
+</parameter>
+<parameter name="arg1" type="junit.framework.Test">
+</parameter>
+<parameter name="arg2" type="junit.framework.TestResult">
+</parameter>
+</constructor>
+<method name="run"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ visibility="public"
+>
+</method>
+</class>
+</package>
+<package name="junit.framework"
+>
+<class name="Test"
+ extends="java.lang.Object"
+ interface="true"
+ abstract="true"
+ static="false"
+ final="false"
+ visibility="public"
+>
+<method name="countTestCases"
+ return="int"
+ abstract="true"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ visibility="public"
+>
+</method>
+<method name="run"
+ return="void"
+ abstract="true"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ visibility="public"
+>
+<parameter name="arg0" type="junit.framework.TestResult">
+</parameter>
+</method>
+</class>
+<class name="TestSuite"
+ extends="java.lang.Object"
+ interface="false"
+ abstract="false"
+ static="false"
+ final="false"
+ visibility="public"
+>
+<implements name="junit.framework.Test">
+</implements>
+<field name="fName"
+ type="java.lang.String"
+ transient="false"
+ volatile="false"
+ static="false"
+ final="false"
+ visibility="private"
+>
+</field>
+<field name="fTests"
+ type="java.util.Vector"
+ transient="false"
+ volatile="false"
+ static="false"
+ final="false"
+ visibility="private"
+>
+</field>
+<constructor name="TestSuite"
+ type="junit.framework.TestSuite"
+ static="false"
+ final="false"
+ visibility="public"
+>
+</constructor>
+<constructor name="TestSuite"
+ type="junit.framework.TestSuite"
+ static="false"
+ final="false"
+ visibility="public"
+>
+<parameter name="arg0" type="java.lang.Class">
+</parameter>
+</constructor>
+<constructor name="TestSuite"
+ type="junit.framework.TestSuite"
+ static="false"
+ final="false"
+ visibility="public"
+>
+<parameter name="arg0" type="java.lang.Class">
+</parameter>
+<parameter name="arg1" type="java.lang.String">
+</parameter>
+</constructor>
+<constructor name="TestSuite"
+ type="junit.framework.TestSuite"
+ static="false"
+ final="false"
+ visibility="public"
+>
+<parameter name="arg0" type="java.lang.String">
+</parameter>
+</constructor>
+<constructor name="TestSuite"
+ type="junit.framework.TestSuite"
+ static="false"
+ final="false"
+ visibility="public"
+>
+<parameter name="arg0" type="java.lang.Class[]">
+</parameter>
+</constructor>
+<constructor name="TestSuite"
+ type="junit.framework.TestSuite"
+ static="false"
+ final="false"
+ visibility="public"
+>
+<parameter name="arg0" type="java.lang.Class[]">
+</parameter>
+<parameter name="arg1" type="java.lang.String">
+</parameter>
+</constructor>
+<method name="addTestMethod"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ visibility="private"
+>
+<parameter name="arg0" type="java.lang.reflect.Method">
+</parameter>
+<parameter name="arg1" type="java.util.List">
+</parameter>
+<parameter name="arg2" type="java.lang.Class">
+</parameter>
+</method>
+<method name="addTestsFromTestCase"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ visibility="private"
+>
+<parameter name="arg0" type="java.lang.Class">
+</parameter>
+</method>
+<method name="createTest"
+ return="junit.framework.Test"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="true"
+ final="false"
+ visibility="public"
+>
+<parameter name="arg0" type="java.lang.Class">
+</parameter>
+<parameter name="arg1" type="java.lang.String">
+</parameter>
+</method>
+<method name="exceptionToString"
+ return="java.lang.String"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="true"
+ final="false"
+ visibility="private"
+>
+<parameter name="arg0" type="java.lang.Throwable">
+</parameter>
+</method>
+<method name="getTestConstructor"
+ return="java.lang.reflect.Constructor"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="true"
+ final="false"
+ visibility="public"
+>
+<parameter name="arg0" type="java.lang.Class">
+</parameter>
+</method>
+<method name="isPublicTestMethod"
+ return="boolean"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ visibility="private"
+>
+<parameter name="arg0" type="java.lang.reflect.Method">
+</parameter>
+</method>
+<method name="isTestMethod"
+ return="boolean"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ visibility="private"
+>
+<parameter name="arg0" type="java.lang.reflect.Method">
+</parameter>
+</method>
+<method name="testCaseForClass"
+ return="junit.framework.Test"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ visibility="private"
+>
+<parameter name="arg0" type="java.lang.Class">
+</parameter>
+</method>
+<method name="warning"
+ return="junit.framework.Test"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="true"
+ final="false"
+ visibility="public"
+>
+<parameter name="arg0" type="java.lang.String">
+</parameter>
+</method>
+<method name="addTest"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ visibility="public"
+>
+<parameter name="arg0" type="junit.framework.Test">
+</parameter>
+</method>
+<method name="addTestSuite"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ visibility="public"
+>
+<parameter name="arg0" type="java.lang.Class">
+</parameter>
+</method>
+<method name="countTestCases"
+ return="int"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ visibility="public"
+>
+</method>
+<method name="getName"
+ return="java.lang.String"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ visibility="public"
+>
+</method>
+<method name="run"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ visibility="public"
+>
+<parameter name="arg0" type="junit.framework.TestResult">
+</parameter>
+</method>
+<method name="runTest"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ visibility="public"
+>
+<parameter name="arg0" type="junit.framework.Test">
+</parameter>
+<parameter name="arg1" type="junit.framework.TestResult">
+</parameter>
+</method>
+<method name="setName"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ visibility="public"
+>
+<parameter name="arg0" type="java.lang.String">
+</parameter>
+</method>
+<method name="testAt"
+ return="junit.framework.Test"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ visibility="public"
+>
+<parameter name="arg0" type="int">
+</parameter>
+</method>
+<method name="testCount"
+ return="int"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ visibility="public"
+>
+</method>
+<method name="tests"
+ return="java.util.Enumeration"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ visibility="public"
+>
+</method>
+<method name="toString"
+ return="java.lang.String"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ visibility="public"
+>
+</method>
+</class>
+</package>
+<package name="junit.extensions"
+>
+<class name="ActiveTestSuite"
+ extends="junit.framework.TestSuite"
+ interface="false"
+ abstract="false"
+ static="false"
+ final="false"
+ visibility="public"
+>
+<field name="fActiveTestDeathCount"
+ type="int"
+ transient="false"
+ volatile="true"
+ static="false"
+ final="false"
+ visibility="private"
+>
+</field>
+<constructor name="ActiveTestSuite"
+ type="junit.extensions.ActiveTestSuite"
+ static="false"
+ final="false"
+ visibility="public"
+>
+</constructor>
+<constructor name="ActiveTestSuite"
+ type="junit.extensions.ActiveTestSuite"
+ static="false"
+ final="false"
+ visibility="public"
+>
+<parameter name="arg0" type="java.lang.Class">
+</parameter>
+</constructor>
+<constructor name="ActiveTestSuite"
+ type="junit.extensions.ActiveTestSuite"
+ static="false"
+ final="false"
+ visibility="public"
+>
+<parameter name="arg0" type="java.lang.Class">
+</parameter>
+<parameter name="arg1" type="java.lang.String">
+</parameter>
+</constructor>
+<constructor name="ActiveTestSuite"
+ type="junit.extensions.ActiveTestSuite"
+ static="false"
+ final="false"
+ visibility="public"
+>
+<parameter name="arg0" type="java.lang.String">
+</parameter>
+</constructor>
+<method name="run"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ visibility="public"
+>
+<parameter name="arg0" type="junit.framework.TestResult">
+</parameter>
+</method>
+<method name="runFinished"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="true"
+ static="false"
+ final="false"
+ visibility="public"
+>
+</method>
+<method name="runTest"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ visibility="public"
+>
+<parameter name="arg0" type="junit.framework.Test">
+</parameter>
+<parameter name="arg1" type="junit.framework.TestResult">
+</parameter>
+</method>
+<method name="waitUntilFinished"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="true"
+ static="false"
+ final="false"
+ visibility="package"
+>
+</method>
+</class>
+</package>
+<package name="junit.framework"
+>
+<class name="Assert"
+ extends="java.lang.Object"
+ interface="false"
+ abstract="false"
+ static="false"
+ final="false"
+ visibility="public"
+>
+<constructor name="Assert"
+ type="junit.framework.Assert"
+ static="false"
+ final="false"
+ visibility="protected"
+>
+</constructor>
+<method name="assertEquals"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="true"
+ final="false"
+ visibility="public"
+>
+<parameter name="arg0" type="byte">
+</parameter>
+<parameter name="arg1" type="byte">
+</parameter>
+</method>
+<method name="assertEquals"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="true"
+ final="false"
+ visibility="public"
+>
+<parameter name="arg0" type="char">
+</parameter>
+<parameter name="arg1" type="char">
+</parameter>
+</method>
+<method name="assertEquals"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="true"
+ final="false"
+ visibility="public"
+>
+<parameter name="arg0" type="double">
+</parameter>
+<parameter name="arg1" type="double">
+</parameter>
+<parameter name="arg2" type="double">
+</parameter>
+</method>
+<method name="assertEquals"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="true"
+ final="false"
+ visibility="public"
+>
+<parameter name="arg0" type="float">
+</parameter>
+<parameter name="arg1" type="float">
+</parameter>
+<parameter name="arg2" type="float">
+</parameter>
+</method>
+<method name="assertEquals"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="true"
+ final="false"
+ visibility="public"
+>
+<parameter name="arg0" type="int">
+</parameter>
+<parameter name="arg1" type="int">
+</parameter>
+</method>
+<method name="assertEquals"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="true"
+ final="false"
+ visibility="public"
+>
+<parameter name="arg0" type="long">
+</parameter>
+<parameter name="arg1" type="long">
+</parameter>
+</method>
+<method name="assertEquals"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="true"
+ final="false"
+ visibility="public"
+>
+<parameter name="arg0" type="java.lang.Object">
+</parameter>
+<parameter name="arg1" type="java.lang.Object">
+</parameter>
+</method>
+<method name="assertEquals"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="true"
+ final="false"
+ visibility="public"
+>
+<parameter name="arg0" type="java.lang.String">
+</parameter>
+<parameter name="arg1" type="byte">
+</parameter>
+<parameter name="arg2" type="byte">
+</parameter>
+</method>
+<method name="assertEquals"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="true"
+ final="false"
+ visibility="public"
+>
+<parameter name="arg0" type="java.lang.String">
+</parameter>
+<parameter name="arg1" type="char">
+</parameter>
+<parameter name="arg2" type="char">
+</parameter>
+</method>
+<method name="assertEquals"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="true"
+ final="false"
+ visibility="public"
+>
+<parameter name="arg0" type="java.lang.String">
+</parameter>
+<parameter name="arg1" type="double">
+</parameter>
+<parameter name="arg2" type="double">
+</parameter>
+<parameter name="arg3" type="double">
+</parameter>
+</method>
+<method name="assertEquals"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="true"
+ final="false"
+ visibility="public"
+>
+<parameter name="arg0" type="java.lang.String">
+</parameter>
+<parameter name="arg1" type="float">
+</parameter>
+<parameter name="arg2" type="float">
+</parameter>
+<parameter name="arg3" type="float">
+</parameter>
+</method>
+<method name="assertEquals"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="true"
+ final="false"
+ visibility="public"
+>
+<parameter name="arg0" type="java.lang.String">
+</parameter>
+<parameter name="arg1" type="int">
+</parameter>
+<parameter name="arg2" type="int">
+</parameter>
+</method>
+<method name="assertEquals"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="true"
+ final="false"
+ visibility="public"
+>
+<parameter name="arg0" type="java.lang.String">
+</parameter>
+<parameter name="arg1" type="long">
+</parameter>
+<parameter name="arg2" type="long">
+</parameter>
+</method>
+<method name="assertEquals"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="true"
+ final="false"
+ visibility="public"
+>
+<parameter name="arg0" type="java.lang.String">
+</parameter>
+<parameter name="arg1" type="java.lang.Object">
+</parameter>
+<parameter name="arg2" type="java.lang.Object">
+</parameter>
+</method>
+<method name="assertEquals"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="true"
+ final="false"
+ visibility="public"
+>
+<parameter name="arg0" type="java.lang.String">
+</parameter>
+<parameter name="arg1" type="java.lang.String">
+</parameter>
+</method>
+<method name="assertEquals"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="true"
+ final="false"
+ visibility="public"
+>
+<parameter name="arg0" type="java.lang.String">
+</parameter>
+<parameter name="arg1" type="java.lang.String">
+</parameter>
+<parameter name="arg2" type="java.lang.String">
+</parameter>
+</method>
+<method name="assertEquals"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="true"
+ final="false"
+ visibility="public"
+>
+<parameter name="arg0" type="java.lang.String">
+</parameter>
+<parameter name="arg1" type="short">
+</parameter>
+<parameter name="arg2" type="short">
+</parameter>
+</method>
+<method name="assertEquals"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="true"
+ final="false"
+ visibility="public"
+>
+<parameter name="arg0" type="java.lang.String">
+</parameter>
+<parameter name="arg1" type="boolean">
+</parameter>
+<parameter name="arg2" type="boolean">
+</parameter>
+</method>
+<method name="assertEquals"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="true"
+ final="false"
+ visibility="public"
+>
+<parameter name="arg0" type="short">
+</parameter>
+<parameter name="arg1" type="short">
+</parameter>
+</method>
+<method name="assertEquals"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="true"
+ final="false"
+ visibility="public"
+>
+<parameter name="arg0" type="boolean">
+</parameter>
+<parameter name="arg1" type="boolean">
+</parameter>
+</method>
+<method name="assertFalse"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="true"
+ final="false"
+ visibility="public"
+>
+<parameter name="arg0" type="java.lang.String">
+</parameter>
+<parameter name="arg1" type="boolean">
+</parameter>
+</method>
+<method name="assertFalse"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="true"
+ final="false"
+ visibility="public"
+>
+<parameter name="arg0" type="boolean">
+</parameter>
+</method>
+<method name="assertNotNull"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="true"
+ final="false"
+ visibility="public"
+>
+<parameter name="arg0" type="java.lang.Object">
+</parameter>
+</method>
+<method name="assertNotNull"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="true"
+ final="false"
+ visibility="public"
+>
+<parameter name="arg0" type="java.lang.String">
+</parameter>
+<parameter name="arg1" type="java.lang.Object">
+</parameter>
+</method>
+<method name="assertNotSame"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="true"
+ final="false"
+ visibility="public"
+>
+<parameter name="arg0" type="java.lang.Object">
+</parameter>
+<parameter name="arg1" type="java.lang.Object">
+</parameter>
+</method>
+<method name="assertNotSame"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="true"
+ final="false"
+ visibility="public"
+>
+<parameter name="arg0" type="java.lang.String">
+</parameter>
+<parameter name="arg1" type="java.lang.Object">
+</parameter>
+<parameter name="arg2" type="java.lang.Object">
+</parameter>
+</method>
+<method name="assertNull"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="true"
+ final="false"
+ visibility="public"
+>
+<parameter name="arg0" type="java.lang.Object">
+</parameter>
+</method>
+<method name="assertNull"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="true"
+ final="false"
+ visibility="public"
+>
+<parameter name="arg0" type="java.lang.String">
+</parameter>
+<parameter name="arg1" type="java.lang.Object">
+</parameter>
+</method>
+<method name="assertSame"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="true"
+ final="false"
+ visibility="public"
+>
+<parameter name="arg0" type="java.lang.Object">
+</parameter>
+<parameter name="arg1" type="java.lang.Object">
+</parameter>
+</method>
+<method name="assertSame"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="true"
+ final="false"
+ visibility="public"
+>
+<parameter name="arg0" type="java.lang.String">
+</parameter>
+<parameter name="arg1" type="java.lang.Object">
+</parameter>
+<parameter name="arg2" type="java.lang.Object">
+</parameter>
+</method>
+<method name="assertTrue"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="true"
+ final="false"
+ visibility="public"
+>
+<parameter name="arg0" type="java.lang.String">
+</parameter>
+<parameter name="arg1" type="boolean">
+</parameter>
+</method>
+<method name="assertTrue"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="true"
+ final="false"
+ visibility="public"
+>
+<parameter name="arg0" type="boolean">
+</parameter>
+</method>
+<method name="fail"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="true"
+ final="false"
+ visibility="public"
+>
+</method>
+<method name="fail"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="true"
+ final="false"
+ visibility="public"
+>
+<parameter name="arg0" type="java.lang.String">
+</parameter>
+</method>
+<method name="failNotEquals"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="true"
+ final="false"
+ visibility="public"
+>
+<parameter name="arg0" type="java.lang.String">
+</parameter>
+<parameter name="arg1" type="java.lang.Object">
+</parameter>
+<parameter name="arg2" type="java.lang.Object">
+</parameter>
+</method>
+<method name="failNotSame"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="true"
+ final="false"
+ visibility="public"
+>
+<parameter name="arg0" type="java.lang.String">
+</parameter>
+<parameter name="arg1" type="java.lang.Object">
+</parameter>
+<parameter name="arg2" type="java.lang.Object">
+</parameter>
+</method>
+<method name="failSame"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="true"
+ final="false"
+ visibility="public"
+>
+<parameter name="arg0" type="java.lang.String">
+</parameter>
+</method>
+<method name="format"
+ return="java.lang.String"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="true"
+ final="false"
+ visibility="public"
+>
+<parameter name="arg0" type="java.lang.String">
+</parameter>
+<parameter name="arg1" type="java.lang.Object">
+</parameter>
+<parameter name="arg2" type="java.lang.Object">
+</parameter>
+</method>
+</class>
+</package>
+<package name="junit.extensions"
+>
+<class name="TestDecorator"
+ extends="junit.framework.Assert"
+ interface="false"
+ abstract="false"
+ static="false"
+ final="false"
+ visibility="public"
+>
+<implements name="junit.framework.Test">
+</implements>
+<field name="fTest"
+ type="junit.framework.Test"
+ transient="false"
+ volatile="false"
+ static="false"
+ final="false"
+ visibility="protected"
+>
+</field>
+<constructor name="TestDecorator"
+ type="junit.extensions.TestDecorator"
+ static="false"
+ final="false"
+ visibility="public"
+>
+<parameter name="arg0" type="junit.framework.Test">
+</parameter>
+</constructor>
+<method name="basicRun"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ visibility="public"
+>
+<parameter name="arg0" type="junit.framework.TestResult">
+</parameter>
+</method>
+<method name="countTestCases"
+ return="int"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ visibility="public"
+>
+</method>
+<method name="getTest"
+ return="junit.framework.Test"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ visibility="public"
+>
+</method>
+<method name="run"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ visibility="public"
+>
+<parameter name="arg0" type="junit.framework.TestResult">
+</parameter>
+</method>
+<method name="toString"
+ return="java.lang.String"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ visibility="public"
+>
+</method>
+</class>
+<class name="RepeatedTest"
+ extends="junit.extensions.TestDecorator"
+ interface="false"
+ abstract="false"
+ static="false"
+ final="false"
+ visibility="public"
+>
+<field name="fTimesRepeat"
+ type="int"
+ transient="false"
+ volatile="false"
+ static="false"
+ final="false"
+ visibility="private"
+>
+</field>
+<constructor name="RepeatedTest"
+ type="junit.extensions.RepeatedTest"
+ static="false"
+ final="false"
+ visibility="public"
+>
+<parameter name="arg0" type="junit.framework.Test">
+</parameter>
+<parameter name="arg1" type="int">
+</parameter>
+</constructor>
+<method name="countTestCases"
+ return="int"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ visibility="public"
+>
+</method>
+<method name="run"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ visibility="public"
+>
+<parameter name="arg0" type="junit.framework.TestResult">
+</parameter>
+</method>
+<method name="toString"
+ return="java.lang.String"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ visibility="public"
+>
+</method>
+</class>
+</package>
+<package name="junit.framework"
+>
+<class name="Protectable"
+ extends="java.lang.Object"
+ interface="true"
+ abstract="true"
+ static="false"
+ final="false"
+ visibility="public"
+>
+<method name="protect"
+ return="void"
+ abstract="true"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ visibility="public"
+>
+</method>
+</class>
+</package>
+<package name="junit.extensions"
+>
+<class name="TestSetup.1"
+ extends="java.lang.Object"
+ interface="false"
+ abstract="false"
+ static="false"
+ final="false"
+ visibility="package"
+>
+<implements name="junit.framework.Protectable">
+</implements>
+<field name="this$0"
+ type="junit.extensions.TestSetup"
+ transient="false"
+ volatile="false"
+ static="false"
+ final="true"
+ visibility="package"
+>
+</field>
+<field name="val$result"
+ type="junit.framework.TestResult"
+ transient="false"
+ volatile="false"
+ static="false"
+ final="true"
+ visibility="package"
+>
+</field>
+<constructor name="TestSetup.1"
+ type="junit.extensions.TestSetup.1"
+ static="false"
+ final="false"
+ visibility="package"
+>
+<parameter name="arg0" type="junit.extensions.TestSetup">
+</parameter>
+<parameter name="arg1" type="junit.framework.TestResult">
+</parameter>
+</constructor>
+<method name="protect"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ visibility="public"
+>
+</method>
+</class>
+<class name="TestSetup"
+ extends="junit.extensions.TestDecorator"
+ interface="false"
+ abstract="false"
+ static="false"
+ final="false"
+ visibility="public"
+>
+<constructor name="TestSetup"
+ type="junit.extensions.TestSetup"
+ static="false"
+ final="false"
+ visibility="public"
+>
+<parameter name="arg0" type="junit.framework.Test">
+</parameter>
+</constructor>
+<method name="run"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ visibility="public"
+>
+<parameter name="arg0" type="junit.framework.TestResult">
+</parameter>
+</method>
+<method name="setUp"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ visibility="protected"
+>
+</method>
+<method name="tearDown"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ visibility="protected"
+>
+</method>
+</class>
+<class name="package-info"
+ extends="java.lang.Object"
+ interface="true"
+ abstract="true"
+ static="false"
+ final="false"
+ visibility="package"
+>
+</class>
+</package>
+<package name="junit.framework"
+>
+<class name="AssertionFailedError"
+ extends="java.lang.AssertionError"
+ interface="false"
+ abstract="false"
+ static="false"
+ final="false"
+ visibility="public"
+>
+<field name="serialVersionUID"
+ type="long"
+ transient="false"
+ volatile="false"
+ static="true"
+ final="true"
+ visibility="private"
+ value="1"
+>
+</field>
+<constructor name="AssertionFailedError"
+ type="junit.framework.AssertionFailedError"
+ static="false"
+ final="false"
+ visibility="public"
+>
+</constructor>
+<constructor name="AssertionFailedError"
+ type="junit.framework.AssertionFailedError"
+ static="false"
+ final="false"
+ visibility="public"
+>
+<parameter name="arg0" type="java.lang.String">
+</parameter>
+</constructor>
+<method name="defaultString"
+ return="java.lang.String"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="true"
+ final="false"
+ visibility="private"
+>
+<parameter name="arg0" type="java.lang.String">
+</parameter>
+</method>
+</class>
+<class name="ComparisonCompactor"
+ extends="java.lang.Object"
+ interface="false"
+ abstract="false"
+ static="false"
+ final="false"
+ visibility="public"
+>
+<field name="DELTA_END"
+ type="java.lang.String"
+ transient="false"
+ volatile="false"
+ static="true"
+ final="true"
+ visibility="private"
+ value="]"
+>
+</field>
+<field name="DELTA_START"
+ type="java.lang.String"
+ transient="false"
+ volatile="false"
+ static="true"
+ final="true"
+ visibility="private"
+ value="["
+>
+</field>
+<field name="ELLIPSIS"
+ type="java.lang.String"
+ transient="false"
+ volatile="false"
+ static="true"
+ final="true"
+ visibility="private"
+ value="..."
+>
+</field>
+<field name="fActual"
+ type="java.lang.String"
+ transient="false"
+ volatile="false"
+ static="false"
+ final="false"
+ visibility="private"
+>
+</field>
+<field name="fContextLength"
+ type="int"
+ transient="false"
+ volatile="false"
+ static="false"
+ final="false"
+ visibility="private"
+>
+</field>
+<field name="fExpected"
+ type="java.lang.String"
+ transient="false"
+ volatile="false"
+ static="false"
+ final="false"
+ visibility="private"
+>
+</field>
+<field name="fPrefix"
+ type="int"
+ transient="false"
+ volatile="false"
+ static="false"
+ final="false"
+ visibility="private"
+>
+</field>
+<field name="fSuffix"
+ type="int"
+ transient="false"
+ volatile="false"
+ static="false"
+ final="false"
+ visibility="private"
+>
+</field>
+<constructor name="ComparisonCompactor"
+ type="junit.framework.ComparisonCompactor"
+ static="false"
+ final="false"
+ visibility="public"
+>
+<parameter name="arg0" type="int">
+</parameter>
+<parameter name="arg1" type="java.lang.String">
+</parameter>
+<parameter name="arg2" type="java.lang.String">
+</parameter>
+</constructor>
+<method name="areStringsEqual"
+ return="boolean"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ visibility="private"
+>
+</method>
+<method name="compactString"
+ return="java.lang.String"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ visibility="private"
+>
+<parameter name="arg0" type="java.lang.String">
+</parameter>
+</method>
+<method name="computeCommonPrefix"
+ return="java.lang.String"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ visibility="private"
+>
+</method>
+<method name="computeCommonSuffix"
+ return="java.lang.String"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ visibility="private"
+>
+</method>
+<method name="findCommonPrefix"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ visibility="private"
+>
+</method>
+<method name="findCommonSuffix"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ visibility="private"
+>
+</method>
+<method name="format"
+ return="java.lang.String"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="true"
+ final="false"
+ visibility="private"
+>
+<parameter name="arg0" type="java.lang.String">
+</parameter>
+<parameter name="arg1" type="java.lang.Object">
+</parameter>
+<parameter name="arg2" type="java.lang.Object">
+</parameter>
+</method>
+<method name="compact"
+ return="java.lang.String"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ visibility="public"
+>
+<parameter name="arg0" type="java.lang.String">
+</parameter>
+</method>
+</class>
+<class name="ComparisonFailure"
+ extends="junit.framework.AssertionFailedError"
+ interface="false"
+ abstract="false"
+ static="false"
+ final="false"
+ visibility="public"
+>
+<field name="MAX_CONTEXT_LENGTH"
+ type="int"
+ transient="false"
+ volatile="false"
+ static="true"
+ final="true"
+ visibility="private"
+ value="20"
+>
+</field>
+<field name="serialVersionUID"
+ type="long"
+ transient="false"
+ volatile="false"
+ static="true"
+ final="true"
+ visibility="private"
+ value="1"
+>
+</field>
+<field name="fActual"
+ type="java.lang.String"
+ transient="false"
+ volatile="false"
+ static="false"
+ final="false"
+ visibility="private"
+>
+</field>
+<field name="fExpected"
+ type="java.lang.String"
+ transient="false"
+ volatile="false"
+ static="false"
+ final="false"
+ visibility="private"
+>
+</field>
+<constructor name="ComparisonFailure"
+ type="junit.framework.ComparisonFailure"
+ static="false"
+ final="false"
+ visibility="public"
+>
+<parameter name="arg0" type="java.lang.String">
+</parameter>
+<parameter name="arg1" type="java.lang.String">
+</parameter>
+<parameter name="arg2" type="java.lang.String">
+</parameter>
+</constructor>
+<method name="getActual"
+ return="java.lang.String"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ visibility="public"
+>
+</method>
+<method name="getExpected"
+ return="java.lang.String"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ visibility="public"
+>
+</method>
+<method name="getMessage"
+ return="java.lang.String"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ visibility="public"
+>
+</method>
+</class>
+<class name="TestCase"
+ extends="junit.framework.Assert"
+ interface="false"
+ abstract="true"
+ static="false"
+ final="false"
+ visibility="public"
+>
+<implements name="junit.framework.Test">
+</implements>
+<field name="fName"
+ type="java.lang.String"
+ transient="false"
+ volatile="false"
+ static="false"
+ final="false"
+ visibility="private"
+>
+</field>
+<constructor name="TestCase"
+ type="junit.framework.TestCase"
+ static="false"
+ final="false"
+ visibility="public"
+>
+</constructor>
+<constructor name="TestCase"
+ type="junit.framework.TestCase"
+ static="false"
+ final="false"
+ visibility="public"
+>
+<parameter name="arg0" type="java.lang.String">
+</parameter>
+</constructor>
+<method name="countTestCases"
+ return="int"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ visibility="public"
+>
+</method>
+<method name="createResult"
+ return="junit.framework.TestResult"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ visibility="protected"
+>
+</method>
+<method name="getName"
+ return="java.lang.String"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ visibility="public"
+>
+</method>
+<method name="run"
+ return="junit.framework.TestResult"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ visibility="public"
+>
+</method>
+<method name="run"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ visibility="public"
+>
+<parameter name="arg0" type="junit.framework.TestResult">
+</parameter>
+</method>
+<method name="runBare"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ visibility="public"
+>
+</method>
+<method name="runTest"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ visibility="protected"
+>
+</method>
+<method name="setName"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ visibility="public"
+>
+<parameter name="arg0" type="java.lang.String">
+</parameter>
+</method>
+<method name="setUp"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ visibility="protected"
+>
+</method>
+<method name="tearDown"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ visibility="protected"
+>
+</method>
+<method name="toString"
+ return="java.lang.String"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ visibility="public"
+>
+</method>
+</class>
+<class name="TestFailure"
+ extends="java.lang.Object"
+ interface="false"
+ abstract="false"
+ static="false"
+ final="false"
+ visibility="public"
+>
+<field name="fFailedTest"
+ type="junit.framework.Test"
+ transient="false"
+ volatile="false"
+ static="false"
+ final="false"
+ visibility="protected"
+>
+</field>
+<field name="fThrownException"
+ type="java.lang.Throwable"
+ transient="false"
+ volatile="false"
+ static="false"
+ final="false"
+ visibility="protected"
+>
+</field>
+<constructor name="TestFailure"
+ type="junit.framework.TestFailure"
+ static="false"
+ final="false"
+ visibility="public"
+>
+<parameter name="arg0" type="junit.framework.Test">
+</parameter>
+<parameter name="arg1" type="java.lang.Throwable">
+</parameter>
+</constructor>
+<method name="exceptionMessage"
+ return="java.lang.String"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ visibility="public"
+>
+</method>
+<method name="failedTest"
+ return="junit.framework.Test"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ visibility="public"
+>
+</method>
+<method name="isFailure"
+ return="boolean"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ visibility="public"
+>
+</method>
+<method name="thrownException"
+ return="java.lang.Throwable"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ visibility="public"
+>
+</method>
+<method name="toString"
+ return="java.lang.String"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ visibility="public"
+>
+</method>
+<method name="trace"
+ return="java.lang.String"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ visibility="public"
+>
+</method>
+</class>
+<class name="TestListener"
+ extends="java.lang.Object"
+ interface="true"
+ abstract="true"
+ static="false"
+ final="false"
+ visibility="public"
+>
+<method name="addError"
+ return="void"
+ abstract="true"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ visibility="public"
+>
+<parameter name="arg0" type="junit.framework.Test">
+</parameter>
+<parameter name="arg1" type="java.lang.Throwable">
+</parameter>
+</method>
+<method name="addFailure"
+ return="void"
+ abstract="true"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ visibility="public"
+>
+<parameter name="arg0" type="junit.framework.Test">
+</parameter>
+<parameter name="arg1" type="junit.framework.AssertionFailedError">
+</parameter>
+</method>
+<method name="endTest"
+ return="void"
+ abstract="true"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ visibility="public"
+>
+<parameter name="arg0" type="junit.framework.Test">
+</parameter>
+</method>
+<method name="startTest"
+ return="void"
+ abstract="true"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ visibility="public"
+>
+<parameter name="arg0" type="junit.framework.Test">
+</parameter>
+</method>
+</class>
+<class name="TestResult.1"
+ extends="java.lang.Object"
+ interface="false"
+ abstract="false"
+ static="false"
+ final="false"
+ visibility="package"
+>
+<implements name="junit.framework.Protectable">
+</implements>
+<field name="this$0"
+ type="junit.framework.TestResult"
+ transient="false"
+ volatile="false"
+ static="false"
+ final="true"
+ visibility="package"
+>
+</field>
+<field name="val$test"
+ type="junit.framework.TestCase"
+ transient="false"
+ volatile="false"
+ static="false"
+ final="true"
+ visibility="package"
+>
+</field>
+<constructor name="TestResult.1"
+ type="junit.framework.TestResult.1"
+ static="false"
+ final="false"
+ visibility="package"
+>
+<parameter name="arg0" type="junit.framework.TestResult">
+</parameter>
+<parameter name="arg1" type="junit.framework.TestCase">
+</parameter>
+</constructor>
+<method name="protect"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ visibility="public"
+>
+</method>
+</class>
+<class name="TestResult"
+ extends="java.lang.Object"
+ interface="false"
+ abstract="false"
+ static="false"
+ final="false"
+ visibility="public"
+>
+<field name="fErrors"
+ type="java.util.Vector"
+ transient="false"
+ volatile="false"
+ static="false"
+ final="false"
+ visibility="protected"
+>
+</field>
+<field name="fFailures"
+ type="java.util.Vector"
+ transient="false"
+ volatile="false"
+ static="false"
+ final="false"
+ visibility="protected"
+>
+</field>
+<field name="fListeners"
+ type="java.util.Vector"
+ transient="false"
+ volatile="false"
+ static="false"
+ final="false"
+ visibility="protected"
+>
+</field>
+<field name="fRunTests"
+ type="int"
+ transient="false"
+ volatile="false"
+ static="false"
+ final="false"
+ visibility="protected"
+>
+</field>
+<field name="fStop"
+ type="boolean"
+ transient="false"
+ volatile="false"
+ static="false"
+ final="false"
+ visibility="private"
+>
+</field>
+<constructor name="TestResult"
+ type="junit.framework.TestResult"
+ static="false"
+ final="false"
+ visibility="public"
+>
+</constructor>
+<method name="cloneListeners"
+ return="java.util.List"
+ abstract="false"
+ native="false"
+ synchronized="true"
+ static="false"
+ final="false"
+ visibility="private"
+>
+</method>
+<method name="addError"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="true"
+ static="false"
+ final="false"
+ visibility="public"
+>
+<parameter name="arg0" type="junit.framework.Test">
+</parameter>
+<parameter name="arg1" type="java.lang.Throwable">
+</parameter>
+</method>
+<method name="addFailure"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="true"
+ static="false"
+ final="false"
+ visibility="public"
+>
+<parameter name="arg0" type="junit.framework.Test">
+</parameter>
+<parameter name="arg1" type="junit.framework.AssertionFailedError">
+</parameter>
+</method>
+<method name="addListener"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="true"
+ static="false"
+ final="false"
+ visibility="public"
+>
+<parameter name="arg0" type="junit.framework.TestListener">
+</parameter>
+</method>
+<method name="endTest"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ visibility="public"
+>
+<parameter name="arg0" type="junit.framework.Test">
+</parameter>
+</method>
+<method name="errorCount"
+ return="int"
+ abstract="false"
+ native="false"
+ synchronized="true"
+ static="false"
+ final="false"
+ visibility="public"
+>
+</method>
+<method name="errors"
+ return="java.util.Enumeration"
+ abstract="false"
+ native="false"
+ synchronized="true"
+ static="false"
+ final="false"
+ visibility="public"
+>
+</method>
+<method name="failureCount"
+ return="int"
+ abstract="false"
+ native="false"
+ synchronized="true"
+ static="false"
+ final="false"
+ visibility="public"
+>
+</method>
+<method name="failures"
+ return="java.util.Enumeration"
+ abstract="false"
+ native="false"
+ synchronized="true"
+ static="false"
+ final="false"
+ visibility="public"
+>
+</method>
+<method name="removeListener"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="true"
+ static="false"
+ final="false"
+ visibility="public"
+>
+<parameter name="arg0" type="junit.framework.TestListener">
+</parameter>
+</method>
+<method name="run"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ visibility="protected"
+>
+<parameter name="arg0" type="junit.framework.TestCase">
+</parameter>
+</method>
+<method name="runCount"
+ return="int"
+ abstract="false"
+ native="false"
+ synchronized="true"
+ static="false"
+ final="false"
+ visibility="public"
+>
+</method>
+<method name="runProtected"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ visibility="public"
+>
+<parameter name="arg0" type="junit.framework.Test">
+</parameter>
+<parameter name="arg1" type="junit.framework.Protectable">
+</parameter>
+</method>
+<method name="shouldStop"
+ return="boolean"
+ abstract="false"
+ native="false"
+ synchronized="true"
+ static="false"
+ final="false"
+ visibility="public"
+>
+</method>
+<method name="startTest"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ visibility="public"
+>
+<parameter name="arg0" type="junit.framework.Test">
+</parameter>
+</method>
+<method name="stop"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="true"
+ static="false"
+ final="false"
+ visibility="public"
+>
+</method>
+<method name="wasSuccessful"
+ return="boolean"
+ abstract="false"
+ native="false"
+ synchronized="true"
+ static="false"
+ final="false"
+ visibility="public"
+>
+</method>
+</class>
+<class name="TestSuite.1"
+ extends="junit.framework.TestCase"
+ interface="false"
+ abstract="false"
+ static="false"
+ final="true"
+ visibility="package"
+>
+<field name="val$message"
+ type="java.lang.String"
+ transient="false"
+ volatile="false"
+ static="false"
+ final="true"
+ visibility="package"
+>
+</field>
+<constructor name="TestSuite.1"
+ type="junit.framework.TestSuite.1"
+ static="false"
+ final="false"
+ visibility="package"
+>
+<parameter name="arg0" type="java.lang.String">
+</parameter>
+<parameter name="arg1" type="java.lang.String">
+</parameter>
+</constructor>
+<method name="runTest"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ visibility="protected"
+>
+</method>
+</class>
+</package>
+<package name="junit.runner"
+>
+<class name="BaseTestRunner"
+ extends="java.lang.Object"
+ interface="false"
+ abstract="true"
+ static="false"
+ final="false"
+ visibility="public"
+>
+<implements name="junit.framework.TestListener">
+</implements>
+<field name="SUITE_METHODNAME"
+ type="java.lang.String"
+ transient="false"
+ volatile="false"
+ static="true"
+ final="true"
+ visibility="public"
+ value="suite"
+>
+</field>
+<field name="fPreferences"
+ type="java.util.Properties"
+ transient="false"
+ volatile="false"
+ static="true"
+ final="false"
+ visibility="private"
+>
+</field>
+<field name="fgFilterStack"
+ type="boolean"
+ transient="false"
+ volatile="false"
+ static="true"
+ final="false"
+ visibility="package"
+>
+</field>
+<field name="fgMaxMessageLength"
+ type="int"
+ transient="false"
+ volatile="false"
+ static="true"
+ final="false"
+ visibility="package"
+>
+</field>
+<field name="fLoading"
+ type="boolean"
+ transient="false"
+ volatile="false"
+ static="false"
+ final="false"
+ visibility="package"
+>
+</field>
+<constructor name="BaseTestRunner"
+ type="junit.runner.BaseTestRunner"
+ static="true"
+ final="false"
+ visibility="package"
+>
+</constructor>
+<constructor name="BaseTestRunner"
+ type="junit.runner.BaseTestRunner"
+ static="false"
+ final="false"
+ visibility="public"
+>
+</constructor>
+<method name="filterLine"
+ return="boolean"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="true"
+ final="false"
+ visibility="package"
+>
+<parameter name="arg0" type="java.lang.String">
+</parameter>
+</method>
+<method name="getFilteredTrace"
+ return="java.lang.String"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="true"
+ final="false"
+ visibility="public"
+>
+<parameter name="arg0" type="java.lang.String">
+</parameter>
+</method>
+<method name="getFilteredTrace"
+ return="java.lang.String"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="true"
+ final="false"
+ visibility="public"
+>
+<parameter name="arg0" type="java.lang.Throwable">
+</parameter>
+</method>
+<method name="getPreference"
+ return="int"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="true"
+ final="false"
+ visibility="public"
+>
+<parameter name="arg0" type="java.lang.String">
+</parameter>
+<parameter name="arg1" type="int">
+</parameter>
+</method>
+<method name="getPreference"
+ return="java.lang.String"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="true"
+ final="false"
+ visibility="public"
+>
+<parameter name="arg0" type="java.lang.String">
+</parameter>
+</method>
+<method name="getPreferences"
+ return="java.util.Properties"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="true"
+ final="false"
+ visibility="protected"
+>
+</method>
+<method name="getPreferencesFile"
+ return="java.io.File"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="true"
+ final="false"
+ visibility="private"
+>
+</method>
+<method name="inVAJava"
+ return="boolean"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="true"
+ final="false"
+ visibility="public"
+>
+</method>
+<method name="readPreferences"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="true"
+ final="false"
+ visibility="private"
+>
+</method>
+<method name="savePreferences"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="true"
+ final="false"
+ visibility="public"
+>
+</method>
+<method name="setPreferences"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="true"
+ final="false"
+ visibility="protected"
+>
+<parameter name="arg0" type="java.util.Properties">
+</parameter>
+</method>
+<method name="showStackRaw"
+ return="boolean"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="true"
+ final="false"
+ visibility="protected"
+>
+</method>
+<method name="truncate"
+ return="java.lang.String"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="true"
+ final="false"
+ visibility="public"
+>
+<parameter name="arg0" type="java.lang.String">
+</parameter>
+</method>
+<method name="addError"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="true"
+ static="false"
+ final="false"
+ visibility="public"
+>
+<parameter name="arg0" type="junit.framework.Test">
+</parameter>
+<parameter name="arg1" type="java.lang.Throwable">
+</parameter>
+</method>
+<method name="addFailure"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="true"
+ static="false"
+ final="false"
+ visibility="public"
+>
+<parameter name="arg0" type="junit.framework.Test">
+</parameter>
+<parameter name="arg1" type="junit.framework.AssertionFailedError">
+</parameter>
+</method>
+<method name="clearStatus"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ visibility="protected"
+>
+</method>
+<method name="elapsedTimeAsString"
+ return="java.lang.String"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ visibility="public"
+>
+<parameter name="arg0" type="long">
+</parameter>
+</method>
+<method name="endTest"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="true"
+ static="false"
+ final="false"
+ visibility="public"
+>
+<parameter name="arg0" type="junit.framework.Test">
+</parameter>
+</method>
+<method name="extractClassName"
+ return="java.lang.String"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ visibility="public"
+>
+<parameter name="arg0" type="java.lang.String">
+</parameter>
+</method>
+<method name="getLoader"
+ return="junit.runner.TestSuiteLoader"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ visibility="public"
+>
+</method>
+<method name="getTest"
+ return="junit.framework.Test"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ visibility="public"
+>
+<parameter name="arg0" type="java.lang.String">
+</parameter>
+</method>
+<method name="loadSuiteClass"
+ return="java.lang.Class"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ visibility="protected"
+>
+<parameter name="arg0" type="java.lang.String">
+</parameter>
+</method>
+<method name="processArguments"
+ return="java.lang.String"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ visibility="protected"
+>
+<parameter name="arg0" type="java.lang.String[]">
+</parameter>
+</method>
+<method name="runFailed"
+ return="void"
+ abstract="true"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ visibility="protected"
+>
+<parameter name="arg0" type="java.lang.String">
+</parameter>
+</method>
+<method name="setLoading"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ visibility="public"
+>
+<parameter name="arg0" type="boolean">
+</parameter>
+</method>
+<method name="setPreference"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ visibility="public"
+>
+<parameter name="arg0" type="java.lang.String">
+</parameter>
+<parameter name="arg1" type="java.lang.String">
+</parameter>
+</method>
+<method name="startTest"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="true"
+ static="false"
+ final="false"
+ visibility="public"
+>
+<parameter name="arg0" type="junit.framework.Test">
+</parameter>
+</method>
+<method name="testEnded"
+ return="void"
+ abstract="true"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ visibility="public"
+>
+<parameter name="arg0" type="java.lang.String">
+</parameter>
+</method>
+<method name="testFailed"
+ return="void"
+ abstract="true"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ visibility="public"
+>
+<parameter name="arg0" type="int">
+</parameter>
+<parameter name="arg1" type="junit.framework.Test">
+</parameter>
+<parameter name="arg2" type="java.lang.Throwable">
+</parameter>
+</method>
+<method name="testStarted"
+ return="void"
+ abstract="true"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ visibility="public"
+>
+<parameter name="arg0" type="java.lang.String">
+</parameter>
+</method>
+<method name="useReloadingTestSuiteLoader"
+ return="boolean"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ visibility="protected"
+>
+</method>
+</class>
+<class name="TestSuiteLoader"
+ extends="java.lang.Object"
+ interface="true"
+ abstract="true"
+ static="false"
+ final="false"
+ visibility="public"
+>
+<method name="load"
+ return="java.lang.Class"
+ abstract="true"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ visibility="public"
+>
+<parameter name="arg0" type="java.lang.String">
+</parameter>
+</method>
+<method name="reload"
+ return="java.lang.Class"
+ abstract="true"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ visibility="public"
+>
+<parameter name="arg0" type="java.lang.Class">
+</parameter>
+</method>
+</class>
+<class name="StandardTestSuiteLoader"
+ extends="java.lang.Object"
+ interface="false"
+ abstract="false"
+ static="false"
+ final="false"
+ visibility="public"
+>
+<implements name="junit.runner.TestSuiteLoader">
+</implements>
+<constructor name="StandardTestSuiteLoader"
+ type="junit.runner.StandardTestSuiteLoader"
+ static="false"
+ final="false"
+ visibility="public"
+>
+</constructor>
+<method name="load"
+ return="java.lang.Class"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ visibility="public"
+>
+<parameter name="arg0" type="java.lang.String">
+</parameter>
+</method>
+<method name="reload"
+ return="java.lang.Class"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ visibility="public"
+>
+<parameter name="arg0" type="java.lang.Class">
+</parameter>
+</method>
+</class>
+<class name="TestRunListener"
+ extends="java.lang.Object"
+ interface="true"
+ abstract="true"
+ static="false"
+ final="false"
+ visibility="public"
+>
+<field name="STATUS_ERROR"
+ type="int"
+ transient="false"
+ volatile="false"
+ static="true"
+ final="true"
+ visibility="public"
+ value="1"
+>
+</field>
+<field name="STATUS_FAILURE"
+ type="int"
+ transient="false"
+ volatile="false"
+ static="true"
+ final="true"
+ visibility="public"
+ value="2"
+>
+</field>
+<method name="testEnded"
+ return="void"
+ abstract="true"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ visibility="public"
+>
+<parameter name="arg0" type="java.lang.String">
+</parameter>
+</method>
+<method name="testFailed"
+ return="void"
+ abstract="true"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ visibility="public"
+>
+<parameter name="arg0" type="int">
+</parameter>
+<parameter name="arg1" type="java.lang.String">
+</parameter>
+<parameter name="arg2" type="java.lang.String">
+</parameter>
+</method>
+<method name="testRunEnded"
+ return="void"
+ abstract="true"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ visibility="public"
+>
+<parameter name="arg0" type="long">
+</parameter>
+</method>
+<method name="testRunStarted"
+ return="void"
+ abstract="true"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ visibility="public"
+>
+<parameter name="arg0" type="java.lang.String">
+</parameter>
+<parameter name="arg1" type="int">
+</parameter>
+</method>
+<method name="testRunStopped"
+ return="void"
+ abstract="true"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ visibility="public"
+>
+<parameter name="arg0" type="long">
+</parameter>
+</method>
+<method name="testStarted"
+ return="void"
+ abstract="true"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ visibility="public"
+>
+<parameter name="arg0" type="java.lang.String">
+</parameter>
+</method>
+</class>
+<class name="Version"
+ extends="java.lang.Object"
+ interface="false"
+ abstract="false"
+ static="false"
+ final="false"
+ visibility="public"
+>
+<constructor name="Version"
+ type="junit.runner.Version"
+ static="false"
+ final="false"
+ visibility="private"
+>
+</constructor>
+<method name="id"
+ return="java.lang.String"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="true"
+ final="false"
+ visibility="public"
+>
+</method>
+<method name="main"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="true"
+ final="false"
+ visibility="public"
+>
+<parameter name="arg0" type="java.lang.String[]">
+</parameter>
+</method>
+</class>
+</package>
+<package name="junit.textui"
+>
+<class name="ResultPrinter"
+ extends="java.lang.Object"
+ interface="false"
+ abstract="false"
+ static="false"
+ final="false"
+ visibility="public"
+>
+<implements name="junit.framework.TestListener">
+</implements>
+<field name="fColumn"
+ type="int"
+ transient="false"
+ volatile="false"
+ static="false"
+ final="false"
+ visibility="package"
+>
+</field>
+<field name="fWriter"
+ type="java.io.PrintStream"
+ transient="false"
+ volatile="false"
+ static="false"
+ final="false"
+ visibility="package"
+>
+</field>
+<constructor name="ResultPrinter"
+ type="junit.textui.ResultPrinter"
+ static="false"
+ final="false"
+ visibility="public"
+>
+<parameter name="arg0" type="java.io.PrintStream">
+</parameter>
+</constructor>
+<method name="addError"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ visibility="public"
+>
+<parameter name="arg0" type="junit.framework.Test">
+</parameter>
+<parameter name="arg1" type="java.lang.Throwable">
+</parameter>
+</method>
+<method name="addFailure"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ visibility="public"
+>
+<parameter name="arg0" type="junit.framework.Test">
+</parameter>
+<parameter name="arg1" type="junit.framework.AssertionFailedError">
+</parameter>
+</method>
+<method name="elapsedTimeAsString"
+ return="java.lang.String"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ visibility="protected"
+>
+<parameter name="arg0" type="long">
+</parameter>
+</method>
+<method name="endTest"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ visibility="public"
+>
+<parameter name="arg0" type="junit.framework.Test">
+</parameter>
+</method>
+<method name="getWriter"
+ return="java.io.PrintStream"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ visibility="public"
+>
+</method>
+<method name="print"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="true"
+ static="false"
+ final="false"
+ visibility="package"
+>
+<parameter name="arg0" type="junit.framework.TestResult">
+</parameter>
+<parameter name="arg1" type="long">
+</parameter>
+</method>
+<method name="printDefect"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ visibility="public"
+>
+<parameter name="arg0" type="junit.framework.TestFailure">
+</parameter>
+<parameter name="arg1" type="int">
+</parameter>
+</method>
+<method name="printDefectHeader"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ visibility="protected"
+>
+<parameter name="arg0" type="junit.framework.TestFailure">
+</parameter>
+<parameter name="arg1" type="int">
+</parameter>
+</method>
+<method name="printDefectTrace"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ visibility="protected"
+>
+<parameter name="arg0" type="junit.framework.TestFailure">
+</parameter>
+</method>
+<method name="printDefects"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ visibility="protected"
+>
+<parameter name="arg0" type="java.util.Enumeration">
+</parameter>
+<parameter name="arg1" type="int">
+</parameter>
+<parameter name="arg2" type="java.lang.String">
+</parameter>
+</method>
+<method name="printErrors"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ visibility="protected"
+>
+<parameter name="arg0" type="junit.framework.TestResult">
+</parameter>
+</method>
+<method name="printFailures"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ visibility="protected"
+>
+<parameter name="arg0" type="junit.framework.TestResult">
+</parameter>
+</method>
+<method name="printFooter"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ visibility="protected"
+>
+<parameter name="arg0" type="junit.framework.TestResult">
+</parameter>
+</method>
+<method name="printHeader"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ visibility="protected"
+>
+<parameter name="arg0" type="long">
+</parameter>
+</method>
+<method name="printWaitPrompt"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ visibility="package"
+>
+</method>
+<method name="startTest"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ visibility="public"
+>
+<parameter name="arg0" type="junit.framework.Test">
+</parameter>
+</method>
+</class>
+<class name="TestRunner"
+ extends="junit.runner.BaseTestRunner"
+ interface="false"
+ abstract="false"
+ static="false"
+ final="false"
+ visibility="public"
+>
+<field name="EXCEPTION_EXIT"
+ type="int"
+ transient="false"
+ volatile="false"
+ static="true"
+ final="true"
+ visibility="public"
+ value="2"
+>
+</field>
+<field name="FAILURE_EXIT"
+ type="int"
+ transient="false"
+ volatile="false"
+ static="true"
+ final="true"
+ visibility="public"
+ value="1"
+>
+</field>
+<field name="SUCCESS_EXIT"
+ type="int"
+ transient="false"
+ volatile="false"
+ static="true"
+ final="true"
+ visibility="public"
+>
+</field>
+<field name="fPrinter"
+ type="junit.textui.ResultPrinter"
+ transient="false"
+ volatile="false"
+ static="false"
+ final="false"
+ visibility="private"
+>
+</field>
+<constructor name="TestRunner"
+ type="junit.textui.TestRunner"
+ static="false"
+ final="false"
+ visibility="public"
+>
+</constructor>
+<constructor name="TestRunner"
+ type="junit.textui.TestRunner"
+ static="false"
+ final="false"
+ visibility="public"
+>
+<parameter name="arg0" type="java.io.PrintStream">
+</parameter>
+</constructor>
+<constructor name="TestRunner"
+ type="junit.textui.TestRunner"
+ static="false"
+ final="false"
+ visibility="public"
+>
+<parameter name="arg0" type="junit.textui.ResultPrinter">
+</parameter>
+</constructor>
+<method name="main"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="true"
+ final="false"
+ visibility="public"
+>
+<parameter name="arg0" type="java.lang.String[]">
+</parameter>
+</method>
+<method name="run"
+ return="junit.framework.TestResult"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="true"
+ final="false"
+ visibility="public"
+>
+<parameter name="arg0" type="junit.framework.Test">
+</parameter>
+</method>
+<method name="run"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="true"
+ final="false"
+ visibility="public"
+>
+<parameter name="arg0" type="java.lang.Class">
+</parameter>
+</method>
+<method name="runAndWait"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="true"
+ final="false"
+ visibility="public"
+>
+<parameter name="arg0" type="junit.framework.Test">
+</parameter>
+</method>
+<method name="createTestResult"
+ return="junit.framework.TestResult"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ visibility="protected"
+>
+</method>
+<method name="doRun"
+ return="junit.framework.TestResult"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ visibility="public"
+>
+<parameter name="arg0" type="junit.framework.Test">
+</parameter>
+</method>
+<method name="doRun"
+ return="junit.framework.TestResult"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ visibility="public"
+>
+<parameter name="arg0" type="junit.framework.Test">
+</parameter>
+<parameter name="arg1" type="boolean">
+</parameter>
+</method>
+<method name="pause"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ visibility="protected"
+>
+<parameter name="arg0" type="boolean">
+</parameter>
+</method>
+<method name="runFailed"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ visibility="protected"
+>
+<parameter name="arg0" type="java.lang.String">
+</parameter>
+</method>
+<method name="runSingleMethod"
+ return="junit.framework.TestResult"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ visibility="protected"
+>
+<parameter name="arg0" type="java.lang.String">
+</parameter>
+<parameter name="arg1" type="java.lang.String">
+</parameter>
+<parameter name="arg2" type="boolean">
+</parameter>
+</method>
+<method name="setPrinter"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ visibility="public"
+>
+<parameter name="arg0" type="junit.textui.ResultPrinter">
+</parameter>
+</method>
+<method name="start"
+ return="junit.framework.TestResult"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ visibility="public"
+>
+<parameter name="arg0" type="java.lang.String[]">
+</parameter>
+</method>
+<method name="testEnded"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ visibility="public"
+>
+<parameter name="arg0" type="java.lang.String">
+</parameter>
+</method>
+<method name="testFailed"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ visibility="public"
+>
+<parameter name="arg0" type="int">
+</parameter>
+<parameter name="arg1" type="junit.framework.Test">
+</parameter>
+<parameter name="arg2" type="java.lang.Throwable">
+</parameter>
+</method>
+<method name="testStarted"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ visibility="public"
+>
+<parameter name="arg0" type="java.lang.String">
+</parameter>
+</method>
+</class>
+</package>
+</api>

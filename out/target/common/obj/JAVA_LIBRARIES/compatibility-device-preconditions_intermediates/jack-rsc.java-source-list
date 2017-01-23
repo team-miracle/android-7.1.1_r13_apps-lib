@@ -1,0 +1,3 @@
+cts/common/device-side/preconditions/src/com/android/compatibility/common/preconditions/ExternalStorageHelper.java
+cts/common/device-side/preconditions/src/com/android/compatibility/common/preconditions/ScreenLockHelper.java
+cts/common/device-side/preconditions/src/com/android/compatibility/common/preconditions/WifiHelper.java

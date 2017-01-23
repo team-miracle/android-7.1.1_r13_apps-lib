@@ -1,0 +1,4 @@
+frameworks/support/media-compat/api24/android/support/v4/media/MediaBrowserCompatApi24.java
+frameworks/support/media-compat/api24/android/support/v4/media/MediaBrowserServiceCompatApi24.java
+frameworks/support/media-compat/api24/android/support/v4/media/session/MediaControllerCompatApi24.java
+frameworks/support/media-compat/api24/android/support/v4/media/session/MediaSessionCompatApi24.java

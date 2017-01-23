@@ -1,0 +1,4 @@
+frameworks/support/v7/palette/src/main/java/android/support/v7/graphics/ColorCutQuantizer.java
+frameworks/support/v7/palette/src/main/java/android/support/v7/graphics/Palette.java
+frameworks/support/v7/palette/src/main/java/android/support/v7/graphics/Target.java
+out/target/common/obj/JAVA_LIBRARIES/android-support-v7-palette_intermediates/src/android/support/v7/palette/R.java

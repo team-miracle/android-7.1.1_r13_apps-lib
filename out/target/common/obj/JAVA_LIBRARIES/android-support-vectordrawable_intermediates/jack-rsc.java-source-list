@@ -1,0 +1,5 @@
+frameworks/support/graphics/drawable/static/src/android/support/graphics/drawable/AndroidResources.java
+frameworks/support/graphics/drawable/static/src/android/support/graphics/drawable/PathParser.java
+frameworks/support/graphics/drawable/static/src/android/support/graphics/drawable/TypedArrayUtils.java
+frameworks/support/graphics/drawable/static/src/android/support/graphics/drawable/VectorDrawableCommon.java
+frameworks/support/graphics/drawable/static/src/android/support/graphics/drawable/VectorDrawableCompat.java

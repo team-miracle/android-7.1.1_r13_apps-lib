@@ -1,0 +1,6 @@
+external/littlemock/src/com/google/testing/littlemock/AppDataDirGuesser.java
+external/littlemock/src/com/google/testing/littlemock/ArgumentCaptor.java
+external/littlemock/src/com/google/testing/littlemock/Behaviour.java
+external/littlemock/src/com/google/testing/littlemock/Captor.java
+external/littlemock/src/com/google/testing/littlemock/LittleMock.java
+external/littlemock/src/com/google/testing/littlemock/Mock.java

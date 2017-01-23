@@ -1,0 +1,6 @@
+frameworks/opt/colorpicker/src/com/android/colorpicker/ColorPickerDialog.java
+frameworks/opt/colorpicker/src/com/android/colorpicker/ColorPickerPalette.java
+frameworks/opt/colorpicker/src/com/android/colorpicker/ColorPickerSwatch.java
+frameworks/opt/colorpicker/src/com/android/colorpicker/ColorStateDrawable.java
+frameworks/opt/colorpicker/src/com/android/colorpicker/HsvColorComparator.java
+out/target/common/obj/JAVA_LIBRARIES/colorpicker_intermediates/src/com/android/colorpicker/R.java
